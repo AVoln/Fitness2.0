@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  @include desktop-width-only {
+    padding-top: 30px;
+  }
+
+  @include tablet-width {
+    padding-top: 45px;
+  }
+
+  @include mobile-width {
+    padding-top: 15px;
+  }
+
+  &__phone {
+    color: $color-default-white;
+    font-family: $ff-alumni;
+
+    @include desktop-width-only {
+    font-size: 26px;
+    }
+
+    @include tablet-width {
+      font-size: 24px;
+    }
+
+    @include mobile-width {
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.logo {
+  &__container {
+    padding: 40px;
+    background-color: $color-sapphire;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    font-family: $ff-alumni;
+    font-size: 36px;
+    color: #fff;
+  }
+}
