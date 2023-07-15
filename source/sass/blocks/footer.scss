@@ -1,0 +1,21 @@
+.footer {
+  position: relative;
+  color: $color-default-white;
+  display: flex;
+  justify-content: space-between;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    @include mobile-width {
+      position: absolute;
+      top: 50px;
+      left: 35px;
+    }
+  }
+
+  @include mobile-width {
+    display: block;
+  }
+}

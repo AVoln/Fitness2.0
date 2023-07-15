@@ -5,7 +5,6 @@
 
   @include desktop-width-only {
     grid-template-columns: 35% 65%;
-    column-gap: 5%;
   }
 
   @include tablet-width {
@@ -113,9 +112,9 @@
   }
 
   &__image {
-
     @include desktop-width-only {
       margin-top: -15px;
+      margin-left: -40px;
     }
 
     @include tablet-width {
