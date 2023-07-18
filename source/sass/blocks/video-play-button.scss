@@ -1,0 +1,44 @@
+.general-info__video-play-button {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  color: $color-default-white;
+
+  @include tablet-width {
+    top: 20%;
+  }
+
+  &:hover,
+  &:active {
+    color: $color-default-black;
+    cursor: pointer;
+  }
+
+  &:hover circle:first-child,
+  &:active circle:first-child {
+    stroke: $color-black-russian;
+    stroke-opacity: 1;
+  }
+
+  &:hover circle:nth-child(2),
+  &:active circle:nth-child(2) {
+    fill: $color-transparent;
+  }
+
+  &--disabled {
+    color: $color-default-black;
+    opacity: 0.2;
+
+    & circle:first-child {
+      stroke: $color-black-russian;
+      stroke-opacity: 1;
+    }
+
+    & circle:nth-child(2)  {
+      fill: $color-transparent;
+    }
+  }
+}

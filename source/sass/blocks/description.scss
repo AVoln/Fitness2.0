@@ -1,0 +1,43 @@
+.description {
+
+  @include desktop-width-only {
+    width: 35%;
+    padding-top: 169px;
+  }
+
+  @include tablet-width {
+    text-align: center;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__about {
+    margin: 0;
+
+    @include desktop-width-only {
+      padding-top: 25px;
+    }
+  }
+
+  &__text {
+    display: block;
+
+    @include desktop-width-only {
+      padding-top: 55px;
+    }
+  }
+
+  &__text-desktop-only {
+    display: block;
+
+    @include desktop-width-only {
+      padding-top: 10px;
+    }
+
+    @include tablet-width {
+      display: none;
+    }
+  }
+}
