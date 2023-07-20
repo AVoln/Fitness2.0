@@ -1,5 +1,92 @@
 .trainers {
+  @include desktop-width-only {
+    width: 1160px;
+  }
+
+  @include tablet-width {
+    width: 566px;
+  }
+
+  @include mobile-width {
+    width: 226px;
+  }
+
+  &__title {
+    font-family: $ff-alumni-semibold;
+
+    @include desktop-width-only {
+      font-size: 54px;
+      line-height: 65px;
+      padding-top: 106px;
+    }
+
+    @include tablet-width {
+      text-align: center;
+      font-size: 42px;
+      line-height: 46px;
+      padding-top: 100px;
+    }
+
+    @include mobile-width {
+      font-size: 32px;
+      line-height: 38px;
+      padding-top: 63px;
+    }
+  }
+
   &__list {
     display: flex;
+
+    @include desktop-width-only {
+      padding-top: 48px;
+      padding-bottom: 105px;
+    }
+
+    @include tablet-width {
+      padding-top: 31px;
+      padding-bottom: 100px;
+    }
+
+    @include mobile-width {
+      padding-top: 42px;
+      padding-bottom: 70px;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    @include desktop-width-only {
+      &:hover .trainers__name {
+        display: none;
+      }
+
+      &:hover .trainers__description {
+        display: block;
+      }
+    }
+
+    @include tablet-width {
+      &:active .trainers__name {
+        display: none;
+      }
+
+      &:active .trainers__description {
+        display: block;
+      }
+
+    }
+  }
+
+  &__name {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: $ff-roboto-bold;
+    color: $color-default-white;
+    font-size: 18px;
+
   }
 }

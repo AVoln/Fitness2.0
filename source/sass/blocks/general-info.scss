@@ -5,6 +5,7 @@
 
   @include desktop-width-only {
     padding-bottom: 235px;
+    justify-content: center;
   }
 
   @include tablet-width {

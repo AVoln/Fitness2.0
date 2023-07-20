@@ -1,9 +1,9 @@
 .super-games {
   display: flex;
-  justify-content: center;
   margin: 0 auto;
 
   &-wrapper {
+    justify-content: center;
     display: flex;
     width: 100%;
 
