@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper.scss";
 
 // Global
 // ---------------------------------
@@ -44,6 +44,11 @@
 @import "blocks/date.scss";
 @import "blocks/time.scss";
 @import "blocks/trainers.scss";
+@import "blocks/trainer-info.scss";
+@import "blocks/trainers-arrows.scss";
+@import "blocks/trainers-arrow.scss";
+@import "blocks/trainers-wrapper.scss";
+
 
 
 // ---------------------------------

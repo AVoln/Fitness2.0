@@ -1,0 +1,41 @@
+.trainer-info {
+  display: none;
+  position: absolute;
+  top: 0;
+  background: $color-bcgr-trainer;
+  height: 100%;
+  color: $color-default-white;
+  text-align: center;
+
+  &__name {
+    font-family: $ff-roboto-bold;
+    padding-top: 58px;
+    font-size: 18px;
+    line-height: 20px;
+
+    @include mobile-width {
+      padding-top: 44px;
+    }
+  }
+
+  &__direction {
+    color: $color-spindle;
+  }
+
+  &__list {
+    text-align: left;
+    padding-top: 17px;
+  }
+
+  &__item {
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 70px;
+    font-size: 14px;
+    padding-top: 9px;
+
+    @include mobile-width {
+      margin-left: 50px;
+    }
+  }
+}

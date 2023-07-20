@@ -15,7 +15,7 @@
     crossorigin="anonymous">
   <link rel="preload" href="./fonts/roboto-condensed-v25-cyrillic_latin-300.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/roboto-condensed-v25-cyrillic_latin-700.woff2" as="font" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="manifest" href="./manifest.webmanifest">
 </head>
@@ -281,270 +281,271 @@
         </div>
       </section>
 
-      <section class="trainers swiper">
-        <h2 class="trainers__title">Тренеры</h2>
-        <ul class="trainers__list swiper-wrapper">
-          <li class="trainers__item swiper-slide">
-            <div class="trainers__image-wrapper">
-              <div class="trainers__image">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/anna-pavlova.webp 1x,
+      <section class="trainers-wrapper">
+        <div class="trainers swiper">
+          <h2 class="trainers__title">Тренеры</h2>
+          <ul class="trainers__list swiper-wrapper">
+            <li class="trainers__item swiper-slide">
+              <div class="trainers__image-wrapper">
+                <div class="trainers__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/anna-pavlova.webp 1x,
                     img/anna-pavlova@2x.webp 2x" width="260" height="294">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/anna-pavlova.webp 1x,
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/anna-pavlova.webp 1x,
                     img/anna-pavlova@2x.webp 2x" width="268" height="294">
-                  <source type="image/webp" media="(min-width: 320px)" srcset="img/anna-pavlova.webp 1x,
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/anna-pavlova.webp 1x,
                   img/anna-pavlova@2x.webp 2x" width="226" height="274">
 
-                  <source media="(min-width: 1200px)" srcset="img/anna-pavlova.png 1x,
+                    <source media="(min-width: 1200px)" srcset="img/anna-pavlova.png 1x,
                     img/anna-pavlova@2x.png 2x" width="260" height="294">
-                  <source media="(min-width: 768px)" srcset="img/anna-pavlova.png 1x,
+                    <source media="(min-width: 768px)" srcset="img/anna-pavlova.png 1x,
                     img/video-preview_tablet@2x.png 2x" width="268" height="294">
-                  <img src="img/anna-pavlova.png" srcset="img/anna-pavlova@2x.png 2x" alt="Анна Павлова."
-                    width="226" height="274">
-                </picture>
+                    <img src="img/anna-pavlova.png" srcset="img/anna-pavlova@2x.png 2x" alt="Анна&nbsp;Павлова."
+                      width="226" height="274">
+                  </picture>
+                </div>
+                <span class="trainers__name">Анна&nbsp;Павлова</span>
+                <div class="trainers__description trainer-info">
+                  <p class="trainer-info__name">Анна&nbsp;Павлова</p>
+                  <span class="trainer-info__direction">CrossFit</span>
+                  <ul class="trainer-info__list">
+                    <li class="trainer-info__item">Certified Level&nbsp;1 Trainer</li>
+                    <li class="trainer-info__item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li class="trainer-info__item">Опыт&nbsp;&mdash; 4&nbsp;года</li>
+                  </ul>
+                </div>
               </div>
-              <span class="trainers__name">Анна Павлова</span>
-              <div class="trainers__description trainer-info">
-                <p class="trainer-info__name">Анна Павлова</p>
-                <span class="trainer-info__direction">CrossFit</span>
-                <ul class="trainer-info__list">
-                  <li class="trainer-info__item">Certified Level&nbsp;1 Trainer</li>
-                  <li class="trainer-info__item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                  <li class="trainer-info__item">Опыт&nbsp;&mdash; 4&nbsp;лет</li>
-                </ul>
-              </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="trainers__item swiper-slide">
-            <div class="trainers__image-wrapper">
-              <div class="trainers__image">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/aleksey-lavrov.webp 1x,
+            <li class="trainers__item swiper-slide">
+              <div class="trainers__image-wrapper">
+                <div class="trainers__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/aleksey-lavrov.webp 1x,
                     img/aleksey-lavrov@2x.webp 2x" width="260" height="294">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/aleksey-lavrov.webp 1x,
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/aleksey-lavrov.webp 1x,
                     img/aleksey-lavrov@2x.webp 2x" width="268" height="294">
-                  <source type="image/webp" media="(min-width: 320px)" srcset="img/aleksey-lavrov.webp 1x,
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/aleksey-lavrov.webp 1x,
                   img/aleksey-lavrov@2x.webp 2x" width="226" height="274">
 
-                  <source media="(min-width: 1200px)" srcset="img/aleksey-lavrov.png 1x,
+                    <source media="(min-width: 1200px)" srcset="img/aleksey-lavrov.png 1x,
                     img/aleksey-lavrov@2x.png 2x" width="260" height="294">
-                  <source media="(min-width: 768px)" srcset="img/aleksey-lavrov.png 1x,
+                    <source media="(min-width: 768px)" srcset="img/aleksey-lavrov.png 1x,
                     img/video-preview_tablet@2x.png 2x" width="268" height="294">
-                  <img src="img/aleksey-lavrov.png" srcset="img/aleksey-lavrov@2x.png 2x" alt="Алексей Лавров."
-                    width="226" height="274">
-                </picture>
+                    <img src="img/aleksey-lavrov.png" srcset="img/aleksey-lavrov@2x.png 2x" alt="Алексей&nbsp;Лавров."
+                      width="226" height="274">
+                  </picture>
+                </div>
+                <span class="trainers__name">Алексей&nbsp;Лавров</span>
+                <div class="trainers__description trainer-info">
+                  <p class="trainer-info__name">Алексей&nbsp;Лавров</p>
+                  <span class="trainer-info__direction">CrossFit</span>
+                  <ul class="trainer-info__list">
+                    <li class="trainer-info__item">Certified Level&nbsp;2 Trainer</li>
+                    <li class="trainer-info__item">Победитель чемпионата России по&nbsp;Прищуру</li>
+                    <li class="trainer-info__item">Опыт&nbsp;&mdash; 5&nbsp;лет</li>
+                  </ul>
+                </div>
               </div>
-              <span class="trainers__name">Алексей Лавров</span>
-              <div class="trainers__description trainer-info">
-                <p class="trainer-info__name">Алексей Лавров</p>
-                <span class="trainer-info__direction">CrossFit</span>
-                <ul class="trainer-info__list">
-                  <li class="trainer-info__item">Certified Level&nbsp;2 Trainer</li>
-                  <li class="trainer-info__item">Победитель чемпионата России по&nbsp;Прищуру</li>
-                  <li class="trainer-info__item">Опыт&nbsp;&mdash; 5&nbsp;лет</li>
-                </ul>
-              </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="trainers__item swiper-slide">
-            <div class="trainers__image-wrapper">
-              <div class="trainers__image">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/aleksandr-pashkov.webp 1x,
+            <li class="trainers__item swiper-slide">
+              <div class="trainers__image-wrapper">
+                <div class="trainers__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/aleksandr-pashkov.webp 1x,
                     img/aleksandr-pashkov@2x.webp 2x" width="260" height="294">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/aleksandr-pashkov.webp 1x,
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/aleksandr-pashkov.webp 1x,
                     img/aleksandr-pashkov@2x.webp 2x" width="268" height="294">
-                  <source type="image/webp" media="(min-width: 320px)" srcset="img/aleksandr-pashkov.webp 1x,
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/aleksandr-pashkov.webp 1x,
                   img/aleksandr-pashkov@2x.webp 2x" width="226" height="274">
 
-                  <source media="(min-width: 1200px)" srcset="img/aleksandr-pashkov.png 1x,
+                    <source media="(min-width: 1200px)" srcset="img/aleksandr-pashkov.png 1x,
                     img/aleksandr-pashkov@2x.png 2x" width="260" height="294">
-                  <source media="(min-width: 768px)" srcset="img/aleksandr-pashkov.png 1x,
+                    <source media="(min-width: 768px)" srcset="img/aleksandr-pashkov.png 1x,
                     img/video-preview_tablet@2x.png 2x" width="268" height="294">
-                  <img src="img/aleksandr-pashkov.png" srcset="img/aleksandr-pashkov@2x.png 2x" alt="Анна Павлова."
-                    width="226" height="274">
-                </picture>
+                    <img src="img/aleksandr-pashkov.png" srcset="img/aleksandr-pashkov@2x.png 2x"
+                      alt="Анна&nbsp;Павлова." width="226" height="274">
+                  </picture>
+                </div>
+                <span class="trainers__name">Александр&nbsp;Пашков</span>
+                <div class="trainers__description trainer-info">
+                  <p class="trainer-info__name">Александр&nbsp;Пашков</p>
+                  <span class="trainer-info__direction">CrossFit</span>
+                  <ul class="trainer-info__list">
+                    <li class="trainer-info__item">Certified Level&nbsp;3 Trainer</li>
+                    <li class="trainer-info__item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li class="trainer-info__item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                  </ul>
+                </div>
               </div>
-              <span class="trainers__name">Александр Пашков</span>
-              <div class="trainers__description trainer-info">
-                <p class="trainer-info__name">Александр Пашков</p>
-                <span class="trainer-info__direction">CrossFit</span>
-                <ul class="trainer-info__list">
-                  <li class="trainer-info__item">Certified Level&nbsp;3 Trainer</li>
-                  <li class="trainer-info__item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                  <li class="trainer-info__item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                </ul>
-              </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="trainers__item swiper-slide">
-            <div class="trainers__image-wrapper">
-              <div class="trainers__image">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/mariya-ketova.webp 1x,
+            <li class="trainers__item swiper-slide">
+              <div class="trainers__image-wrapper">
+                <div class="trainers__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/mariya-ketova.webp 1x,
                     img/mariya-ketova@2x.webp 2x" width="260" height="294">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/mariya-ketova.webp 1x,
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/mariya-ketova.webp 1x,
                     img/mariya-ketova@2x.webp 2x" width="268" height="294">
-                  <source type="image/webp" media="(min-width: 320px)" srcset="img/mariya-ketova.webp 1x,
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/mariya-ketova.webp 1x,
                   img/mariya-ketova@2x.webp 2x" width="226" height="274">
 
-                  <source media="(min-width: 1200px)" srcset="img/mariya-ketova.png 1x,
+                    <source media="(min-width: 1200px)" srcset="img/mariya-ketova.png 1x,
                     img/mariya-ketova@2x.png 2x" width="260" height="294">
-                  <source media="(min-width: 768px)" srcset="img/mariya-ketova.png 1x,
+                    <source media="(min-width: 768px)" srcset="img/mariya-ketova.png 1x,
                     img/video-preview_tablet@2x.png 2x" width="268" height="294">
-                  <img src="img/mariya-ketova.png" srcset="img/mariya-ketova@2x.png 2x" alt="Анна Павлова."
-                    width="226" height="274">
-                </picture>
+                    <img src="img/mariya-ketova.png" srcset="img/mariya-ketova@2x.png 2x" alt="Анна&nbsp;Павлова."
+                      width="226" height="274">
+                  </picture>
+                </div>
+                <span class="trainers__name">Мария&nbsp;Кетова</span>
+                <div class="trainers__description trainer-info">
+                  <p class="trainer-info__name">Мария&nbsp;Кетова</p>
+                  <span class="trainer-info__direction">CrossFit</span>
+                  <ul class="trainer-info__list">
+                    <li class="trainer-info__item">Certified Level&nbsp;4 Trainer</li>
+                    <li class="trainer-info__item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li class="trainer-info__item">Опыт&nbsp;&mdash; 7&nbsp;лет</li>
+                  </ul>
+                </div>
               </div>
-              <span class="trainers__name">Мария Кетова</span>
-              <div class="trainers__description trainer-info">
-                <p class="trainer-info__name">Мария Кетова</p>
-                <span class="trainer-info__direction">CrossFit</span>
-                <ul class="trainer-info__list">
-                  <li class="trainer-info__item">Certified Level&nbsp;4 Trainer</li>
-                  <li class="trainer-info__item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                  <li class="trainer-info__item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li class="trainers__item swiper-slide">
-            <div class="trainers__image-wrapper">
-              <div class="trainers__image">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/anna-pavlova.webp 1x,
+            </li>
+
+            <li class="trainers__item swiper-slide">
+              <div class="trainers__image-wrapper">
+                <div class="trainers__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/anna-pavlova.webp 1x,
                     img/anna-pavlova@2x.webp 2x" width="260" height="294">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/anna-pavlova.webp 1x,
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/anna-pavlova.webp 1x,
                     img/anna-pavlova@2x.webp 2x" width="268" height="294">
-                  <source type="image/webp" media="(min-width: 320px)" srcset="img/anna-pavlova.webp 1x,
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/anna-pavlova.webp 1x,
                   img/anna-pavlova@2x.webp 2x" width="226" height="274">
 
-                  <source media="(min-width: 1200px)" srcset="img/anna-pavlova.png 1x,
+                    <source media="(min-width: 1200px)" srcset="img/anna-pavlova.png 1x,
                     img/anna-pavlova@2x.png 2x" width="260" height="294">
-                  <source media="(min-width: 768px)" srcset="img/anna-pavlova.png 1x,
+                    <source media="(min-width: 768px)" srcset="img/anna-pavlova.png 1x,
                     img/video-preview_tablet@2x.png 2x" width="268" height="294">
-                  <img src="img/anna-pavlova.png" srcset="img/anna-pavlova@2x.png 2x" alt="Анна Павлова."
-                    width="226" height="274">
-                </picture>
+                    <img src="img/anna-pavlova.png" srcset="img/anna-pavlova@2x.png 2x" alt="Анна&nbsp;Павлова."
+                      width="226" height="274">
+                  </picture>
+                </div>
+                <span class="trainers__name">Анна&nbsp;Павлова</span>
+                <div class="trainers__description trainer-info">
+                  <p class="trainer-info__name">Анна&nbsp;Павлова</p>
+                  <span class="trainer-info__direction">CrossFit</span>
+                  <ul class="trainer-info__list">
+                    <li class="trainer-info__item">Certified Level&nbsp;1 Trainer</li>
+                    <li class="trainer-info__item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li class="trainer-info__item">Опыт&nbsp;&mdash; 4&nbsp;года</li>
+                  </ul>
+                </div>
               </div>
-              <span class="trainers__name">Анна Павлова</span>
-              <div class="trainers__description trainer-info">
-                <p class="trainer-info__name">Анна Павлова</p>
-                <span class="trainer-info__direction">CrossFit</span>
-                <ul class="trainer-info__list">
-                  <li class="trainer-info__item">Certified Level&nbsp;1 Trainer</li>
-                  <li class="trainer-info__item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                  <li class="trainer-info__item">Опыт&nbsp;&mdash; 4&nbsp;лет</li>
-                </ul>
-              </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="trainers__item swiper-slide">
-            <div class="trainers__image-wrapper">
-              <div class="trainers__image">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/aleksey-lavrov.webp 1x,
+            <li class="trainers__item swiper-slide">
+              <div class="trainers__image-wrapper">
+                <div class="trainers__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/aleksey-lavrov.webp 1x,
                     img/aleksey-lavrov@2x.webp 2x" width="260" height="294">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/aleksey-lavrov.webp 1x,
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/aleksey-lavrov.webp 1x,
                     img/aleksey-lavrov@2x.webp 2x" width="268" height="294">
-                  <source type="image/webp" media="(min-width: 320px)" srcset="img/aleksey-lavrov.webp 1x,
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/aleksey-lavrov.webp 1x,
                   img/aleksey-lavrov@2x.webp 2x" width="226" height="274">
 
-                  <source media="(min-width: 1200px)" srcset="img/aleksey-lavrov.png 1x,
+                    <source media="(min-width: 1200px)" srcset="img/aleksey-lavrov.png 1x,
                     img/aleksey-lavrov@2x.png 2x" width="260" height="294">
-                  <source media="(min-width: 768px)" srcset="img/aleksey-lavrov.png 1x,
+                    <source media="(min-width: 768px)" srcset="img/aleksey-lavrov.png 1x,
                     img/video-preview_tablet@2x.png 2x" width="268" height="294">
-                  <img src="img/aleksey-lavrov.png" srcset="img/aleksey-lavrov@2x.png 2x" alt="Алексей Лавров."
-                    width="226" height="274">
-                </picture>
+                    <img src="img/aleksey-lavrov.png" srcset="img/aleksey-lavrov@2x.png 2x" alt="Алексей&nbsp;Лавров."
+                      width="226" height="274">
+                  </picture>
+                </div>
+                <span class="trainers__name">Алексей&nbsp;Лавров</span>
+                <div class="trainers__description trainer-info">
+                  <p class="trainer-info__name">Алексей&nbsp;Лавров</p>
+                  <span class="trainer-info__direction">CrossFit</span>
+                  <ul class="trainer-info__list">
+                    <li class="trainer-info__item">Certified Level&nbsp;2 Trainer</li>
+                    <li class="trainer-info__item">Победитель чемпионата России по&nbsp;Прищуру</li>
+                    <li class="trainer-info__item">Опыт&nbsp;&mdash; 5&nbsp;лет</li>
+                  </ul>
+                </div>
               </div>
-              <span class="trainers__name">Алексей Лавров</span>
-              <div class="trainers__description trainer-info">
-                <p class="trainer-info__name">Алексей Лавров</p>
-                <span class="trainer-info__direction">CrossFit</span>
-                <ul class="trainer-info__list">
-                  <li class="trainer-info__item">Certified Level&nbsp;2 Trainer</li>
-                  <li class="trainer-info__item">Победитель чемпионата России по&nbsp;Прищуру</li>
-                  <li class="trainer-info__item">Опыт&nbsp;&mdash; 5&nbsp;лет</li>
-                </ul>
-              </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="trainers__item swiper-slide">
-            <div class="trainers__image-wrapper">
-              <div class="trainers__image">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/aleksandr-pashkov.webp 1x,
+            <li class="trainers__item swiper-slide">
+              <div class="trainers__image-wrapper">
+                <div class="trainers__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/aleksandr-pashkov.webp 1x,
                     img/aleksandr-pashkov@2x.webp 2x" width="260" height="294">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/aleksandr-pashkov.webp 1x,
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/aleksandr-pashkov.webp 1x,
                     img/aleksandr-pashkov@2x.webp 2x" width="268" height="294">
-                  <source type="image/webp" media="(min-width: 320px)" srcset="img/aleksandr-pashkov.webp 1x,
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/aleksandr-pashkov.webp 1x,
                   img/aleksandr-pashkov@2x.webp 2x" width="226" height="274">
 
-                  <source media="(min-width: 1200px)" srcset="img/aleksandr-pashkov.png 1x,
+                    <source media="(min-width: 1200px)" srcset="img/aleksandr-pashkov.png 1x,
                     img/aleksandr-pashkov@2x.png 2x" width="260" height="294">
-                  <source media="(min-width: 768px)" srcset="img/aleksandr-pashkov.png 1x,
+                    <source media="(min-width: 768px)" srcset="img/aleksandr-pashkov.png 1x,
                     img/video-preview_tablet@2x.png 2x" width="268" height="294">
-                  <img src="img/aleksandr-pashkov.png" srcset="img/aleksandr-pashkov@2x.png 2x" alt="Анна Павлова."
-                    width="226" height="274">
-                </picture>
+                    <img src="img/aleksandr-pashkov.png" srcset="img/aleksandr-pashkov@2x.png 2x"
+                      alt="Анна&nbsp;Павлова." width="226" height="274">
+                  </picture>
+                </div>
+                <span class="trainers__name">Александр&nbsp;Пашков</span>
+                <div class="trainers__description trainer-info">
+                  <p class="trainer-info__name">Александр&nbsp;Пашков</p>
+                  <span class="trainer-info__direction">CrossFit</span>
+                  <ul class="trainer-info__list">
+                    <li class="trainer-info__item">Certified Level&nbsp;3 Trainer</li>
+                    <li class="trainer-info__item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li class="trainer-info__item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                  </ul>
+                </div>
               </div>
-              <span class="trainers__name">Александр Пашков</span>
-              <div class="trainers__description trainer-info">
-                <p class="trainer-info__name">Александр Пашков</p>
-                <span class="trainer-info__direction">CrossFit</span>
-                <ul class="trainer-info__list">
-                  <li class="trainer-info__item">Certified Level&nbsp;3 Trainer</li>
-                  <li class="trainer-info__item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                  <li class="trainer-info__item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                </ul>
-              </div>
-            </div>
-          </li>
+            </li>
 
-          <li class="trainers__item swiper-slide">
-            <div class="trainers__image-wrapper">
-              <div class="trainers__image">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/mariya-ketova.webp 1x,
+            <li class="trainers__item swiper-slide">
+              <div class="trainers__image-wrapper">
+                <div class="trainers__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/mariya-ketova.webp 1x,
                     img/mariya-ketova@2x.webp 2x" width="260" height="294">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/mariya-ketova.webp 1x,
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/mariya-ketova.webp 1x,
                     img/mariya-ketova@2x.webp 2x" width="268" height="294">
-                  <source type="image/webp" media="(min-width: 320px)" srcset="img/mariya-ketova.webp 1x,
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/mariya-ketova.webp 1x,
                   img/mariya-ketova@2x.webp 2x" width="226" height="274">
 
-                  <source media="(min-width: 1200px)" srcset="img/mariya-ketova.png 1x,
+                    <source media="(min-width: 1200px)" srcset="img/mariya-ketova.png 1x,
                     img/mariya-ketova@2x.png 2x" width="260" height="294">
-                  <source media="(min-width: 768px)" srcset="img/mariya-ketova.png 1x,
+                    <source media="(min-width: 768px)" srcset="img/mariya-ketova.png 1x,
                     img/video-preview_tablet@2x.png 2x" width="268" height="294">
-                  <img src="img/mariya-ketova.png" srcset="img/mariya-ketova@2x.png 2x" alt="Анна Павлова."
-                    width="226" height="274">
-                </picture>
+                    <img src="img/mariya-ketova.png" srcset="img/mariya-ketova@2x.png 2x" alt="Анна&nbsp;Павлова."
+                      width="226" height="274">
+                  </picture>
+                </div>
+                <span class="trainers__name">Мария&nbsp;Кетова</span>
+                <div class="trainers__description trainer-info">
+                  <p class="trainer-info__name">Мария&nbsp;Кетова</p>
+                  <span class="trainer-info__direction">CrossFit</span>
+                  <ul class="trainer-info__list">
+                    <li class="trainer-info__item">Certified Level&nbsp;4 Trainer</li>
+                    <li class="trainer-info__item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li class="trainer-info__item">Опыт&nbsp;&mdash; 7&nbsp;лет</li>
+                  </ul>
+                </div>
               </div>
-              <span class="trainers__name">Мария Кетова</span>
-              <div class="trainers__description trainer-info">
-                <p class="trainer-info__name">Мария Кетова</p>
-                <span class="trainer-info__direction">CrossFit</span>
-                <ul class="trainer-info__list">
-                  <li class="trainer-info__item">Certified Level&nbsp;4 Trainer</li>
-                  <li class="trainer-info__item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                  <li class="trainer-info__item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                </ul>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <div class="trainers__arrows">
-          <button class="trainers__arrow trainers__arrow--left swiper-button-prev" type="button"
-            aria-label="Предыдущий слайд.">
+            </li>
+          </ul>
+        </div>
+        <div class="trainers-arrows">
+          <button class="trainers-arrow trainers-arrow--left" type="button" aria-label="Предыдущий слайд.">
           </button>
-          <button class="trainers__arrow trainers__arrow--right swiper-button-next" type="button"
-            aria-label="Следующий слайд.">
+          <button class="trainers-arrow trainers-arrow--right" type="button" aria-label="Следующий слайд.">
           </button>
         </div>
       </section>
@@ -603,7 +604,7 @@
       </div>
     </footer>
   </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
