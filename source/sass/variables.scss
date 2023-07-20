@@ -15,6 +15,9 @@ $color-torch-red: #ed0233;
 $color-black-russian: #030a1a;
 $color-neon-blue:#103aae;
 $color-bcgr-video: rgba(20, 54, 122, 0.50);
+$color-ghost-white: #f8f9fc;
+$color-grey: #787878;
+$color-whisper: #e8e8e8;
 
 
 // Gradient
@@ -22,6 +25,7 @@ $color-bcgr-video: rgba(20, 54, 122, 0.50);
 $black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 $blue-to-red: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 20deg, #B80027 295deg, #003D85);
 $red-to-blue: linear-gradient(100deg, #ED0233 0%, #003EB7 100%);
+$red-to-blue-border: linear-gradient(140deg, #ED0233 0%, #003EB7 100%);
 
 // Typography
 // ---------------------------------
