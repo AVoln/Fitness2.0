@@ -58,6 +58,7 @@
   }
 
   &__button {
+    display: block;
     font-family: $ff-roboto-bold;
     text-transform: uppercase;
     background-color: $color-transparent;
@@ -69,12 +70,14 @@
       margin-top: 45px;
       font-size: 12px;
       padding: 28px 114px;
+      line-height: 14px;
     }
 
     @include tablet-width {
       border: 2px solid $color-default-white;
       margin-top: 27px;
       font-size: 10px;
+      line-height: 11px;
       padding: 14px 48px;
     }
 

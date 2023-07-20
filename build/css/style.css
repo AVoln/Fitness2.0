@@ -2244,6 +2244,7 @@ button {
   }
 }
 .game__button {
+  display: block;
   font-family: "roboto-bold", "Arial", sans-serif;
   text-transform: uppercase;
   background-color: rgba(255, 255, 255, 0);
@@ -2256,6 +2257,7 @@ button {
     margin-top: 45px;
     font-size: 12px;
     padding: 28px 114px;
+    line-height: 14px;
   }
 }
 @media (max-width: 1199px) {
@@ -2263,6 +2265,7 @@ button {
     border: 2px solid #ffffff;
     margin-top: 27px;
     font-size: 10px;
+    line-height: 11px;
     padding: 14px 48px;
   }
 }
@@ -2377,6 +2380,12 @@ button {
     font-size: 24px;
     line-height: 28px;
   }
+}
+
+.trainers__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /* @mixin hover-focus {
