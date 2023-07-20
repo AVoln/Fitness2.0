@@ -61,13 +61,14 @@
             img/hero-desktop@2x.png 2x" width="500" height="556">
             <source media="(min-width: 768px)" srcset="img/hero-tablet.png 1x,
             img/hero-tablet@2x.png 2x" width="324" height="390">
-            <img src="img/hero-tablet.png" srcset="img/hero-tablet@2x.png 2x" alt="Фото Супермена." width="324"
+            <img src="img/hero-tablet.png" srcset="img/hero-tablet@2x.png 2x" alt="Супермен." width="324"
               height="390">
           </picture>
         </div>
       </section>
     </div>
     <main>
+
       <section class="general-info">
         <div class="general-info__description description">
           <h2 class="description__title">Тренажерный зал</h2>
@@ -81,7 +82,6 @@
             в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
           </span>
         </div>
-
         <div class="general-info__image">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/general-info_desktop.webp 1x,
@@ -99,7 +99,23 @@
               width="320" height="313">
           </picture>
         </div>
-        <div class="general-info__video" data-id="video" data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
+        <div class="general-info__video" data-id="video"
+          data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-preview_desktop.webp 1x,
+              img/video-preview_desktop@2x.webp 2x" width="364" height="228">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/video-preview_tablet.webp 1x,
+              img/video-preview_tablet@2x.webp 2x" width="266" height="167">
+            <source type="image/webp" media="(min-width: 320px)" srcset="img/video-preview_mobile.webp 1x,
+              img/video-preview_mobile@2x.webp 2x" width="100%" height="167">
+
+            <source media="(min-width: 1200px)" srcset="img/video-preview_desktop.png 1x,
+              img/video-preview_desktop@2x.png 2x" width="364" height="228">
+            <source media="(min-width: 768px)" srcset="img/video-preview_tablet.png 1x,
+              img/video-preview_tablet@2x.png 2x" width="266" height="167">
+            <img src="img/video-preview_mobile.png" srcset="img/video-preview_mobile@2x.png 2x" alt="Спортзал."
+              width="100%" height="167">
+          </picture>
           <div class="general-info__video-play-button">
             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
               <circle cx="50" cy="50" r="49" stroke="url(#paint0_linear_1_293)" stroke-opacity="0.2" stroke-width="2" />
@@ -121,6 +137,151 @@
           </div>
         </div>
       </section>
+
+      <section class="abonements" data-tabs="parent" data-delay="300" data-height="max">
+        <h2 class="abonements__title">Абонементы</h2>
+        <div class="abonements__controls" data-tabs="controls">
+          <button class="abonements__control is-active" type="button" data-tabs="control">1&nbsp;месяц</button>
+          <button class="abonements__control" type="button" data-tabs="control">6&nbsp;месяцев</button>
+          <button class="abonements__control" type="button" data-tabs="control">12&nbsp;месяцев</button>
+        </div>
+        <div class="abonements__content" data-tabs="content">
+          <div class="abonements__element" data-tabs="element">
+            <ul class="abonements__list cards">
+              <li class="cards__item" data-tabs="card" data-tabs="card">
+                <h3 class="cards__title">С&nbsp;тренером</h3>
+                <p class="cards__info">12&nbsp;занятий</p>
+                <p class="cards__price" data-price="5000">5000&nbsp;₽
+                </p>
+                <button class="cards__buy">Купить абонемент</button>
+              </li>
+              <li class="cards__item is-active">
+                <h3 class="cards__title">Дневной</h3>
+                <p class="cards__info">с&nbsp;8:00 до&nbsp;17:00</p>
+                <p class="cards__price" data-price="1700">1700&nbsp;₽
+                </p>
+                <button class="cards__buy">Купить абонемент</button>
+              </li>
+              <li class="cards__item" data-tabs="card">
+                <h3 class="cards__title">Полный день</h3>
+                <p class="cards__info">с&nbsp;8:00 до&nbsp;22:00</p>
+                <p class="cards__price" data-price="2700">2700&nbsp;₽
+                </p>
+                <button class="cards__buy">Купить абонемент</button>
+              </li>
+            </ul>
+          </div>
+          <div class="abonements__element" data-tabs="element">
+            <ul class="abonements__list cards">
+              <li class="cards__item" data-tabs="card">
+                <h3 class="cards__title">С&nbsp;тренером</h3>
+                <p class="cards__info">12&nbsp;занятий</p>
+                <p class="cards__price" data-price="25000">25000&nbsp;₽
+                </p>
+                <button class="cards__buy">Купить абонемент</button>
+              </li>
+              <li class="cards__item is-active">
+                <h3 class="cards__title">Дневной</h3>
+                <p class="cards__info">с&nbsp;8:00 до&nbsp;17:00</p>
+                <p class="cards__price" data-price="8000">8000&nbsp;₽
+                </p>
+                <button class="cards__buy">Купить абонемент</button>
+              </li>
+              <li class="cards__item" data-tabs="card">
+                <h3 class="cards__title">Полный день</h3>
+                <p class="cards__info">с&nbsp;8:00 до&nbsp;22:00</p>
+                <p class="cards__price" data-price="13000">13000&nbsp;₽
+                </p>
+                <button class="cards__buy">Купить абонемент</button>
+              </li>
+            </ul>
+          </div>
+          <div class="abonements__element" data-tabs="element">
+            <ul class="abonements__list cards">
+              <li class="cards__item" data-tabs="card">
+                <h3 class="cards__title">С&nbsp;тренером</h3>
+                <p class="cards__info">12&nbsp;занятий</p>
+                <p class="cards__price" data-price="50000">50000&nbsp;₽
+                </p>
+                <button class="cards__buy">Купить абонемент</button>
+              </li>
+              <li class="cards__item is-active">
+                <h3 class="cards__title">Дневной</h3>
+                <p class="cards__info">с&nbsp;8:00 до&nbsp;17:00</p>
+                <p class="cards__price" data-price="17000">17000&nbsp;₽
+                </p>
+                <button class="cards__buy">Купить абонемент</button>
+              </li>
+              <li class="cards__item" data-tabs="card">
+                <h3 class="cards__title">Полный день</h3>
+                <p class="cards__info">с&nbsp;8:00 до&nbsp;22:00</p>
+                <p class="cards__price" data-price="27000">27000&nbsp;₽
+                </p>
+                <button class="cards__buy">Купить абонемент</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="abonements__image">
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/plates-desktop.webp 1x,
+            img/plates-desktop@2x.webp 2x" width="321" height="384">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/plates-tablet.webp 1x,
+            img/plates-tablet@2x.webp 2x" width="289" height="345">
+
+            <source media="(min-width: 1200px)" srcset="img/plates-desktop.png 1x,
+            img/plates-desktop@2x.png 2x" width="321" height="384">
+            <source media="(min-width: 768px)" srcset="img/plates-tablet.png 1x,
+            img/plates-tablet@2x.png 2x" width="289" height="345">
+            <img src="img/plates-tablet.png" srcset="img/plates-tablet@2x.png 2x" alt="Фото блинов для штанги."
+              width="289" height="345">
+          </picture>
+        </div>
+      </section>
+
+      <section class="super-games">
+        <div class="super-games-wrapper">
+          <div class="super-games__description game">
+            <div class="game__info">
+              <h3 class="game__title">Super Games</h3>
+              <ul class="game__timetable-list timelist">
+                <li class="timelist__item date">
+                  <span class="date__text">Дата</span>
+                  <div class="date__when">
+                    <p class="data__day">7</p>
+                    <span class="data__month">Марта<br>2019</span>
+                  </div>
+                </li>
+                <li class="timelist__item time">
+                  <span class="time__text">Время</span>
+                  <p class="time__when">12:00</p>
+                </li>
+              </ul>
+            </div>
+            <span class="game__text">Ежегодные соревнования по&nbsp;CrossFitt</span>
+            <button class="super-games__button" type="button">заполнить заявку</button>
+          </div>
+          <div class="super-games__image">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/super-games-desktop.webp 1x,
+              img/super-games-desktop@2x.webp 2x" width="660" height="500">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/super-games-tablet.webp 1x,
+              img/super-games-tablet@2x.webp 2x" width="386" height="292">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/super-games-mobile.webp 1x,
+              img/super-games-mobile@2x.webp 2x" width="290" height="292">
+
+              <source media="(min-width: 1200px)" srcset="img/super-games-desktop.png 1x,
+              img/super-games-desktop@2x.png 2x" width="660" height="500">
+              <source media="(min-width: 768px)" srcset="img/super-games-tablet.png 1x,
+              img/super-games-tablet@2x.png 2x" width="386" height="292">
+              <img src="img/super-games-mobile.png" srcset="img/super-games-mobile@2x.png 2x" alt="Супер игры." width="290"
+                height="292">
+            </picture>
+
+          </div>
+        </div>
+      </section>
+
     </main>
     <footer>
       <div class="footer-wrapper">

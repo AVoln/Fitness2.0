@@ -1,0 +1,119 @@
+.abonements {
+  text-align: center;
+  background-color: $color-ghost-white;
+
+  &__title {
+    font-family: $ff-alumni-semibold;
+    margin: 0;
+
+    @include desktop-width-only {
+      font-size: 54px;
+      line-height: 65px;
+      padding-top: 120px;
+    }
+
+    @include tablet-width {
+      font-size: 42px;
+      line-height: 50px;
+      padding-top: 100px;
+    }
+
+    @include mobile-width {
+      font-size: 32px;
+      line-height: 38px;
+      padding-top: 63px;
+    }
+  }
+
+  &__controls {
+    font-family: $ff-roboto-regular;
+    color: $color-sapphire;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 341px;
+      height: 2px;
+      background-color: $color-grey;
+      opacity: 0.2;
+      bottom: 0;
+      left: 50%;
+      right: 50%;
+      transform: translateX(-50%);
+
+      @include mobile-width {
+        margin: 0 15px;
+        width: 100%;
+      }
+    }
+
+    @include desktop-width-only {
+      font-size: 20px;
+    }
+
+    @include tablet-width {
+      font-size: 18px;
+    }
+
+    @include mobile-width {
+      font-size: 16px;
+      margin: 0 auto;
+      padding: 0 15px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__control {
+    color: $color-sapphire;
+    opacity: 0.5;
+    border: none;
+    background-color: $color-transparent;
+    padding: 20px 0 20px;
+
+    &.is-active {
+      border-bottom: 2px solid $color-torch-red;
+      opacity: 1;
+      z-index: 2;
+    }
+
+    @include desktop-width-only {
+      margin: 0 23px 0;
+    }
+
+    @include tablet-width {
+      margin: 0 27px 0;
+    }
+
+    @include mobile-width {
+      margin: 0;
+    }
+  }
+
+  &__content {
+    @include tablet-width {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    position: absolute;
+
+    @include desktop-width-only {
+      bottom: -70px;
+      right: 0;
+    }
+
+    @include tablet-width {
+      bottom: 20px;
+      right: 0;
+    }
+
+    @include mobile-width {
+      display: none;
+    }
+  }
+}

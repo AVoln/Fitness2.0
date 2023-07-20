@@ -19,8 +19,14 @@
       padding-top: 120px;
     }
 
+    @include tablet-width {
+      width: 100%;
+      padding: 0 45px;
+    }
+
     @include mobile-width {
       width: 100%;
+      padding: 0;
     }
 
     & img {
@@ -33,8 +39,6 @@
     transform: translateX(-50%);
 
     @include desktop-width-only {
-      background-image: url(../../img/video-preview_desktop.png);
-      background-repeat: no-repeat;
       position: absolute;
       bottom: 110px;
       left: 50%;
@@ -47,18 +51,22 @@
       position: absolute;
       bottom: 100px;
       left: 50%;
-      width: 266px;
-      height: 167px;
     }
 
     @include mobile-width {
       position: relative;
-      width: 100%;
-      height: 167px;
       transform: none;
       bottom: auto;
       left: auto;
       margin-top: 40px;
+      object-fit: cover;
+      width: 100%;
+      height: 167px;
+
+      & img {
+        object-fit: cover;
+        height: 167px;
+      }
     }
 
     &::before {

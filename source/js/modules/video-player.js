@@ -1,4 +1,4 @@
-const getVideo = function () {
+const play = () => {
 
   const video = document.querySelector('[data-id="video"]');
 
@@ -14,4 +14,4 @@ const getVideo = function () {
   });
 };
 
-export {getVideo};
+export {play};
