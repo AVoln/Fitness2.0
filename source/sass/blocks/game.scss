@@ -1,0 +1,82 @@
+.game {
+  background-color: $color-torch-red;
+  color: $color-default-white;
+
+  @include desktop-width-only {
+    width: 500px;
+    padding: 78px;
+  }
+
+  @include tablet-width {
+    width: 290px;
+    padding: 45px 45px;
+  }
+
+  @include mobile-width {
+    margin: 0 auto;
+    padding: 50px 44px;
+  }
+
+  &__info {
+    display: flex;
+  }
+
+  &__title {
+    font-family: $ff-alumni-semibold;
+    text-transform: uppercase;
+
+    @include desktop-width-only {
+      padding-left: 15px;
+      font-size: 82px;
+      line-height: 78px;
+      padding-right: 50px;
+    }
+
+    @include tablet-width {
+      padding-left: 10px;
+      font-size: 48px;
+      line-height: 46px;
+      padding-right: 39px;
+
+
+    }
+  }
+
+  &__text {
+    display: block;
+    font-family: $ff-roboto-regular;
+
+    @include desktop-width-only {
+      padding-top: 18px;
+      font-size: 18px;
+    }
+
+    @include tablet-width {
+      padding-top: 2px;
+      font-size: 12px;
+    }
+  }
+
+  &__button {
+    font-family: $ff-roboto-bold;
+    text-transform: uppercase;
+    background-color: $color-transparent;
+    border: 4px solid $color-default-white;
+    color: $color-default-white;
+    letter-spacing: 0.6px;
+
+    @include desktop-width-only {
+      margin-top: 45px;
+      font-size: 12px;
+      padding: 28px 114px;
+    }
+
+    @include tablet-width {
+      border: 2px solid $color-default-white;
+      margin-top: 27px;
+      font-size: 10px;
+      padding: 14px 48px;
+    }
+
+  }
+}

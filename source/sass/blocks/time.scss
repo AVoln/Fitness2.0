@@ -1,0 +1,31 @@
+.time {
+
+  &__text {
+    display: block;
+    font-family: $ff-roboto-regular;
+
+    @include desktop-width-only {
+      padding-bottom: 7px;
+      font-size: 18px;
+    }
+
+    @include tablet-width {
+      font-size: 12px;
+    }
+  }
+
+  &__when {
+    font-family: $ff-roboto-bold;
+    border-top: 1px solid $color-default-white;
+
+    @include desktop-width-only {
+      font-size: 40px;
+      line-height: 52px;
+    }
+
+    @include tablet-width {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+}

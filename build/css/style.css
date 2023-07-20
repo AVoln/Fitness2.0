@@ -422,6 +422,13 @@ textarea {
   resize: none;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 input:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0 1000px #ffffff;
           box-shadow: inset 0 0 0 1000px #ffffff;
@@ -1841,6 +1848,7 @@ button {
 .abonements {
   text-align: center;
   background-color: #f8f9fc;
+  position: relative;
 }
 .abonements__title {
   font-family: "alumni-semibold", "Arial", sans-serif;
@@ -2141,6 +2149,233 @@ button {
 @media (max-width: 1199px) {
   .cards__buy {
     margin-top: 59px;
+  }
+}
+
+.super-games {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+.super-games-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .super-games-wrapper {
+    padding: 0 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.game {
+  background-color: #ed0233;
+  color: #ffffff;
+}
+@media (min-width: 1200px) {
+  .game {
+    width: 500px;
+    padding: 78px;
+  }
+}
+@media (max-width: 1199px) {
+  .game {
+    width: 290px;
+    padding: 45px 45px;
+  }
+}
+@media (max-width: 767px) {
+  .game {
+    margin: 0 auto;
+    padding: 50px 44px;
+  }
+}
+.game__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.game__title {
+  font-family: "alumni-semibold", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+@media (min-width: 1200px) {
+  .game__title {
+    padding-left: 15px;
+    font-size: 82px;
+    line-height: 78px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 1199px) {
+  .game__title {
+    padding-left: 10px;
+    font-size: 48px;
+    line-height: 46px;
+    padding-right: 39px;
+  }
+}
+.game__text {
+  display: block;
+  font-family: "roboto-regular", "Arial", sans-serif;
+}
+@media (min-width: 1200px) {
+  .game__text {
+    padding-top: 18px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 1199px) {
+  .game__text {
+    padding-top: 2px;
+    font-size: 12px;
+  }
+}
+.game__button {
+  font-family: "roboto-bold", "Arial", sans-serif;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0);
+  border: 4px solid #ffffff;
+  color: #ffffff;
+  letter-spacing: 0.6px;
+}
+@media (min-width: 1200px) {
+  .game__button {
+    margin-top: 45px;
+    font-size: 12px;
+    padding: 28px 114px;
+  }
+}
+@media (max-width: 1199px) {
+  .game__button {
+    border: 2px solid #ffffff;
+    margin-top: 27px;
+    font-size: 10px;
+    padding: 14px 48px;
+  }
+}
+
+.timelist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1200px) {
+  .date {
+    padding-bottom: 23px;
+  }
+}
+.date__text {
+  display: block;
+  font-family: "roboto-regular", "Arial", sans-serif;
+}
+@media (min-width: 1200px) {
+  .date__text {
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+}
+@media (max-width: 1199px) {
+  .date__text {
+    font-size: 12px;
+  }
+}
+.date__when {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #ffffff;
+}
+@media (min-width: 1200px) {
+  .date__when {
+    padding-top: 5px;
+  }
+}
+@media (max-width: 1199px) {
+  .date__when {
+    padding-top: 5px;
+  }
+}
+.date__day {
+  font-family: "roboto-bold", "Arial", sans-serif;
+}
+@media (min-width: 1200px) {
+  .date__day {
+    font-size: 40px;
+    padding-right: 5px;
+  }
+}
+@media (max-width: 1199px) {
+  .date__day {
+    font-size: 24px;
+    padding-right: 3px;
+  }
+}
+.date__month {
+  font-family: "roboto-regular", "Arial", sans-serif;
+}
+@media (min-width: 1200px) {
+  .date__month {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 1199px) {
+  .date__month {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+.time__text {
+  display: block;
+  font-family: "roboto-regular", "Arial", sans-serif;
+}
+@media (min-width: 1200px) {
+  .time__text {
+    padding-bottom: 7px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 1199px) {
+  .time__text {
+    font-size: 12px;
+  }
+}
+.time__when {
+  font-family: "roboto-bold", "Arial", sans-serif;
+  border-top: 1px solid #ffffff;
+}
+@media (min-width: 1200px) {
+  .time__when {
+    font-size: 40px;
+    line-height: 52px;
+  }
+}
+@media (max-width: 1199px) {
+  .time__when {
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 
