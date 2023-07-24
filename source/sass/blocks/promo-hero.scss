@@ -1,0 +1,58 @@
+.promo-hero {
+  display: flex;
+
+  @include mobile-width {
+    flex-direction: column;
+  }
+
+  &__info {
+    background-color: $color-torch-red;
+    color: $color-default-white;
+    padding-left: 45px;
+    width: 280px;
+
+    @include mobile-width {
+      text-align: center;
+      padding-left: 0;
+      width: 290px;
+    }
+  }
+
+  &__time {
+    display: block;
+    font-family: $ff-roboto-bold;
+    font-size: 28px;
+    padding-top: 45px;
+  }
+
+  &__price {
+    display: block;
+    font-family: $ff-roboto-bold;
+    font-size: 70px;
+    line-height: 70px;
+    padding-top: 8px;
+  }
+
+  &__text {
+    display: block;
+    font-size: 18px;
+    padding-top: 20px;
+  }
+
+  &__about {
+    display: inline-block;
+    font-size: 14px;
+    font-family: $ff-roboto-bold;
+    color: $color-default-white;
+    border-bottom: 1px solid $color-default-white;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding-top: 180px;
+
+    @include mobile-width {
+      padding-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+}

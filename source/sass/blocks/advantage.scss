@@ -54,6 +54,7 @@
   &__text {
     @include mobile-width {
       text-align: center;
+      padding-bottom: 70px;
     }
   }
 
