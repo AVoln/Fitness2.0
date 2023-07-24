@@ -1,0 +1,33 @@
+.promotion {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include mobile-width {
+    justify-content: center;
+  }
+
+  &__title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: $ff-alumni-semibold;
+
+    @include desktop-width-only {
+      padding-top: 135px;
+      padding-bottom: 34px;
+      font-size: 54px;
+    }
+
+    @include tablet-width {
+      padding-top: 91px;
+      padding-bottom: 40px;
+      font-size: 42px;
+    }
+
+    @include mobile-width {
+      padding-top: 63px;
+      padding-bottom: 42px;
+      font-size: 32px;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.another-promos {
+
+  @include desktop-width-only {
+    padding-left: 40px;
+  }
+
+  @include tablet-width {
+    display: flex;
+    gap: 30px;
+    padding-top: 30px;
+  }
+
+  @include mobile-width {
+    display: block;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    border: 7px solid $color-sapphire;
+    border-image: $red-to-blue-border;
+    border-image-slice: 1;
+    padding: 35px;
+    color: $color-resolution-blue;
+
+    @include desktop-width-only {
+      & br {
+        display: none;
+      }
+
+      &:nth-child(2) {
+        margin-top: 40px;
+      }
+    }
+
+    @include tablet-width {
+      &:nth-child(2) br {
+        display: none;
+      }
+    }
+
+    @include mobile-width {
+      align-items: center;
+      text-align: center;
+
+      &:nth-child(2) {
+        margin-top: 30px;
+        margin-bottom: 70px;
+      }
+
+      &:nth-child(2) br {
+        display: inline;
+      }
+    }
+  }
+
+  &__title {
+    font-family: $ff-roboto-bold;
+    font-size: 26px;
+    line-height: 20px;
+  }
+
+  &__text {
+    display: inline-block;
+  }
+
+  &__link {
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 1px solid $color-resolution-blue;
+    color: $color-resolution-blue;
+    font-family: $ff-roboto-bold;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.7px;
+    width: max-content;
+    padding-top: 70px;
+
+    @include mobile-width {
+      padding-top: 35px;
+    }
+  }
+}
