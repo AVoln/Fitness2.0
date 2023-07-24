@@ -1,2 +1,16 @@
 .trainers-arrows {
+  position: relative;
+  margin: 0 auto;
+
+  @include desktop-width-only {
+    max-width: 1300px;
+  }
+
+  @include tablet-width {
+    max-width: 678px;
+  }
+
+  @include mobile-width {
+    max-width: 290px;
+  }
 }

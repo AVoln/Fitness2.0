@@ -1,0 +1,45 @@
+.simulator {
+  background-color: $color-sapphire;
+  color: $color-default-white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  @include desktop-width-only {
+    position: absolute;
+    width: 240px;
+    top: 50%;
+    left: 50%;
+  }
+
+  @include tablet-width {
+    width: 442px;
+  }
+
+  @include mobile-width {
+    width: 100%;
+  }
+
+  &__number {
+    font-size: 74px;
+    line-height: 111px;
+    font-family: $ff-roboto-bold;
+  }
+
+  &__number-text {
+    font-family: $ff-roboto-bold;
+
+    @include desktop-width-only {
+      font-size: 26px;
+    }
+
+    @include tablet-width {
+      font-size: 22px;
+    }
+  }
+
+  &__text {
+    display: block;
+    text-align: center;
+  }
+}
