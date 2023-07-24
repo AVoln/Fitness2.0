@@ -1,10 +1,13 @@
+// import { Navigation } from 'swiper';
+
 const swiper = new Swiper('.swiper', {
 
+  // modules: [Navigation],
   loop: true,
 
   navigation: {
-    nextEl: '.trainers__arrow--left',
-    prevEl: '.trainers__arrow--right',
+    nextEl: '.trainers-arrow--right',
+    prevEl: '.trainers-arrow--left',
   },
 
   breakpoints: {

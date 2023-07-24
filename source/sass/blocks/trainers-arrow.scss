@@ -1,12 +1,61 @@
 .trainers-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  top: 55%;
+  border: none;
+  background-color: $color-transparent;
+  border-radius: 50%;
+  z-index: 2;
+  color: $color-sapphire;
+
+  @include desktop-width-only {
+    width: 56px;
+    height: 56px;
+    bottom: 230px;
+  }
+
+  @include tablet-width {
+    width: 56px;
+    height: 56px;
+    bottom: 230px;
+  }
+
+  @include mobile-width {
+    width: 32px;
+    height: 32px;
+    bottom: 190px;
+  }
+
+  &:hover {
+    border: 1px solid $color-sapphire;
+  }
+
+  &:active {
+    background-color: $color-sapphire;
+    color: $color-default-white;
+  }
+
+  &:disabled {
+    background-color: $color-transparent;
+    color: $color-ghost-white;
+  }
+
+  & svg {
+    transform: translateX(-7%);
+
+    @include mobile-width {
+      width: 10px;
+      height: 19px;
+    }
+  }
 
   &--left {
     left: 0;
   }
 
   &--right {
+    transform: rotate(180deg);
     right: 0;
   }
 }

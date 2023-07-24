@@ -1,0 +1,84 @@
+.advantage {
+  &__element {
+    display: flex;
+
+    @include desktop-width-only {
+      &.comfort,
+      &.experience {
+        padding-top: 84px;
+        border-top: 2px solid $color-crimson;
+      }
+    }
+
+    @include mobile-width {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  &__amount {
+    @include desktop-width-only {
+      padding-right: 30px;
+    }
+
+    @include mobile-width {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__number {
+    font-family: $ff-roboto-bold;
+    background-image: $blue-to-red-text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include desktop-width-only {
+      font-size: 71px;
+      line-height: 57px;
+    }
+
+    @include tablet-width {
+      font-size: 58px;
+      line-height: 60px;
+    }
+  }
+
+  &__number-text {
+    font-size: 14px;
+    line-height: 21px;
+    color: $color-persian-blue;
+  }
+
+  &__text {
+    @include mobile-width {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-family: $ff-roboto-bold;
+
+    @include desktop-width-only {
+      font-size: 22px;
+    }
+
+    @include tablet-width {
+      font-size: 20px;
+    }
+  }
+
+  &__about {
+    display: block;
+
+    @include desktop-width-only {
+      padding-top: 20px;
+    }
+
+    @include tablet-width {
+      padding-top: 15px;
+    }
+
+  }
+}
