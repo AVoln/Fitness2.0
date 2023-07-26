@@ -3,6 +3,7 @@
   margin: 0 auto;
 
   @include desktop-width-only {
+    width: 700px;
+    bottom: 220px;
   }
-
 }

@@ -30,6 +30,7 @@ const swiper2 = new Swiper('.swiper--2', {
 
   loop: false,
   initialSlide: 0,
+  spaceBetween: 40,
 
   navigation: {
     nextEl: '.swiper-arrow--right',

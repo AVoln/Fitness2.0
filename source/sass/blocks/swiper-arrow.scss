@@ -38,7 +38,7 @@
 
   &:disabled {
     background-color: $color-transparent;
-    color: $color-ghost-white;
+    opacity: 0.2;
   }
 
   & svg {
