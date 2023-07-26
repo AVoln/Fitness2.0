@@ -1,0 +1,109 @@
+.faq {
+  background-color: $color-ghost-white;
+
+  &-container {
+    margin: 0 auto;
+
+    @include desktop-width-only {
+      display: flex;
+    }
+
+    @include tablet-width {
+      flex-direction: column;
+    }
+
+    @include mobile-width {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__title {
+    font-family: $ff-alumni-semibold;
+
+    @include desktop-width-only {
+      font-size: 54px;
+      padding: 120px 0 39px 110px;
+    }
+
+    @include tablet-width {
+      text-align: center;
+      font-size: 42px;
+      padding: 100px 0 39px;
+    }
+
+    @include mobile-width {
+      font-size: 32px;
+    }
+  }
+
+  &__controls {
+    display: flex;
+
+    @include desktop-width-only {
+      flex-direction: column;
+      padding-right: 40px;
+    }
+
+    @include tablet-width {
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    @include mobile-width {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      justify-items: center;
+    }
+  }
+
+  &__control {
+    font-family: $ff-roboto-bold;
+    font-size: 18px;
+    color: $color-sapphire;
+    padding: 18px 0;
+    border: 1px solid $color-border-faq;
+    background-color: $color-transparent;
+    letter-spacing: 0.6px;
+
+    @include desktop-width-only {
+      width: 260px;
+      margin-bottom: 10px;
+    }
+
+    @include tablet-width {
+      width: 162px;
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+
+    @include mobile-width {
+      width: 141px;
+      margin: 0;
+    }
+
+    &:hover {
+      border: 1px solid $color-sapphire;
+    }
+
+    &.is-active {
+      background: $red-to-blue;
+      color: $color-default-white;
+      border: none;
+    }
+
+    &:disabled {
+      opacity: 0.2;
+    }
+  }
+
+  &__content {
+    @include desktop-width-only {
+      width: 100%;
+    }
+    @include tablet-width {
+
+    }
+
+  }
+}
