@@ -2651,6 +2651,18 @@ button {
     bottom: 220px;
   }
 }
+@media (max-width: 1199px) {
+  .comments-arrows {
+    width: 706px;
+    bottom: 200px;
+  }
+}
+@media (max-width: 767px) {
+  .comments-arrows {
+    width: 305px;
+    bottom: 230px;
+  }
+}
 
 @media (min-width: 1200px) {
   .comments-arrow.swiper-arrow {
@@ -2670,11 +2682,21 @@ button {
 
 .comments {
   overflow: hidden;
+  margin: 0 auto;
 }
 @media (min-width: 1200px) {
   .comments {
     width: 560px;
-    margin: 0 auto;
+  }
+}
+@media (max-width: 1199px) {
+  .comments {
+    width: 566px;
+  }
+}
+@media (max-width: 767px) {
+  .comments {
+    width: 226px;
   }
 }
 .comments__title {
@@ -2692,12 +2714,14 @@ button {
   .comments__title {
     font-size: 42px;
     line-height: 44px;
+    padding: 91px 0 40px;
   }
 }
 @media (max-width: 767px) {
   .comments__title {
     font-size: 32px;
     line-height: 34px;
+    padding: 63px 0 42px;
   }
 }
 .comments__list {
@@ -2706,6 +2730,16 @@ button {
 @media (min-width: 1200px) {
   .comments__list {
     padding-bottom: 120px;
+  }
+}
+@media (max-width: 1199px) {
+  .comments__list {
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .comments__list {
+    padding-bottom: 70px;
   }
 }
 .comments__item {
@@ -2717,8 +2751,24 @@ button {
 }
 .comments__image {
   position: absolute;
-  top: 62px;
-  left: 62px;
+}
+@media (min-width: 1200px) {
+  .comments__image {
+    top: 62px;
+    left: 62px;
+  }
+}
+@media (max-width: 1199px) {
+  .comments__image {
+    top: 62px;
+    left: 62px;
+  }
+}
+@media (max-width: 767px) {
+  .comments__image {
+    top: 40px;
+    left: 40px;
+  }
 }
 .comments__image img {
   -webkit-clip-path: circle(50%);
@@ -2747,9 +2797,38 @@ button {
     padding: 62px 62px 62px 170px;
   }
 }
+@media (max-width: 1199px) {
+  .comments__text {
+    padding: 62px 62px 62px 170px;
+  }
+}
+@media (max-width: 767px) {
+  .comments__text {
+    padding: 0;
+  }
+}
+.comments__name {
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .comments__name {
+    padding: 55px 40px 34px 124px;
+  }
+}
 @media (min-width: 1200px) {
   .comments__comment {
     padding-top: 25px;
+  }
+}
+@media (max-width: 1199px) {
+  .comments__comment {
+    padding-top: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .comments__comment {
+    padding: 0 25px 40px 25px;
+    text-align: center;
   }
 }
 
