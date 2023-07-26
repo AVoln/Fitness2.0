@@ -57,6 +57,10 @@
     }
   }
 
+  &__input {
+    position: relative;
+  }
+
   &__input input {
     background-color: $color-transparent;
     border: none;
@@ -84,6 +88,26 @@
     }
   }
 
+  &__input .is-invalid {
+    position: absolute;
+    font-size: 12px;
+
+    @include desktop-width-only {
+      left: -18px;
+      top: 28px;
+    }
+
+    @include tablet-width {
+      top: 28px;
+      left: -3px;
+    }
+
+    @include mobile-width {
+      top: 70px;
+      left: 1px;
+    }
+  }
+
   &__button {
     border: 3px solid $color-default-white;
     background-color: $color-transparent;
@@ -104,6 +128,7 @@
       padding: 21px 0;
       margin-top: 30px;
       margin-bottom: 70px;
+      width: 100%;
     }
 
     @include mobile-width {

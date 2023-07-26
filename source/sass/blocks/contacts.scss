@@ -3,4 +3,138 @@
     width: 50%;
     border-top: 1px solid $color-sapphire;
   }
+
+  &__wrapper {
+    @include desktop-width-only {
+      padding: 56px 0 70px 120px;
+    }
+
+    @include tablet-width {
+      padding: 70px 0;
+      width: 472px;
+      margin: 0 auto;
+    }
+
+    @include mobile-width {
+      padding: 70px 15px;
+      width: 100%;
+    }
+  }
+
+  & h2 {
+    font-family: $ff-alumni-semibold;
+
+    @include desktop-width-only {
+      font-size: 54px;
+      line-height: 54px;
+      padding-bottom: 10px;
+    }
+
+    @include tablet-width {
+      font-size: 42px;
+      line-height: 42px;
+      padding-bottom: 25px;
+    }
+
+    @include mobile-width {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+
+  &__info:first-child  {
+    position: relative;
+
+    @include desktop-width-only {
+      padding-right: 60px;
+    }
+
+    @include tablet-width {
+      padding-right: 48px;
+    }
+
+    @include mobile-width {
+      padding: 0;
+    }
+  }
+
+  &__info:first-child::before {
+    position: absolute;
+    content: "";
+    background-color: $color-light-slate-grey;
+    height: 102px;
+    width: 1px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+    @include tablet-width {
+      height: 129px;
+      top: 60%;
+    }
+
+    @include mobile-width {
+      display: none;
+    }
+  }
+
+
+    &__info:last-child {
+      @include desktop-width-only {
+        padding-left: 60px;
+      }
+
+      @include tablet-width {
+        padding-left: 48px;
+      }
+
+      @include mobile-width {
+        padding: 0;
+      }
+  }
+
+  &__info p {
+    font-family: $ff-roboto-bold;
+
+    @include desktop-width-only {
+      font-size: 16px;
+      padding-top: 30px;
+    }
+
+    @include tablet-width {
+      font-size: 20px;
+      padding-top: 22px;
+    }
+
+    @include mobile-width {}
+  }
+
+  &__info span {
+    display: inline-block;
+
+    @include desktop-width-only {
+      font-size: 14px;
+    }
+
+    @include tablet-width {
+      font-size: 18px;
+      padding-top: 14px;
+    }
+
+    @include mobile-width {}
+  }
+
+  &__info-wrapper {
+    @include desktop-width-only {
+      display: flex;
+    }
+
+    @include tablet-width {
+      display: flex;
+    }
+
+    @include mobile-width {
+      display: block;
+    }
+  }
 }
