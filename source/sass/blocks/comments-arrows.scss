@@ -6,4 +6,14 @@
     width: 700px;
     bottom: 220px;
   }
+
+  @include tablet-width {
+    width: 706px;
+    bottom: 200px;
+  }
+
+  @include mobile-width {
+    width: 305px;
+    bottom: 230px;
+  }
 }
