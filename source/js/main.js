@@ -22,6 +22,9 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     const form = new Form();
     window.form = form;
+    window.form.reset(form);
+    // window.form.initPhoneInput('.trial__input--phone');
+    // window.form.validateFormElement('.trial__input--name', true);
     form.init();
     initTabs();
     initAccordions();

@@ -1,0 +1,19 @@
+.feedback {
+  width: 100%;
+
+  @include desktop-width-only {
+    display: flex;
+  }
+
+  &__trial-wrapper {
+    background-color: $color-sapphire;
+
+    @include desktop-width-only {
+      width: 50%;
+    }
+
+    @include mobile-width {
+      padding: 0 15px;
+    }
+  }
+}
