@@ -2,6 +2,18 @@
   display: flex;
   flex-wrap: wrap;
 
+  @include desktop-width-only {
+    padding-bottom: 120px;
+  }
+
+  @include tablet-width {
+    padding-bottom: 100px;
+  }
+
+  @include mobile-width {
+    padding-bottom: 70px;
+  }
+
   @include mobile-width {
     justify-content: center;
   }

@@ -4,19 +4,20 @@
 @import "vendor/normalize";
 // Swiper 7.4.1
 @import "vendor/swiper.scss";
+@import "vendor/data-tabs.scss";
+@import "vendor/tabs.scss";
+@import "vendor/data-accordion.scss";
 
 // Global
 // ---------------------------------
 
 @import "variables";
 @import "mixins";
+@import "global/wrapper.scss";
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
 @import "global/container";
-@import "global/wrapper.scss";
-@import "global/data-tabs.scss";
-@import "global/tabs.scss";
 
 // Blocks
 // ---------------------------------
@@ -54,6 +55,8 @@
 @import "blocks/promotion.scss";
 @import "blocks/promo-hero.scss";
 @import "blocks/another-promos.scss";
+@import "blocks/faq.scss";
+@import "blocks/accordion.scss";
 
 
 
