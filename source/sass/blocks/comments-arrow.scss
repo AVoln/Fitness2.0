@@ -1,0 +1,15 @@
+.comments-arrow {
+  &.swiper-arrow {
+    @include desktop-width-only {
+      bottom: 0;
+    }
+
+    @include tablet-width {
+      bottom: 0;
+    }
+
+    @include mobile-width {
+      bottom: 0;
+    }
+  }
+}

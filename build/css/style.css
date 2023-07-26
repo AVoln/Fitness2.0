@@ -2567,7 +2567,7 @@ button {
   }
 }
 
-.trainers-arrow {
+.swiper-arrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2585,52 +2585,52 @@ button {
   color: #102654;
 }
 @media (min-width: 1200px) {
-  .trainers-arrow {
+  .swiper-arrow {
     width: 56px;
     height: 56px;
     bottom: 230px;
   }
 }
 @media (max-width: 1199px) {
-  .trainers-arrow {
+  .swiper-arrow {
     width: 56px;
     height: 56px;
     bottom: 230px;
   }
 }
 @media (max-width: 767px) {
-  .trainers-arrow {
+  .swiper-arrow {
     width: 32px;
     height: 32px;
     bottom: 190px;
   }
 }
-.trainers-arrow:hover {
+.swiper-arrow:hover {
   border: 1px solid #102654;
 }
-.trainers-arrow:active {
+.swiper-arrow:active {
   background-color: #102654;
   color: #ffffff;
 }
-.trainers-arrow:disabled {
+.swiper-arrow:disabled {
   background-color: rgba(255, 255, 255, 0);
   color: #f8f9fc;
 }
-.trainers-arrow svg {
+.swiper-arrow svg {
   -webkit-transform: translateX(-7%);
       -ms-transform: translateX(-7%);
           transform: translateX(-7%);
 }
 @media (max-width: 767px) {
-  .trainers-arrow svg {
+  .swiper-arrow svg {
     width: 10px;
     height: 19px;
   }
 }
-.trainers-arrow--left {
+.swiper-arrow--left {
   left: 0;
 }
-.trainers-arrow--right {
+.swiper-arrow--right {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -2639,6 +2639,63 @@ button {
 
 .trainers-wrapper {
   position: relative;
+}
+
+.comments-arrows {
+  position: relative;
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .comments-arrow.swiper-arrow {
+    bottom: 0;
+  }
+}
+@media (max-width: 1199px) {
+  .comments-arrow.swiper-arrow {
+    bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .comments-arrow.swiper-arrow {
+    bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .comments {
+    padding: 120px 347px;
+    margin: 0 auto;
+  }
+}
+.comments__title {
+  font-family: "alumni-semibold", "Arial", sans-serif;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .comments__title {
+    font-size: 54px;
+    line-height: 56px;
+  }
+}
+@media (max-width: 1199px) {
+  .comments__title {
+    font-size: 42px;
+    line-height: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .comments__title {
+    font-size: 32px;
+    line-height: 34px;
+  }
+}
+.comments__list {
+  min-width: 0;
+}
+.comments__item {
+  background-color: #102654;
+  color: #ffffff;
+  width: 560px;
 }
 
 .advantages {
