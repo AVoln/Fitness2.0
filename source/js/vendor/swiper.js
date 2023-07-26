@@ -1,13 +1,10 @@
-// import { Navigation } from 'swiper';
-
 const swiper = new Swiper('.swiper', {
 
-  // modules: [Navigation],
   loop: true,
 
   navigation: {
-    nextEl: '.trainers-arrow--right',
-    prevEl: '.trainers-arrow--left',
+    nextEl: '.swiper-arrow--right',
+    prevEl: '.swiper-arrow--left',
   },
 
   breakpoints: {
@@ -26,5 +23,17 @@ const swiper = new Swiper('.swiper', {
       slidesPerView: 4,
       spaceBetween: 40,
     }
+  },
+});
+
+const swiper2 = new Swiper('.swiper--2', {
+
+  loop: false,
+  initialSlide: 0,
+  spaceBetween: 40,
+
+  navigation: {
+    nextEl: '.swiper-arrow--right',
+    prevEl: '.swiper-arrow--left',
   },
 });
