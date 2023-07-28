@@ -8,26 +8,47 @@
   @include desktop-width-only {
     position: absolute;
     width: 240px;
-    top: 50%;
+    top: 229px;
     left: 50%;
     transform: translate(-50%);
+    padding: 0 20px 56px;
   }
 
   @include tablet-width {
+    padding: 0 120px 40px;
+    margin: 43px auto 44px;
     width: 442px;
   }
 
   @include mobile-width {
     width: 100%;
+    margin: 10px 0 46px;
+    padding: 0 56px 44px;
   }
 
-  &__number {
+  & p:first-child {
     font-size: 74px;
-    line-height: 111px;
+    line-height: 95px;
     font-family: $ff-roboto-bold;
+
+    @include desktop-width-only {
+      padding-right: 5px;
+      padding-top: 42px;
+    }
+
+    @include tablet-width {
+      padding-right: 5px;
+      padding-top: 28px;
+      line-height: 82px;
+    }
+
+    @include mobile-width {
+      padding-top: 41px;
+      line-height: 67px;
+    }
   }
 
-  &__number-text {
+  & p:nth-child(2) {
     font-family: $ff-roboto-bold;
 
     @include desktop-width-only {
@@ -37,10 +58,26 @@
     @include tablet-width {
       font-size: 22px;
     }
+
+    @include mobile-width {
+      padding-top: 3px;
+    }
   }
 
-  &__text {
+  & span {
     display: block;
     text-align: center;
+
+    @include desktop-width-only {
+      padding-top: 40px;
+    }
+
+    @include tablet-width {
+      padding-top: 17px;
+    }
+
+    @include mobile-width {
+      padding-top: 13px;
+    }
   }
 }

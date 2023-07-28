@@ -1,12 +1,23 @@
 .advantage {
+@include desktop-width-only {
+  padding: 0 113px 37px;
+}
+
+@include tablet-width {
+  padding: 0 45px 90px;
+}
+
+@include mobile-width {
+  padding: 0 0 30px;
+}
+
   &__element {
     display: flex;
 
     @include desktop-width-only {
       &.comfort,
       &.experience {
-        padding-top: 84px;
-        border-top: 2px solid $color-crimson;
+        padding-top: 53px;
       }
     }
 
@@ -16,8 +27,65 @@
     }
   }
 
+  &__element:first-child {
+    @include desktop-width-only {
+      padding-left: 70px;
+    }
+  }
+
+  &__element:last-child {
+    @include desktop-width-only {
+      padding-left: 142px;
+    }
+
+    @include tablet-width {
+      padding-left: 36px;
+    }
+
+    @include mobile-width {
+      padding-left: 0;
+    }
+  }
+
+  &__element:last-child .advantage__text span {
+    @include desktop-width-only {
+      padding-right: 60px;
+    }
+
+    @include tablet-width {
+      padding-right: 10px;
+    }
+
+    @include mobile-width {
+      padding: 3px 45px 0;
+    }
+  }
+
+  &__element:last-child.experience .advantage__text span {
+    @include desktop-width-only {
+      padding-right: 20px;
+    }
+  }
+
+  &__element:first-child.comfort .advantage__text span {
+    @include mobile-width {
+      padding: 2px 50px 7px;
+    }
+  }
+
+  &__element.experience {
+    @include desktop-width-only {
+      padding-left: 129px;
+    }
+
+  }
+
   &__amount {
     @include desktop-width-only {
+      padding-right: 30px;
+    }
+
+    @include tablet-width {
       padding-right: 30px;
     }
 
@@ -25,10 +93,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-right: 0;
     }
   }
 
-  &__number {
+  &__amount>p {
     font-family: $ff-roboto-bold;
     background-image: $blue-to-red-text;
     -webkit-background-clip: text;
@@ -41,24 +110,32 @@
 
     @include tablet-width {
       font-size: 58px;
-      line-height: 60px;
+      line-height: 48px;
     }
   }
 
-  &__number-text {
+  &__amount>span {
     font-size: 14px;
     line-height: 21px;
     color: $color-persian-blue;
   }
 
   &__text {
+    @include desktop-width-only {
+      min-width: 200px;
+    }
+
+    @include tablet-width {
+      min-width: 200px;
+    }
+
     @include mobile-width {
       text-align: center;
-      padding-bottom: 70px;
+      padding-bottom: 31px;
     }
   }
 
-  &__title {
+  &__text h3 {
     font-family: $ff-roboto-bold;
 
     @include desktop-width-only {
@@ -68,18 +145,26 @@
     @include tablet-width {
       font-size: 20px;
     }
+
+    @include mobile-width {
+      padding-top: 10px;
+    }
   }
 
-  &__about {
+  &__text span {
     display: block;
 
     @include desktop-width-only {
-      padding-top: 20px;
+      padding-top: 10px;
+      padding-right: 20px;
     }
 
     @include tablet-width {
-      padding-top: 15px;
+      padding-top: 3px;
     }
 
+    @include mobile-width {
+      padding: 10px 40px 0;
+    }
   }
 }

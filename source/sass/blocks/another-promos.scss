@@ -1,13 +1,14 @@
 .another-promos {
-
   @include desktop-width-only {
     padding-left: 40px;
+    min-width: 600px;
   }
 
   @include tablet-width {
     display: flex;
     gap: 30px;
     padding-top: 30px;
+    width: 100%;
   }
 
   @include mobile-width {
@@ -20,7 +21,7 @@
     border: 7px solid $color-sapphire;
     border-image: $red-to-blue-border;
     border-image-slice: 1;
-    padding: 35px;
+    padding: 30px;
     color: $color-resolution-blue;
 
     @include desktop-width-only {
@@ -34,14 +35,22 @@
     }
 
     @include tablet-width {
+      width: 100%;
+      letter-spacing: 0.4px;
+
       &:nth-child(2) br {
         display: none;
+      }
+
+      &:nth-child(2) .another-promos__link {
+        padding-top: 71px;
       }
     }
 
     @include mobile-width {
       align-items: center;
       text-align: center;
+      padding: 39px;
 
       &:nth-child(2) {
         margin-top: 30px;
@@ -51,17 +60,33 @@
       &:nth-child(2) br {
         display: inline;
       }
+
+      &:nth-child(2) .another-promos__link {
+        padding-top: 28px;
+      }
     }
   }
 
-  &__title {
+  &__item p {
     font-family: $ff-roboto-bold;
-    font-size: 26px;
+    font-size: 25px;
     line-height: 20px;
+
+    @include desktop-width-only {
+      letter-spacing: 0.5px;
+    }
   }
 
-  &__text {
+  &__item span {
     display: inline-block;
+
+    @include desktop-width-only {
+      padding-top: 11px;
+    }
+
+    @include tablet-width {
+      padding-top: 10px;
+    }
   }
 
   &__link {
@@ -74,10 +99,17 @@
     line-height: 14px;
     letter-spacing: 0.7px;
     width: max-content;
-    padding-top: 70px;
+
+    @include desktop-width-only {
+      padding-top: 70px;
+    }
+
+    @include tablet-width {
+      padding-top: 47px;
+    }
 
     @include mobile-width {
-      padding-top: 35px;
+      padding-top: 26px;
     }
   }
 }

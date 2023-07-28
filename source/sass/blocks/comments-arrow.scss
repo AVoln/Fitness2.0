@@ -1,11 +1,13 @@
 .comments-arrow {
   &.swiper-arrow {
     @include desktop-width-only {
-      bottom: 0;
+      bottom: -6px;
+      width: 43px;
     }
 
     @include tablet-width {
-      bottom: 0;
+      bottom: -6px;
+      width: 43px;
     }
 
     @include mobile-width {

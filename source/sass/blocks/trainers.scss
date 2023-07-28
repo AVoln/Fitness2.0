@@ -11,20 +11,22 @@
     width: 226px;
   }
 
-  &__title {
+  & h2 {
     font-family: $ff-alumni-semibold;
 
     @include desktop-width-only {
       font-size: 54px;
       line-height: 65px;
       padding-top: 106px;
+      letter-spacing: 1.7px;
     }
 
     @include tablet-width {
       text-align: center;
       font-size: 42px;
       line-height: 46px;
-      padding-top: 100px;
+      padding-top: 101px;
+      letter-spacing: 1.2px;
     }
 
     @include mobile-width {
@@ -43,7 +45,7 @@
     }
 
     @include tablet-width {
-      padding-top: 31px;
+      padding-top: 35px;
       padding-bottom: 100px;
     }
 
@@ -74,19 +76,35 @@
       &:active .trainers__description {
         display: block;
       }
-
     }
   }
 
-  &__name {
+  &__image-wrapper > span {
     display: block;
     position: absolute;
-    bottom: 20px;
-    left: 50%;
     transform: translateX(-50%);
     font-family: $ff-roboto-bold;
     color: $color-default-white;
     font-size: 18px;
 
+    @include desktop-width-only {
+      left: 50%;
+      bottom: 23px;
+    }
+
+    @include tablet-width {
+      left: 51%;
+      bottom: 24px;
+    }
+  }
+
+  &__image img {
+    @include tablet-width {
+      height: 294px;
+    }
+
+    @include mobile-width {
+      height: 274px;
+    }
   }
 }

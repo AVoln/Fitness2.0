@@ -1,39 +1,77 @@
 .description {
-
   @include desktop-width-only {
     width: 35%;
-    padding-top: 169px;
+    padding-left: 60px;
+    padding-right: 40px;
+    padding-top: 176px;
   }
 
   @include tablet-width {
+    padding-top: 113px;
     text-align: center;
   }
 
-  &__title {
-    margin: 0;
+  @include mobile-width {
+    text-align: start;
+    padding: 70px 15px 0;
   }
 
-  &__about {
+  & h2 {
+    font-family: $ff-alumni-semibold;
     margin: 0;
+
+    @include desktop-width-only {
+      font-size: 48px;
+      letter-spacing: 1.5px;
+    }
+
+    @include tablet-width {
+      font-size: 42px;
+      letter-spacing: 1.3px;
+    }
+
+    @include mobile-width {
+      font-size: 32px;
+      letter-spacing: 0.9px;
+    }
+  }
+
+  & p {
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: 0.2px;
 
     @include desktop-width-only {
       padding-top: 25px;
     }
-  }
 
-  &__text {
-    display: block;
-
-    @include desktop-width-only {
-      padding-top: 55px;
+    @include tablet-width {
+      padding-top: 14px;
     }
   }
 
-  &__text-desktop-only {
+  & > span {
+    display: block;
+
+    @include desktop-width-only {
+      padding-top: 40px;
+    }
+
+    @include tablet-width {
+      padding: 35px 95px 43px;
+    }
+
+    @include mobile-width {
+      padding: 25px 27px 34px 0;
+    }
+  }
+
+  & span:last-child {
     display: block;
 
     @include desktop-width-only {
       padding-top: 10px;
+      padding-right: 40px;
     }
 
     @include tablet-width {

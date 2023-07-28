@@ -1,4 +1,9 @@
 .timelist {
   display: flex;
   flex-direction: column;
+
+  @include desktop-width-only {
+    padding-top: 5px;
+    padding-left: 10px;
+  }
 }

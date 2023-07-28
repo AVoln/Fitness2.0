@@ -14,31 +14,29 @@
 
   @include mobile-width {
     margin: 0 auto;
-    padding: 50px 44px;
+    padding: 45px 44px 50px;
   }
 
   &__info {
     display: flex;
   }
 
-  &__title {
+  & h3 {
     font-family: $ff-alumni-semibold;
     text-transform: uppercase;
 
     @include desktop-width-only {
-      padding-left: 15px;
       font-size: 82px;
       line-height: 78px;
-      padding-right: 50px;
+      padding: 8px 50px 0 14px;
+      letter-spacing: 2px;
     }
 
     @include tablet-width {
-      padding-left: 10px;
       font-size: 48px;
       line-height: 46px;
-      padding-right: 39px;
-
-
+      padding: 6px 32px 0 7px;
+      letter-spacing: 1.6px;
     }
   }
 
@@ -47,7 +45,7 @@
     font-family: $ff-roboto-regular;
 
     @include desktop-width-only {
-      padding-top: 18px;
+      padding-top: 14px;
       font-size: 18px;
     }
 
@@ -70,16 +68,15 @@
       margin-top: 45px;
       font-size: 12px;
       padding: 28px 114px;
-      line-height: 14px;
+      line-height: 10px;
     }
 
     @include tablet-width {
       border: 2px solid $color-default-white;
-      margin-top: 27px;
+      margin-top: 26px;
       font-size: 10px;
       line-height: 11px;
       padding: 14px 48px;
     }
-
   }
 }

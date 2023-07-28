@@ -1,10 +1,9 @@
 .date {
-
   @include desktop-width-only {
     padding-bottom: 23px;
   }
 
-  &__text {
+  & > span {
     display: block;
     font-family: $ff-roboto-regular;
 
@@ -15,6 +14,7 @@
 
     @include tablet-width {
       font-size: 12px;
+      line-height: 21px;
     }
   }
 
@@ -24,20 +24,20 @@
     border-top: 1px solid $color-default-white;
 
     @include desktop-width-only {
-      padding-top: 5px;
+      padding-top: 8px;
     }
 
     @include tablet-width {
-      padding-top: 5px;
+      padding-top: 3px;
     }
   }
 
-  &__day {
+  &__when > p {
     font-family: $ff-roboto-bold;
 
     @include desktop-width-only {
       font-size: 40px;
-      padding-right: 5px;
+      padding-right: 7px;
     }
 
     @include tablet-width {
@@ -46,7 +46,7 @@
     }
   }
 
-  &__month {
+  &__when > span {
     font-family: $ff-roboto-regular;
 
     @include desktop-width-only {
@@ -58,6 +58,5 @@
       font-size: 10px;
       line-height: 12px;
     }
-
   }
 }

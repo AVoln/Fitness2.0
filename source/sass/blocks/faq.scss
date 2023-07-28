@@ -17,22 +17,26 @@
     }
   }
 
-  &__title {
+  & h2 {
     font-family: $ff-alumni-semibold;
 
     @include desktop-width-only {
       font-size: 54px;
-      padding: 120px 0 39px 110px;
+      padding: 140px 0 57px 103px;
+      letter-spacing: 1.7px;
     }
 
     @include tablet-width {
+      letter-spacing: 1.3px;
       text-align: center;
       font-size: 42px;
-      padding: 100px 0 39px;
+      padding: 112px 0 54px;
     }
 
     @include mobile-width {
       font-size: 32px;
+      padding: 7px 0 38px;
+      letter-spacing: 0.9px;
     }
   }
 
@@ -54,6 +58,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 10px;
       justify-items: center;
+      margin-bottom: 32px;
     }
   }
 
@@ -61,10 +66,9 @@
     font-family: $ff-roboto-bold;
     font-size: 18px;
     color: $color-sapphire;
-    padding: 18px 0;
+    padding: 16px 0;
     border: 1px solid $color-border-faq;
     background-color: $color-transparent;
-    letter-spacing: 0.6px;
 
     @include desktop-width-only {
       width: 260px;
@@ -80,6 +84,8 @@
     @include mobile-width {
       width: 141px;
       margin: 0;
+      font-size: 16px;
+      padding: 11px;
     }
 
     &:hover {
@@ -97,13 +103,25 @@
     }
   }
 
+  &__control:last-child {
+    @include tablet-width {
+      margin-right: 0;
+    }
+  }
+
   &__content {
     @include desktop-width-only {
       width: 100%;
     }
-    @include tablet-width {
+  }
 
+  &__element {
+    @include desktop-width-only {
+      width: 100%;
     }
 
+    @include tablet-width {
+      width: 100%;
+    }
   }
 }

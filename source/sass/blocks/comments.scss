@@ -14,26 +14,28 @@
     width: 226px;
   }
 
-  &__title {
+  & h2 {
     font-family: $ff-alumni-semibold;
     text-align: center;
+    letter-spacing: 1.3px;
+
 
     @include desktop-width-only {
       font-size: 54px;
       line-height: 56px;
-      padding: 120px 0 37px;
+      padding: 122px 0 42px;
     }
 
     @include tablet-width {
       font-size: 42px;
       line-height: 44px;
-      padding: 91px 0 40px;
+      padding: 74px 0 43px;
     }
 
     @include mobile-width {
       font-size: 32px;
       line-height: 34px;
-      padding: 63px 0 42px;
+      padding: 66px 0 44px;
     }
   }
 
@@ -58,7 +60,10 @@
     background-color: $color-resolution-blue;
     color: $color-default-white;
     width: 560px;
-    min-height: 269px;
+
+    @include desktop-width-only {
+      min-height: 243px;
+    }
   }
 
   &__image {
@@ -78,7 +83,6 @@
       top: 40px;
       left: 40px;
     }
-
   }
 
   &__image img {
@@ -101,42 +105,43 @@
   }
 
   &__text {
-
     @include desktop-width-only {
-      padding: 62px 62px 62px 170px;
+      padding: 57px 62px 57px 170px;
     }
 
     @include tablet-width {
-      padding: 62px 62px 62px 170px;
+      padding: 57px 62px 56px 173px;
     }
 
     @include mobile-width {
       padding: 0;
     }
-
   }
 
-  &__name {
+  & h3 {
     font-size: 20px;
 
     @include mobile-width {
-      padding: 55px 40px 34px 124px;
+      padding: 49px 40px 23px 124px;
+      line-height: 26px;
     }
   }
 
-  &__comment {
-
+  & p {
     @include desktop-width-only {
-      padding-top: 25px;
+      padding-top: 16px;
+      line-height: 22px;
+      letter-spacing: 0.1px;
     }
 
     @include tablet-width {
-      padding-top: 25px;
+      padding-top: 17px;
+      line-height: 22px;
+      letter-spacing: .2px;
     }
 
     @include mobile-width {
-      padding: 0 25px 40px 25px;
-      ;
+      padding: 0 25px 35px;
       text-align: center;
     }
   }

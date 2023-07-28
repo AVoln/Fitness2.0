@@ -2,7 +2,9 @@
   display: flex;
 
   @include desktop-width-only {
-    margin-bottom: 120px;
+    margin-bottom: 100px;
+    padding-top: 20px;
+    justify-content: center;
   }
 
   @include tablet-width {
@@ -11,8 +13,7 @@
   }
 
   @include mobile-width {
-    padding: 25px 0 70px;
-
+    padding: 17px 0 40px;
   }
 
   &__item {
@@ -22,17 +23,19 @@
     @include desktop-width-only {
       width: 360px;
       margin: 20px;
-      padding-bottom: 68px;
+      padding-bottom: 61px;
     }
 
     @include tablet-width {
       width: 442px;
       margin: 20px;
-      padding-bottom: 68px;
+      padding-bottom: 62px;
     }
 
     @include mobile-width {
       width: 290px;
+      padding-bottom: 48px;
+      margin: 18px;
     }
 
     &:hover {
@@ -42,30 +45,31 @@
     }
   }
 
-  &__title {
+  & h3 {
     font-family: $ff-roboto-bold;
     margin: 0;
 
     @include desktop-width-only {
       font-size: 26px;
       line-height: 30px;
-      padding-top: 68px;
+      padding-top: 54px;
     }
 
     @include tablet-width {
       font-size: 26px;
       line-height: 30px;
-      padding-top: 68px;
+      padding-top: 55px;
     }
 
     @include mobile-width {
       font-size: 22px;
       line-height: 24px;
-      padding-top: 55px;
+      padding-top: 44px;
     }
   }
 
-  &__info {
+  & span {
+    display: block;
     font-family: $ff-roboto-regular;
     color: $color-sapphire;
     margin: 0;
@@ -81,7 +85,7 @@
     }
   }
 
-  &__price {
+  & p {
     position: relative;
     font-family: $ff-roboto-bold;
     color: $color-neon-blue;
@@ -101,12 +105,13 @@
 
       @include mobile-width {
         font-size: 80px;
+        bottom: 20px;
       }
     }
 
     @include desktop-width-only {
       font-size: 60px;
-      padding-top: 96px;
+      padding-top: 98px;
     }
 
     @include tablet-width {
@@ -116,7 +121,7 @@
 
     @include mobile-width {
       font-size: 48px;
-      padding-top: 81px;
+      padding-top: 77px;
     }
   }
 
@@ -125,7 +130,7 @@
     font-family: $ff-roboto-bold;
     font-size: 12px;
     color: $color-sapphire;
-    padding: 28px 44px;
+    padding: 24px 44px;
     border: 2px solid $color-sapphire;
     background-color: $color-transparent;
     letter-spacing: 0.6px;
@@ -143,11 +148,15 @@
     }
 
     @include desktop-width-only {
-      margin-top: 59px;
+      margin-top: 67px;
     }
 
     @include tablet-width {
-      margin-top: 59px;
+      margin-top: 69px;
+    }
+
+    @include mobile-width {
+      margin-top: 54px;
     }
   }
 }
