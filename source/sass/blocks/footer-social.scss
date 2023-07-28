@@ -3,11 +3,24 @@
   align-items: center;
 
   @include mobile-width {
-    padding: 0 0 52px 14px;
+    padding: 0 0 52px 0;
   }
 
   &__item {
-    padding: 5px;
+    @include desktop-width-only {
+      padding: 5px;
+      margin-right: -1px;
+    }
+
+    @include tablet-width {
+      padding: 7px;
+      margin-right: -5px;
+    }
+
+    @include mobile-width {
+      padding: 5px;
+      margin-right: 0;
+    }
   }
 
   &__link {

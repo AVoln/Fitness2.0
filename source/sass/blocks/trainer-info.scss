@@ -7,24 +7,44 @@
   color: $color-default-white;
   text-align: center;
 
-  &__name {
+  & p {
     font-family: $ff-roboto-bold;
-    padding-top: 58px;
     font-size: 18px;
     line-height: 20px;
+
+    @include desktop-width-only {
+      padding-top: 55px;
+    }
+
+    @include tablet-width {
+      padding-top: 55px;
+    }
 
     @include mobile-width {
       padding-top: 44px;
     }
   }
 
-  &__direction {
+  & span {
     color: $color-spindle;
   }
 
   &__list {
     text-align: left;
-    padding-top: 17px;
+
+    @include desktop-width-only {
+      padding-top: 22px;
+      padding-right: 10px;
+    }
+
+    @include tablet-width {
+      padding-top: 22px;
+      padding-right: 17px;
+    }
+
+    @include mobile-width {
+      padding-top: 24px;
+    }
   }
 
   &__item {

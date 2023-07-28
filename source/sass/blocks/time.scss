@@ -1,6 +1,5 @@
 .time {
-
-  &__text {
+  & span {
     display: block;
     font-family: $ff-roboto-regular;
 
@@ -11,10 +10,11 @@
 
     @include tablet-width {
       font-size: 12px;
+      padding-top: 2px;
     }
   }
 
-  &__when {
+  & p {
     font-family: $ff-roboto-bold;
     border-top: 1px solid $color-default-white;
 

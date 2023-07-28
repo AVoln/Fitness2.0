@@ -1,14 +1,29 @@
-.general-info__video-play-button {
+.video-play-button {
   position: absolute;
   width: 100px;
   height: 100px;
-  top: 30%;
   left: 50%;
   transform: translate(-50%);
   color: $color-default-white;
 
+  @include desktop-width-only {
+    top: 28%;
+  }
+
   @include tablet-width {
     top: 20%;
+  }
+
+  & svg {
+    @include tablet-width {
+      width: 73px;
+      height: 73px;
+      transform: translate3d(16%,19%,0);
+    }
+
+    @include mobile-width {
+      transform: translate3d(20%,17%,0);
+    }
   }
 
   &:hover,
@@ -37,7 +52,7 @@
       stroke-opacity: 1;
     }
 
-    & circle:nth-child(2)  {
+    & circle:nth-child(2) {
       fill: $color-transparent;
     }
   }

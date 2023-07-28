@@ -6,23 +6,24 @@
 
   &__wrapper {
     @include desktop-width-only {
-      padding: 56px 0 70px 120px;
+      padding: 61px 0 52px 120px;
     }
 
     @include tablet-width {
-      padding: 70px 0;
-      width: 472px;
+      padding: 66px 0 63px;
+      width: 503px;
       margin: 0 auto;
     }
 
     @include mobile-width {
-      padding: 70px 15px;
+      padding: 66px 15px 62px;
       width: 100%;
     }
   }
 
   & h2 {
     font-family: $ff-alumni-semibold;
+    letter-spacing: 1.6px;
 
     @include desktop-width-only {
       font-size: 54px;
@@ -33,28 +34,31 @@
     @include tablet-width {
       font-size: 42px;
       line-height: 42px;
-      padding-bottom: 25px;
+      padding-bottom: 15px;
     }
 
     @include mobile-width {
       font-size: 32px;
       line-height: 32px;
+      letter-spacing: 1px;
+      padding-bottom: 14px;
     }
   }
 
-  &__info:first-child  {
+  &__info:first-child {
     position: relative;
 
     @include desktop-width-only {
-      padding-right: 60px;
+      padding-right: 67px;
+      padding-left: 3px;
     }
 
     @include tablet-width {
-      padding-right: 48px;
+      padding-right: 51px;
     }
 
     @include mobile-width {
-      padding: 0;
+      padding: 4px 0 0 0;
     }
   }
 
@@ -64,7 +68,7 @@
     background-color: $color-light-slate-grey;
     height: 102px;
     width: 1px;
-    top: 50%;
+    top: 57%;
     right: 0;
     transform: translateY(-50%);
 
@@ -79,18 +83,18 @@
   }
 
 
-    &__info:last-child {
-      @include desktop-width-only {
-        padding-left: 60px;
-      }
+  &__info:last-child {
+    @include desktop-width-only {
+      padding-left: 60px;
+    }
 
-      @include tablet-width {
-        padding-left: 48px;
-      }
+    @include tablet-width {
+      padding-left: 48px;
+    }
 
-      @include mobile-width {
-        padding: 0;
-      }
+    @include mobile-width {
+      padding: 0;
+    }
   }
 
   &__info p {
@@ -98,15 +102,13 @@
 
     @include desktop-width-only {
       font-size: 16px;
-      padding-top: 30px;
+      padding-top: 17px;
     }
 
     @include tablet-width {
       font-size: 20px;
       padding-top: 22px;
     }
-
-    @include mobile-width {}
   }
 
   &__info span {
@@ -118,15 +120,15 @@
 
     @include tablet-width {
       font-size: 18px;
-      padding-top: 14px;
+      padding-top: 12px;
+      letter-spacing: 0.1px;
     }
-
-    @include mobile-width {}
   }
 
   &__info-wrapper {
     @include desktop-width-only {
       display: flex;
+      padding-top: 14px;
     }
 
     @include tablet-width {

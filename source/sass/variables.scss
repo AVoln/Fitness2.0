@@ -26,14 +26,13 @@ $color-whisper: #e8e8e8;
 $color-spindle: #b6bdcc;
 $color-light-slate-grey: #74819c;
 
-
 // Gradient
 
 $black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
-$blue-to-red: conic-gradient(from 151deg at 16.03% 39.06%, #003D85 20deg, #B80027 295deg, #003D85);
+$blue-to-red: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 20deg, #b80027 295deg, #003d85);
 $blue-to-red-text: conic-gradient(from 151deg at 16.03% 39.06%,#0041ca 80deg,#b80027 125deg,#0041ca);
-$red-to-blue: linear-gradient(100deg, #ED0233 0%, #003EB7 100%);
-$red-to-blue-border: linear-gradient(140deg, #ED0233 0%, #003EB7 100%);
+$red-to-blue: linear-gradient(100deg, #ed0233 0%, #003eb7 100%);
+$red-to-blue-border: linear-gradient(140deg, #ed0233 0%, #003eb7 100%);
 
 // Typography
 // ---------------------------------

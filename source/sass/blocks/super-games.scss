@@ -8,7 +8,7 @@
     width: 100%;
 
     @include mobile-width {
-      padding: 0 15px;
+      padding: 70px 15px 0;
       flex-direction: column;
       align-items: center;
     }

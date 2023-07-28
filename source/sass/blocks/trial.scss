@@ -1,14 +1,11 @@
 .trial {
   color: $color-default-white;
 
-  @include desktop-width-only {
-  }
-
   @include tablet-width {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 472px;
+    width: 502px;
   }
 
   @include mobile-width {
@@ -18,24 +15,26 @@
 
   & h2 {
     font-family: $ff-alumni-extrabold;
+    letter-spacing: 1.6px;
 
     @include desktop-width-only {
       font-size: 54px;
       line-height: 56px;
-      padding: 56px 0 40px 103px;
+      padding: 69px 0 30px 103px;
     }
 
     @include tablet-width {
       font-family: $ff-alumni-semibold;
       font-size: 42px;
       line-height: 44px;
-      padding: 65px 0 40px;
+      padding: 65px 0 35px;
     }
 
     @include mobile-width {
       font-size: 32px;
       line-height: 34px;
       padding: 65px 0 0;
+      letter-spacing: 1px;
     }
   }
 
@@ -54,6 +53,7 @@
     @include mobile-width {
       display: block;
       width: 100%;
+      padding-top: 5px;
     }
   }
 
@@ -67,11 +67,11 @@
     border-bottom: 1px solid $color-light-slate-grey;
     line-height: 26px;
     color: $color-default-white;
+    font-size: 14px;
 
     &::placeholder {
       color: $color-default-white;
       opacity: 1;
-
     }
 
     @include desktop-width-only {
@@ -84,7 +84,7 @@
 
     @include mobile-width {
       width: 100%;
-      margin-top: 40px;
+      margin-top: 32px;
     }
   }
 
@@ -114,25 +114,27 @@
     color: $color-default-white;
     text-transform: uppercase;
     font-family: $ff-roboto-bold;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.3px;
+    font-size: 14px;
 
     @include desktop-width-only {
       margin-left: 103px;
       margin-top: 30px;
       margin-bottom: 70px;
       width: 410px;
-      padding: 21px 0;
+      padding: 16px 0;
     }
 
     @include tablet-width {
-      padding: 21px 0;
+      padding: 16px 0;
       margin-top: 30px;
-      margin-bottom: 70px;
-      width: 100%;
+      margin-bottom: 69px;
+      width: 94%;
     }
 
     @include mobile-width {
       margin-top: 40px;
+      width: 100%;
     }
   }
 }

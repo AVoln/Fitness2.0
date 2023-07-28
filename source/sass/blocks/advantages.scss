@@ -11,6 +11,7 @@
       justify-content: space-around;
       gap: 200px;
       padding-bottom: 84px;
+      padding-top: 17px;
     }
 
     @include tablet-width {
@@ -23,28 +24,32 @@
       flex-direction: column;
       align-items: center;
     }
-
   }
 
-  &__title {
+  & h2 {
     font-family: $ff-alumni-semibold;
     color: $color-sapphire;
     text-align: center;
 
     @include desktop-width-only {
       font-size: 54px;
-      padding-top: 108px;
+      padding-top: 129px;
       padding-bottom: 55px;
+      letter-spacing: 1.7px;
     }
 
     @include tablet-width {
+      padding-top: 105px;
+      padding-bottom: 58px;
       font-size: 42px;
+      letter-spacing: 1.3px;
     }
 
     @include mobile-width {
       font-size: 32px;
-      padding-bottom: 52px;
-      padding-top: 63px;
+      padding-bottom: 57px;
+      padding-top: 70px;
+      letter-spacing: 0.9px;
     }
   }
 }

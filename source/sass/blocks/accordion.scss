@@ -1,32 +1,71 @@
 .accordion {
-
   &__button {
+    display: block;
     border: none;
     text-align: left;
     background-color: $color-transparent;
-    font-family: $ff-roboto-medium;
+    font-family: $ff-roboto-regular;
     font-size: 24px;
     color: $color-sapphire;
     padding: 0;
+    letter-spacing: 0.1px;
+    width: 100%;
 
     @include desktop-width-only {
-      width: 100%;
-      padding: 32px 0;
+      padding: 34px 0;
     }
 
     @include tablet-width {
-      width: 100%;
       padding: 32px 0;
+      line-height: 26px;
     }
 
     @include mobile-width {
-      max-width: 238px;
       font-size: 18px;
+      padding: 20px 0 16px;
+    }
+  }
+
+  &__button span {
+    display: inline-block;
+
+    @include tablet-width {
+      max-width: 640px;
+    }
+
+    @include mobile-width {
+      max-width: 260px;
+      line-height: 22px;
     }
   }
 
   &__element.is-active &__button {
-    padding: 32px 0 0;
+    @include desktop-width-only {
+      padding: 34px 0 0;
+    }
+
+    @include tablet-width {
+      padding: 32px 0 0;
+    }
+
+    @include mobile-width {
+      padding: 20px 0 0;
+    }
+  }
+
+  &__button br,
+  &__button nobr {
+    @include desktop-width-only {
+      display: none;
+    }
+
+    @include tablet-width {
+      display: none;
+    }
+
+    @include mobile-width {
+      display: inline;
+    }
   }
 
   &__button-svg {
@@ -39,9 +78,22 @@
     border: 1px solid $color-sapphire;
     border-radius: 50%;
     color: $color-sapphire;
+    pointer-events: none;
 
-    & svg {
-      display: block;
+    @include mobile-width {
+      width: 32px;
+      height: 32px;
+      top: 34%;
+    }
+  }
+
+  &__button-svg svg {
+    display: block;
+    transform: translateY(-1%);
+
+    @include  mobile-width {
+      width: 32px;
+      height: 32px;
       transform: translateY(-1%);
     }
   }
@@ -82,30 +134,72 @@
 
     @include tablet-width {
       margin-bottom: 120px;
+
+      & .accordion__button {
+        padding: 30px 0 27px;
+      }
     }
 
     @include mobile-width {
       margin-bottom: 70px;
+
+      & .accordion__button {
+        padding: 22px 0 15px;
+      }
+    }
+  }
+
+  &__element:last-child .accordion__button-svg {
+    @include tablet-width {
+      top: 35px;
+    }
+
+    @include mobile-width {
+      top: 27px;
     }
   }
 
   &__element.is-active &__content {
     @include desktop-width-only {
+      margin-top: 20px;
+      margin-bottom: 26px;
+    }
+
+    @include tablet-width {
+      margin-top: 16px;
+      margin-bottom: 26px;
+    }
+
+    @include tablet-width {
+      margin-top: 15px;
+      margin-bottom: 28px;
+    }
+
+    @include mobile-width {
       margin-top: 10px;
-      margin-bottom: 20px;
+      margin-bottom: 19px;
+    }
+  }
+
+  &__element.is-active .accordion__button-svg {
+    @include mobile-width {
+      top: 19%;
     }
   }
 
   &__wrapper {
     @include desktop-width-only {
       font-size: 18px;
+      max-width: 680px;
     }
 
     @include tablet-width {
       font-size: 18px;
+      max-width: 540px;
     }
 
     @include mobile-width {
+      line-height: 22px;
       font-size: 16px;
     }
   }

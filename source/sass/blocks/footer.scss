@@ -4,6 +4,10 @@
   display: flex;
   justify-content: space-between;
 
+  @include mobile-width {
+    display: block;
+  }
+
   &__logo {
     display: flex;
     align-items: center;
@@ -15,7 +19,20 @@
     }
   }
 
-  @include mobile-width {
-    display: block;
+  &__logo img {
+    @include desktop-width-only {
+      transform: translate(-6px, 7px);
+      width: 98px;
+    }
+
+    @include tablet-width {
+      width: 92px;
+      transform: translateX(-6px);
+    }
+
+    @include mobile-width {
+      width: 76px;
+      transform: translateX(-25px);
+    }
   }
 }
