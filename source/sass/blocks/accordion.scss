@@ -91,7 +91,7 @@
     display: block;
     transform: translateY(-1%);
 
-    @include  mobile-width {
+    @include mobile-width {
       width: 32px;
       height: 32px;
       transform: translateY(-1%);
@@ -120,7 +120,7 @@
       color: $color-default-white;
     }
 
-    &:disabled+.accordion__button-svg {
+    &:disabled + .accordion__button-svg {
       opacity: 0.2;
     }
   }

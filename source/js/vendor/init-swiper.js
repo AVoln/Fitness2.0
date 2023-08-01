@@ -1,5 +1,5 @@
 const trainersSwiper = document.querySelector('.swiper');
-const commentsSwiper = document.querySelector('.swiper--comments');
+const commentsSwiper = document.querySelector('.comments--swiper');
 
 const initSwiper = () => {
   if (trainersSwiper) {

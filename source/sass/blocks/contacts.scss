@@ -111,7 +111,8 @@
     }
   }
 
-  &__info span {
+  &__info span,
+  &__info a {
     display: inline-block;
 
     @include desktop-width-only {
