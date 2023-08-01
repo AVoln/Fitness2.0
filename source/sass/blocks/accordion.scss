@@ -10,6 +10,7 @@
     padding: 0;
     letter-spacing: 0.1px;
     width: 100%;
+    cursor: pointer;
 
     @include desktop-width-only {
       padding: 34px 0;
@@ -91,7 +92,7 @@
     display: block;
     transform: translateY(-1%);
 
-    @include  mobile-width {
+    @include mobile-width {
       width: 32px;
       height: 32px;
       transform: translateY(-1%);
@@ -120,7 +121,7 @@
       color: $color-default-white;
     }
 
-    &:disabled+.accordion__button-svg {
+    &:disabled + .accordion__button-svg {
       opacity: 0.2;
     }
   }

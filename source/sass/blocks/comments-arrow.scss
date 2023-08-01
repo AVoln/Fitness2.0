@@ -2,12 +2,12 @@
   &.swiper-arrow {
     @include desktop-width-only {
       bottom: -6px;
-      width: 43px;
+      width: 56px;
     }
 
     @include tablet-width {
       bottom: -6px;
-      width: 43px;
+      width: 56px;
     }
 
     @include mobile-width {

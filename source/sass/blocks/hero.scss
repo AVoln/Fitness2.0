@@ -78,11 +78,6 @@
     @include desktop-width-only {
       width: 70%;
       margin-right: 40px;
-    }
-  }
-
-  &__description-inner {
-    @include desktop-width-only {
       padding-left: 17px;
     }
 

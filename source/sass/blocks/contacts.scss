@@ -125,6 +125,20 @@
     }
   }
 
+  &__info a {
+    display: inline-block;
+
+    @include desktop-width-only {
+      font-size: 14px;
+    }
+
+    @include tablet-width {
+      font-size: 18px;
+      padding-top: 12px;
+      letter-spacing: 0.1px;
+    }
+  }
+
   &__info-wrapper {
     @include desktop-width-only {
       display: flex;
