@@ -18,11 +18,11 @@
     @include tablet-width {
       width: 73px;
       height: 73px;
-      transform: translate3d(16%, 19%, 0);
+      transform: translate3d(16%,19%,0);
     }
 
     @include mobile-width {
-      transform: translate3d(20%, 17%, 0);
+      transform: translate3d(20%,17%,0);
     }
   }
 
