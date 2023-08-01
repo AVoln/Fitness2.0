@@ -3,13 +3,13 @@
   margin: 0 auto;
 
   @include desktop-width-only {
-    width: 710px;
+    width: 700px;
     bottom: 220px;
   }
 
   @include tablet-width {
-    width: 716px;
-    bottom: 196px;
+    width: 706px;
+    bottom: 200px;
   }
 
   @include mobile-width {

@@ -12,14 +12,14 @@ $color-transparent: rgba(255, 255, 255, 0);
 
 $color-sapphire: #102654;
 $color-torch-red: #ed0233;
-$color-crimson: rgba(209, 10, 66, 0.2);
+$color-crimson: rgba(209, 10, 66, 0.20);
 $color-black-russian: #030a1a;
 $color-neon-blue:#103aae;
 $color-persian-blue: #2e35ac;
 $color-resolution-blue: #1c3374;
-$color-bcgr-video: rgba(20, 54, 122, 0.5);
+$color-bcgr-video: rgba(20, 54, 122, 0.50);
 $color-bcgr-trainer: rgba(16, 38, 84, 0.89);
-$color-border-faq: rgba(16, 38, 84, 0.2);
+$color-border-faq: rgba(16, 38, 84, 0.20);
 $color-ghost-white: #f8f9fc;
 $color-grey: #787878;
 $color-whisper: #e8e8e8;
@@ -30,7 +30,7 @@ $color-light-slate-grey: #74819c;
 
 $black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 $blue-to-red: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 20deg, #b80027 295deg, #003d85);
-$blue-to-red-text: conic-gradient(from 151deg at 16.03% 39.06%, #0041ca 80deg, #b80027 125deg, #0041ca);
+$blue-to-red-text: conic-gradient(from 151deg at 16.03% 39.06%,#0041ca 80deg,#b80027 125deg,#0041ca);
 $red-to-blue: linear-gradient(100deg, #ed0233 0%, #003eb7 100%);
 $red-to-blue-border: linear-gradient(140deg, #ed0233 0%, #003eb7 100%);
 

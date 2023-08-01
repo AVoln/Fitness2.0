@@ -2294,6 +2294,10 @@ button {
   .hero__description-inner {
     width: 70%;
     margin-right: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__description-inner {
     padding-left: 17px;
   }
 }
@@ -2705,7 +2709,6 @@ button {
     -o-object-fit: cover;
        object-fit: cover;
     height: 167px;
-    width: 100%;
   }
 }
 .general-info__video::before {
@@ -3755,14 +3758,14 @@ button {
 }
 @media (min-width: 1200px) {
   .comments-arrows {
-    width: 710px;
+    width: 700px;
     bottom: 220px;
   }
 }
 @media (max-width: 1199px) {
   .comments-arrows {
-    width: 716px;
-    bottom: 196px;
+    width: 706px;
+    bottom: 200px;
   }
 }
 @media (max-width: 767px) {
@@ -3775,13 +3778,13 @@ button {
 @media (min-width: 1200px) {
   .comments-arrow.swiper-arrow {
     bottom: -6px;
-    width: 56px;
+    width: 43px;
   }
 }
 @media (max-width: 1199px) {
   .comments-arrow.swiper-arrow {
     bottom: -6px;
-    width: 56px;
+    width: 43px;
   }
 }
 @media (max-width: 767px) {
@@ -4138,10 +4141,8 @@ button {
 .advantage__amount > p {
   font-family: "roboto-bold", "Arial", sans-serif;
   background-image: conic-gradient(from 151deg at 16.03% 39.06%, #0041ca 80deg, #b80027 125deg, #0041ca);
-  /* stylelint-disable */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* stylelint-enable */
 }
 @media (min-width: 1200px) {
   .advantage__amount > p {
@@ -4768,7 +4769,6 @@ button {
   padding: 0;
   letter-spacing: 0.1px;
   width: 100%;
-  cursor: pointer;
 }
 @media (min-width: 1200px) {
   .accordion__button {
@@ -5275,21 +5275,6 @@ button {
 }
 @media (max-width: 1199px) {
   .contacts__info span {
-    font-size: 18px;
-    padding-top: 12px;
-    letter-spacing: 0.1px;
-  }
-}
-.contacts__info a {
-  display: inline-block;
-}
-@media (min-width: 1200px) {
-  .contacts__info a {
-    font-size: 14px;
-  }
-}
-@media (max-width: 1199px) {
-  .contacts__info a {
     font-size: 18px;
     padding-top: 12px;
     letter-spacing: 0.1px;

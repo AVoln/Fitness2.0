@@ -10,7 +10,7 @@
 
   @include tablet-width {
     padding-bottom: 100px;
-    background-image: linear-gradient($color-ghost-white 94.5%, $color-default-white 94.5% 100%);
+    background-image: linear-gradient($color-ghost-white 94.5%,$color-default-white 94.5% 100%);
   }
 
   @include mobile-width {
