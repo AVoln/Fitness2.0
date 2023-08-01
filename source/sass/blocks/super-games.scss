@@ -2,6 +2,10 @@
   display: flex;
   margin: 0 auto;
 
+  &__image {
+    border-color: $color-resolution-blue;
+  }
+
   &-wrapper {
     justify-content: center;
     display: flex;

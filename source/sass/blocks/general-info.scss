@@ -42,6 +42,7 @@
 
   &__video {
     transform: translateX(-50%);
+    background-color: $color-bcgr-video;
 
     @include desktop-width-only {
       position: absolute;

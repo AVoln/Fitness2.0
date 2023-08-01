@@ -98,6 +98,10 @@
     }
   }
 
+  &__image {
+    background-color: $color-grey;
+  }
+
   &__image img {
     @include tablet-width {
       height: 294px;
