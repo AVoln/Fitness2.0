@@ -10,6 +10,8 @@
     padding: 0;
     letter-spacing: 0.1px;
     width: 100%;
+    user-select: none;
+    cursor: pointer;
 
     @include desktop-width-only {
       padding: 34px 0;

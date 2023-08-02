@@ -54,6 +54,7 @@
     font-family: $ff-roboto-regular;
     color: $color-sapphire;
     position: relative;
+    user-select: none;
 
     &::after {
       position: absolute;

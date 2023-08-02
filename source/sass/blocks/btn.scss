@@ -1,4 +1,6 @@
 .btn {
+  user-select: none;
+
   &:hover {
     background-color: $color-default-white;
     color: $color-neon-blue;

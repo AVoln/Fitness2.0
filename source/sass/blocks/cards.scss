@@ -135,6 +135,7 @@
     border: 2px solid $color-sapphire;
     background-color: $color-transparent;
     letter-spacing: 0.6px;
+    user-select: none;
 
     &:hover {
       background: $red-to-blue;
