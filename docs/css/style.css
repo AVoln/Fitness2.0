@@ -1588,6 +1588,12 @@ button {
   }
 }
 
+.btn {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
 .btn:hover {
   background-color: #ffffff;
   color: #103aae;
@@ -2974,6 +2980,10 @@ button {
   font-family: "roboto-regular", "Arial", sans-serif;
   color: #102654;
   position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .abonements__controls::after {
   position: absolute;
@@ -3254,6 +3264,10 @@ button {
   border: 2px solid #102654;
   background-color: rgba(255, 255, 255, 0);
   letter-spacing: 0.6px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .cards__buy:hover {
   background: linear-gradient(100deg, #ed0233 0%, #003eb7 100%);
@@ -3829,7 +3843,7 @@ button {
 }
 @media (max-width: 767px) {
   .comments-arrows {
-    width: 320px;
+    width: 310px;
     bottom: 220px;
   }
 }
@@ -3849,6 +3863,7 @@ button {
 @media (max-width: 767px) {
   .comments-arrow.swiper-arrow {
     bottom: 0;
+    width: 32px;
   }
 }
 
@@ -4544,6 +4559,10 @@ button {
   line-height: 17px;
   text-transform: uppercase;
   letter-spacing: 1.3px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .promo-hero__about:focus-visible {
   outline: 1px solid #ffffff;
@@ -4679,6 +4698,10 @@ button {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .another-promos__link:focus-visible {
   outline: 1px solid #000000;
@@ -4742,6 +4765,10 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 @media (min-width: 1200px) {
   .faq__controls {
@@ -4847,6 +4874,11 @@ button {
   padding: 0;
   letter-spacing: 0.1px;
   width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
 }
 @media (min-width: 1200px) {
   .accordion__button {
