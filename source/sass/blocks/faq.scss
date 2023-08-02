@@ -42,6 +42,7 @@
 
   &__controls {
     display: flex;
+    user-select: none;
 
     @include desktop-width-only {
       flex-direction: column;

@@ -113,6 +113,7 @@
     line-height: 14px;
     letter-spacing: 0.7px;
     width: max-content;
+    user-select: none;
 
     &:focus-visible {
       outline: 1px solid $color-default-black;

@@ -93,6 +93,7 @@
     line-height: 17px;
     text-transform: uppercase;
     letter-spacing: 1.3px;
+    user-select: none;
 
     &:focus-visible {
       outline: 1px solid $color-default-white;
