@@ -36,6 +36,11 @@
     color: $color-default-white;
   }
 
+  &:focus-visible {
+    border: 1px solid $color-sapphire;
+    outline: none;
+  }
+
   &:disabled {
     background-color: $color-transparent;
     opacity: 0.2;

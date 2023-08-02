@@ -74,6 +74,10 @@
       opacity: 1;
     }
 
+    &:focus-visible {
+      outline: 1px solid $color-default-white;
+    }
+
     @include desktop-width-only {
       width: 190px;
     }

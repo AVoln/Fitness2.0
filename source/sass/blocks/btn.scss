@@ -1,20 +1,22 @@
 .btn {
-  display: inline-flex;
-
-  border: 2px solid $color-sapphire;
-  cursor: pointer;
-
-  transition: opacity $trans-default;
-
-  text-transform: uppercase;
-  font-family: $ff-roboto-bold;
-
-  &:disabled {
-    opacity: 0.5;
-    pointer-events: none;
+  &:hover {
+    background-color: $color-default-white;
+    color: $color-neon-blue;
+    outline: none;
   }
 
-  @include hover-focus {
-    opacity: 0.8;
+  &:active {
+    background-color: $color-default-white;
+    color: $color-sapphire;
+  }
+
+  &:focus-visible {
+    background-color: $color-default-white;
+    color: $color-neon-blue;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.2;
   }
 }

@@ -69,6 +69,21 @@
     }
   }
 
+  &__about-wrapper {
+    @include desktop-width-only {
+      padding-top: 184px;
+    }
+
+    @include tablet-width {
+      padding-top: 184px;
+    }
+
+    @include mobile-width {
+      padding-top: 27px;
+      margin-bottom: 46px;
+    }
+  }
+
   &__about {
     display: inline-block;
     font-size: 13px;
@@ -79,17 +94,10 @@
     text-transform: uppercase;
     letter-spacing: 1.3px;
 
-    @include desktop-width-only {
-      padding-top: 188px;
-    }
-
-    @include tablet-width {
-      padding-top: 188px;
-    }
-
-    @include mobile-width {
-      padding-top: 31px;
-      margin-bottom: 46px;
+    &:focus-visible {
+      outline: 1px solid $color-default-white;
+      outline-offset: 5px;
+      border-bottom: none;
     }
   }
 
