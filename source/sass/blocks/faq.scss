@@ -22,7 +22,7 @@
 
     @include desktop-width-only {
       font-size: 54px;
-      padding: 140px 0 57px 103px;
+      padding: 140px 0 59px 103px;
       letter-spacing: 1.7px;
     }
 
@@ -95,7 +95,12 @@
     &.is-active {
       background: $red-to-blue;
       color: $color-default-white;
-      border: none;
+      border: 1px solid $color-transparent;
+    }
+
+    &:focus-visible {
+      outline: none;
+      border: 1px solid $color-sapphire;
     }
 
     &:disabled {

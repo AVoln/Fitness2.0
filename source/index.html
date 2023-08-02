@@ -46,7 +46,7 @@
             </div>
           </div>
           <div class="hero__description-button-wrapper">
-            <button class="hero__description-button" type="button">Купить абонемент</button>
+            <button class="hero__description-button btn" type="button">Купить абонемент</button>
           </div>
         </div>
         <div class="hero__image">
@@ -288,7 +288,7 @@
               </ul>
             </div>
             <span class="game__text">Ежегодные соревнования по&nbsp;CrossFitt</span>
-            <a class="game__button" href="#">заполнить&nbsp;заявку</a>
+            <a class="game__button btn" href="#">заполнить&nbsp;заявку</a>
           </div>
           <div class="super-games__image">
             <picture>
@@ -651,7 +651,9 @@
             <span>Год</span>
             <span>4999</span>
             <span>Безлимитный абонемент<br>в&nbsp;тренажерный зал</span>
-            <a class="promo-hero__about" href="#">Подробнее</a>
+            <div class="promo-hero__about-wrapper">
+              <a class="promo-hero__about" href="#">Подробнее</a>
+            </div>
           </div>
           <div class="promo-hero__img">
             <picture>
@@ -675,12 +677,16 @@
           <li class="another-promos__item">
             <p>Месяц бесплатно</p>
             <span>Приведи друга, получи<br>абонемент в&nbsp;подарок</span>
-            <a class="another-promos__link" href="#">Подробнее</a>
+            <div class="another-promos__link-wrapper">
+              <a class="another-promos__link" href="#">Подробнее</a>
+            </div>
           </li>
           <li class="another-promos__item">
             <p>Скидка&nbsp;20%</p>
             <span>Корпоративный фитнес<br>с&nbsp;командой</span>
-            <a class="another-promos__link" href="#">Подробнее</a>
+            <div class="another-promos__link-wrapper">
+              <a class="another-promos__link" href="#">Подробнее</a>
+            </div>
           </li>
         </ul>
       </section>
@@ -1199,7 +1205,7 @@
                   </label>
                 </div>
               </div>
-              <button class="trial__button" type="reset">Отправить</button>
+              <button class="trial__button btn" type="reset">Отправить</button>
             </form>
           </div>
         </div>
@@ -1229,31 +1235,45 @@
     <footer>
       <div class="footer-wrapper">
         <div class="footer container">
-          <a class="footer__logo">
-            <picture>
-              <source media="(min-width:1200px)" srcset="./img/logo/logo.svg" width="88" height="26">
-              <source media="(min-width:768px)" srcset="./img/logo/logo.svg" width="82" height="18">
-              <img src="./img/logo/logo.svg" width="68" height="15" alt="Лого Fitnes2.0.">
-            </picture>
-          </a>
+          <div class="footer__logo-wrapper">
+            <a class="footer__logo" href="#">
+              <picture>
+                <source media="(min-width:1200px)" srcset="./img/logo/logo.svg" width="88" height="26">
+                <source media="(min-width:768px)" srcset="./img/logo/logo.svg" width="82" height="18">
+                <img src="./img/logo/logo.svg" width="68" height="15" alt="Лого Fitnes2.0.">
+              </picture>
+            </a>
+          </div>
           <ul class="footer__nav-list footer-nav">
             <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#"></a>
+              <div class="footer-nav__link-wrapper">
+                <a class="footer-nav__link" href="#"></a>
+              </div>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#">Услуги</a>
+              <div class="footer-nav__link-wrapper">
+                <a class="footer-nav__link" href="#">Услуги</a>
+              </div>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#">Абонементы</a>
+              <div class="footer-nav__link-wrapper">
+                <a class="footer-nav__link" href="#">Абонементы</a>
+              </div>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#">Акции</a>
+              <div class="footer-nav__link-wrapper">
+                <a class="footer-nav__link" href="#">Акции</a>
+              </div>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#">Тренеры</a>
+              <div class="footer-nav__link-wrapper">
+                <a class="footer-nav__link" href="#">Тренеры</a>
+              </div>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#">Расписание</a>
+              <div class="footer-nav__link-wrapper">
+                <a class="footer-nav__link" href="#">Расписание</a>
+              </div>
             </li>
           </ul>
           <ul class="footer__social-list footer-social">

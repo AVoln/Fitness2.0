@@ -98,10 +98,19 @@
     background-color: $color-transparent;
     border-bottom: 2px solid $color-transparent;
 
-    &.is-active {
+    &.is-active,
+    &:hover,
+    &:active {
       border-bottom: 2px solid $color-torch-red;
       opacity: 1;
       z-index: 2;
+    }
+
+    &:focus-visible {
+      border-bottom: 2px solid $color-torch-red;
+      opacity: 1;
+      z-index: 2;
+      outline: none;
     }
 
     @include desktop-width-only {

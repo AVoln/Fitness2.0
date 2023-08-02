@@ -38,7 +38,8 @@
       margin: 18px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
       border: 7px solid $color-sapphire;
       border-image: $red-to-blue-border;
       border-image-slice: 1;
@@ -145,6 +146,13 @@
       background: $red-to-blue;
       color: $color-grey;
       border: none;
+    }
+
+    &:focus-visible {
+      background: $red-to-blue;
+      color: $color-default-white;
+      border: none;
+      outline: none;
     }
 
     @include desktop-width-only {
