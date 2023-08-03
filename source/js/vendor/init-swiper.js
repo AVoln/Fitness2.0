@@ -7,8 +7,8 @@ const initSwiper = () => {
 
       loop: true,
       navigation: {
-        nextEl: '.swiper-arrow--right',
-        prevEl: '.swiper-arrow--left',
+        nextEl: '.trainers-arrow--right',
+        prevEl: '.trainers-arrow--left',
       },
 
       breakpoints: {
@@ -40,8 +40,8 @@ const initSwiperComments = () => {
       spaceBetween: 40,
 
       navigation: {
-        nextEl: '.swiper-arrow--right',
-        prevEl: '.swiper-arrow--left',
+        nextEl: '.comments-arrow--right',
+        prevEl: '.comments-arrow--left',
       },
     });
   }
