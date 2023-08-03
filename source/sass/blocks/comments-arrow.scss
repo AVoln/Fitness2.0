@@ -1,18 +1,67 @@
 .comments-arrow {
-  &.swiper-arrow {
-    @include desktop-width-only {
-      bottom: -6px;
-      width: 56px;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border: none;
+  background-color: $color-transparent;
+  border-radius: 50%;
+  z-index: 2;
+  color: $color-sapphire;
 
-    @include tablet-width {
-      bottom: -6px;
-      width: 56px;
-    }
+  @include desktop-width-only {
+    bottom: -6px;
+    width: 56px;
+    height: 56px;
+  }
+
+  @include tablet-width {
+    bottom: -6px;
+    width: 56px;
+    height: 56px;
+  }
+
+  @include mobile-width {
+    bottom: 0;
+    width: 32px;
+    height: 32px;
+  }
+
+  &:hover {
+    border: 1px solid $color-sapphire;
+  }
+
+  &:active {
+    background-color: $color-sapphire;
+    color: $color-default-white;
+  }
+
+  &:focus-visible {
+    border: 1px solid $color-sapphire;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: $color-transparent;
+    opacity: 0.2;
+  }
+
+  & svg {
+    transform: translateX(-7%);
 
     @include mobile-width {
-      bottom: 0;
-      width: 32px;
+      width: 10px;
+      height: 19px;
     }
   }
+
+  &--left {
+    left: 0;
+  }
+
+  &--right {
+    transform: rotate(180deg);
+    right: 0;
+  }
 }
+
