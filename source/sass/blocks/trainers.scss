@@ -105,7 +105,8 @@
 
   &__image img {
     @include tablet-width {
-      min-height: 294px;
+      object-fit: cover;
+      height: 294px;
       width: 100%;
     }
 

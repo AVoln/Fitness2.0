@@ -6,6 +6,7 @@
   }
 
   @include tablet-width {
+    position: relative;
     max-width: 716px;
   }
 

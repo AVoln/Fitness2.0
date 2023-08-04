@@ -1,14 +1,15 @@
 .another-promos {
   @include desktop-width-only {
     padding-left: 40px;
-    min-width: 600px;
+    flex-grow: 1;
   }
 
   @include tablet-width {
     display: flex;
     gap: 30px;
     padding-top: 30px;
-    width: 100%;
+    width: 680px;
+    margin: 0 auto;
   }
 
   @include mobile-width {
