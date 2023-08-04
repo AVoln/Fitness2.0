@@ -1,6 +1,8 @@
 .advantage {
   @include desktop-width-only {
     padding: 0 113px 37px;
+    max-width: 1366px;
+    margin: 0 auto;
   }
 
   @include tablet-width {

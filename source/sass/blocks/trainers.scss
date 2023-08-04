@@ -8,7 +8,8 @@
   }
 
   @include mobile-width {
-    width: 226px;
+    width: 100%;
+    padding: 0 47px;
   }
 
   & h2 {
@@ -104,11 +105,12 @@
 
   &__image img {
     @include tablet-width {
-      height: 294px;
+      min-height: 294px;
+      width: 100%;
     }
 
     @include mobile-width {
-      height: 274px;
+      min-height: 274px;
     }
   }
 }

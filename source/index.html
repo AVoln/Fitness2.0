@@ -270,25 +270,27 @@
 
       <section class="super-games">
         <div class="super-games-wrapper">
-          <div class="super-games__description game">
-            <div class="game__info">
-              <h3>Super<br>Games</h3>
-              <ul class="game__timetable-list timelist">
-                <li class="timelist__item date">
-                  <span>Дата</span>
-                  <div class="date__when">
-                    <p>7</p>
-                    <span>Марта<br>2019</span>
-                  </div>
-                </li>
-                <li class="timelist__item time">
-                  <span>Время</span>
-                  <p>12:00</p>
-                </li>
-              </ul>
+          <div class="super-games__description-container">
+            <div class="super-games__description game">
+              <div class="game__info">
+                <h3>Super<br>Games</h3>
+                <ul class="game__timetable-list timelist">
+                  <li class="timelist__item date">
+                    <span>Дата</span>
+                    <div class="date__when">
+                      <p>7</p>
+                      <span>Марта<br>2019</span>
+                    </div>
+                  </li>
+                  <li class="timelist__item time">
+                    <span>Время</span>
+                    <p>12:00</p>
+                  </li>
+                </ul>
+              </div>
+              <span class="game__text">Ежегодные соревнования по&nbsp;CrossFitt</span>
+              <a class="game__button btn" href="#">заполнить&nbsp;заявку</a>
             </div>
-            <span class="game__text">Ежегодные соревнования по&nbsp;CrossFitt</span>
-            <a class="game__button btn" href="#">заполнить&nbsp;заявку</a>
           </div>
           <div class="super-games__image">
             <picture>
@@ -1084,7 +1086,7 @@
                 </picture>
               </div>
               <div class="comments__text">
-                <h3>Анна Орлова</h3>
+                <h3>Анна<br> Орлова</h3>
                 <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе
                   всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время
                   нет
@@ -1182,48 +1184,50 @@
       </section>
 
       <section class="feedback">
-        <div class="feedback__trial-wrapper">
-          <div class="feedback__trial trial" data-form-validate="data-form-validate">
-            <h2>Бесплатное занятие</h2>
-            <form class="trial__form" action="https://echo.htmlacademy.ru" method="post"
-              data-on-input-validate="data-on-input-validate">
-              <div class="trial__inputs">
-                <div class="trial__input trial__input--name" data-validate-type="text"
-                  data-on-input-validate="data-on-input-validate" data-limitation="name"
-                  data-message-base="Поле обязательно к заполнению"
-                  data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
-                  <label aria-label="Ваше имя.">
-                    <input type="text" name="user-name-1" placeholder="Имя" />
-                  </label>
+        <div class="feedback-container">
+          <div class="feedback__trial-wrapper">
+            <div class="feedback__trial trial" data-form-validate="data-form-validate">
+              <h2>Бесплатное занятие</h2>
+              <form class="trial__form" action="https://echo.htmlacademy.ru" method="post"
+                data-on-input-validate="data-on-input-validate">
+                <div class="trial__inputs">
+                  <div class="trial__input trial__input--name" data-validate-type="text"
+                    data-on-input-validate="data-on-input-validate" data-limitation="name"
+                    data-message-base="Поле обязательно к заполнению"
+                    data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
+                    <label aria-label="Ваше имя.">
+                      <input type="text" name="user-name-1" placeholder="Имя" />
+                    </label>
+                  </div>
+                  <div class="trial__input trial__input--phone" data-validate-type="phone"
+                    data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению"
+                    data-message-extra="Проверьте корректность заполнения поля"
+                    data-message-success="Поле заполнено верно" data-required="data-required">
+                    <label aria-label="Ваш номер телефона.">
+                      <input type="tel" name="user-phone" placeholder="Телефон" />
+                    </label>
+                  </div>
                 </div>
-                <div class="trial__input trial__input--phone" data-validate-type="phone"
-                  data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению"
-                  data-message-extra="Проверьте корректность заполнения поля"
-                  data-message-success="Поле заполнено верно" data-required="data-required">
-                  <label aria-label="Ваш номер телефона.">
-                    <input type="tel" name="user-phone" placeholder="Телефон" />
-                  </label>
-                </div>
-              </div>
-              <button class="trial__button btn" type="submit">Отправить</button>
-            </form>
+                <button class="trial__button btn" type="submit">Отправить</button>
+              </form>
+            </div>
           </div>
-        </div>
-        <div class="feedback__contacts contacts">
-          <div class="contacts__wrapper">
-            <h2>Контакты</h2>
-            <div class="contacts__info-wrapper">
-              <div class="contacts__info">
-                <p>Адрес:</p>
-                <span>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</span>
-                <p>График работы:</p>
-                <span>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</span>
-              </div>
-              <div class="contacts__info">
-                <p>Телефон:</p>
-                <a href="tel:88005555555">8-800-555-55-55</a>
-                <p>Email:</p>
-                <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+          <div class="feedback__contacts contacts">
+            <div class="contacts__wrapper">
+              <h2>Контакты</h2>
+              <div class="contacts__info-wrapper">
+                <div class="contacts__info">
+                  <p>Адрес:</p>
+                  <span>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</span>
+                  <p>График работы:</p>
+                  <span>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</span>
+                </div>
+                <div class="contacts__info">
+                  <p>Телефон:</p>
+                  <a href="tel:88005555555">8-800-555-55-55</a>
+                  <p>Email:</p>
+                  <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                </div>
               </div>
             </div>
           </div>

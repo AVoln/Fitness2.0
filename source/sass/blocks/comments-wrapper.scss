@@ -1,0 +1,5 @@
+.comments-wrapper {
+  @include mobile-width {
+    position: relative;
+  }
+}

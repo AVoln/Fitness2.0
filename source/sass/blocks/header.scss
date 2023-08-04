@@ -25,7 +25,7 @@
 
   &__phone {
     color: $color-default-white;
-    font-family: $ff-alumni;
+    font-family: $ff-alumni-semibold;
 
     @include desktop-width-only {
       letter-spacing: 0.7px;

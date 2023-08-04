@@ -19,6 +19,8 @@
 
   & h2 {
     font-family: $ff-alumni-semibold;
+    margin: 0 auto;
+    max-width: 1366px;
 
     @include desktop-width-only {
       font-size: 54px;

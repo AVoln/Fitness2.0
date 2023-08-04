@@ -11,7 +11,8 @@
   }
 
   @include mobile-width {
-    width: 226px;
+    width: 100%;
+    padding: 0 47px;
   }
 
   & h2 {
@@ -124,6 +125,20 @@
     @include mobile-width {
       padding: 49px 40px 23px 124px;
       line-height: 26px;
+    }
+  }
+
+  & h3 br {
+    @include desktop-width-only {
+      display: none;
+    }
+
+    @include tablet-width {
+      display: none;
+    }
+
+    @include mobile-width {
+      display: inline;
     }
   }
 

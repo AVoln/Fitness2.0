@@ -1,7 +1,6 @@
 .contacts {
   @include desktop-width-only {
     width: 50%;
-    border-top: 1px solid $color-sapphire;
   }
 
   &__wrapper {

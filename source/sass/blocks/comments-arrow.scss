@@ -22,9 +22,10 @@
   }
 
   @include mobile-width {
-    bottom: 0;
+    bottom: 40.5%;
     width: 32px;
     height: 32px;
+    margin: 0 3px;
   }
 
   &:hover {

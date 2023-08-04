@@ -1,5 +1,4 @@
 .trainers-arrows {
-  position: relative;
   margin: 0 auto;
 
   @include desktop-width-only {
@@ -11,6 +10,6 @@
   }
 
   @include mobile-width {
-    max-width: 290px;
+    max-width: 310px;
   }
 }
