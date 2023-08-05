@@ -2165,10 +2165,7 @@ button {
 }
 @media (min-width: 1200px) {
   .header__logo {
-    -webkit-transform: translateY(5px);
-        -ms-transform: translateY(5px);
-            transform: translateY(5px);
-    padding-bottom: 5px;
+    padding: 5px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0);
   }
 }
@@ -2190,10 +2187,10 @@ button {
   .header__phone {
     letter-spacing: 0.7px;
     font-size: 26px;
-    -webkit-transform: translateY(-3px);
-        -ms-transform: translateY(-3px);
-            transform: translateY(-3px);
-    padding-bottom: 1px;
+    -webkit-transform: translateY(-7px);
+        -ms-transform: translateY(-7px);
+            transform: translateY(-7px);
+    padding: 3px 0 1px;
     border-bottom: 1px solid rgba(255, 255, 255, 0);
   }
 }
@@ -2234,7 +2231,7 @@ button {
     -ms-grid-columns: 35% 65%;
     grid-template-columns: 35% 65%;
     padding-bottom: 50px;
-    margin-top: -6px;
+    margin-top: -10px;
   }
 }
 @media (max-width: 1199px) {
@@ -2675,7 +2672,11 @@ button {
   width: 25px;
   height: 25px;
 }
-.footer-social__link:hover svg {
+.footer-social__link:focus {
+  border: none;
+  outline: none;
+}
+.footer-social__link:hover svg, .footer-social__link:focus svg {
   color: #ffffff;
   background-color: #103aae;
   border-radius: 50%;
@@ -2937,15 +2938,16 @@ button {
             transform: translate3d(20%, 17%, 0);
   }
 }
-.video-play-button:hover, .video-play-button:active {
+.video-play-button:hover, .video-play-button:focus, .video-play-button:active {
   color: #102654;
   cursor: pointer;
+  outline: none;
 }
-.video-play-button:hover circle:first-child, .video-play-button:active circle:first-child {
+.video-play-button:hover circle:first-child, .video-play-button:focus circle:first-child, .video-play-button:active circle:first-child {
   stroke: #102654;
   stroke-opacity: 1;
 }
-.video-play-button:hover circle:nth-child(2), .video-play-button:active circle:nth-child(2) {
+.video-play-button:hover circle:nth-child(2), .video-play-button:focus circle:nth-child(2), .video-play-button:active circle:nth-child(2) {
   fill: #ffffff;
 }
 .video-play-button--disabled {
@@ -3206,20 +3208,20 @@ button {
     margin: 18px;
   }
 }
-.cards__item:hover, .cards__item:focus-visible {
+.cards__item:hover, .cards__item:focus-within, .cards__item:focus-visible {
   border: 7px solid #102654;
   -o-border-image: linear-gradient(140deg, #ed0233 0%, #003eb7 100%);
      border-image: linear-gradient(140deg, #ed0233 0%, #003eb7 100%);
   border-image-slice: 1;
 }
-.cards__item:hover .cards__buy {
-  background: linear-gradient(100deg, #ed0233 0%, #003eb7 100%);
-  color: #ffffff;
-  border: none;
-}
-.cards__item:active .cards__buy {
+.cards__item:hover .cards__buy:active {
   background: linear-gradient(100deg, #ed0233 0%, #003eb7 100%);
   color: rgba(255, 255, 255, 0.7);
+  border: none;
+}
+.cards__item:hover .cards__buy, .cards__item:focus .cards__buy {
+  background: linear-gradient(100deg, #ed0233 0%, #003eb7 100%);
+  color: #ffffff;
   border: none;
 }
 .cards__item:focus-visible .cards__buy {
@@ -3341,6 +3343,17 @@ button {
   .cards__buy {
     margin-top: 54px;
   }
+}
+.cards__buy:focus {
+  background: linear-gradient(100deg, #ed0233 0%, #003eb7 100%);
+  color: #ffffff;
+  border: none;
+  outline: none;
+}
+.cards__buy:active {
+  background: linear-gradient(100deg, #ed0233 0%, #003eb7 100%);
+  color: rgba(255, 255, 255, 0.7);
+  border: none;
 }
 
 .super-games {
@@ -3957,14 +3970,14 @@ button {
     margin: 0 3px;
   }
 }
-.comments-arrow:hover {
+.comments-arrow:not(.comments-arrow.swiper-button-disabled):hover {
   border: 1px solid #102654;
 }
-.comments-arrow:active {
+.comments-arrow:not(.comments-arrow.swiper-button-disabled):active {
   background-color: #102654;
   color: #ffffff;
 }
-.comments-arrow:focus-visible {
+.comments-arrow:not(.comments-arrow.swiper-button-disabled):focus-visible {
   border: 1px solid #102654;
   outline: none;
 }
@@ -5595,6 +5608,9 @@ button {
 }
 .contacts__info a:hover {
   border-bottom: 1px solid #102654;
+}
+.contacts__info a:focus {
+  outline: 1px solid #102654;
 }
 @media (min-width: 1200px) {
   .contacts__info-wrapper {

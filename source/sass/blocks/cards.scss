@@ -39,21 +39,23 @@
     }
 
     &:hover,
+    &:focus-within,
     &:focus-visible {
       border: 7px solid $color-sapphire;
       border-image: $red-to-blue-border;
       border-image-slice: 1;
     }
 
-    &:hover .cards__buy {
+    &:hover .cards__buy:active {
       background: $red-to-blue;
-      color: $color-default-white;
+      color: $color-white-active;
       border: none;
     }
 
-    &:active .cards__buy {
+    &:hover .cards__buy,
+    &:focus .cards__buy {
       background: $red-to-blue;
-      color: $color-white-active;
+      color: $color-default-white;
       border: none;
     }
 
@@ -166,6 +168,19 @@
 
     @include mobile-width {
       margin-top: 54px;
+    }
+
+    &:focus {
+      background: $red-to-blue;
+      color: $color-default-white;
+      border: none;
+      outline: none;
+    }
+
+    &:active {
+      background: $red-to-blue;
+      color: $color-white-active;
+      border: none;
     }
   }
 }

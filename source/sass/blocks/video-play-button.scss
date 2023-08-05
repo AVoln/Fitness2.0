@@ -32,18 +32,22 @@
   }
 
   &:hover,
+  &:focus,
   &:active {
     color: $color-sapphire;
     cursor: pointer;
+    outline: none ;
   }
 
   &:hover circle:first-child,
+  &:focus circle:first-child,
   &:active circle:first-child {
     stroke: $color-sapphire;
     stroke-opacity: 1;
   }
 
   &:hover circle:nth-child(2),
+  &:focus circle:nth-child(2),
   &:active circle:nth-child(2) {
     fill: $color-default-white;
   }

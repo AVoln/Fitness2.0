@@ -19,8 +19,7 @@
 
   &__logo {
     @include desktop-width-only {
-      transform: translateY(5px);
-      padding-bottom: 5px;
+      padding: 5px 0;
       border-bottom: 1px solid $color-transparent;
     }
 
@@ -45,8 +44,8 @@
     @include desktop-width-only {
       letter-spacing: 0.7px;
       font-size: 26px;
-      transform: translateY(-3px);
-      padding-bottom: 1px;
+      transform: translateY(-7px);
+      padding: 3px 0 1px;
       border-bottom: 1px solid $color-transparent;
     }
 
