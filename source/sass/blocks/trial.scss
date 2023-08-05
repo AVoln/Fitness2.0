@@ -74,8 +74,16 @@
       opacity: 1;
     }
 
+    &:hover {
+      border-bottom: 1px solid $color-default-white;
+    }
+
     &:focus-visible {
       outline: 1px solid $color-default-white;
+    }
+
+    &:disabled {
+      opacity: 0.2;
     }
 
     @include desktop-width-only {

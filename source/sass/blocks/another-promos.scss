@@ -116,10 +116,22 @@
     width: max-content;
     user-select: none;
 
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+
     &:focus-visible {
       outline: 1px solid $color-default-black;
       outline-offset: 5px;
       border-bottom: none;
+    }
+
+    &:disabled {
+      opacity: 0.2;
     }
   }
 }

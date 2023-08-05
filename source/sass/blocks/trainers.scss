@@ -59,28 +59,16 @@
   &__item {
     position: relative;
 
-    @include desktop-width-only {
-      &:hover .trainers__name {
-        display: none;
-      }
-
-      &:hover .trainers__description {
-        display: block;
-      }
+    &:hover span {
+      display: none;
     }
 
-    @include tablet-width {
-      &:active .trainers__name {
-        display: none;
-      }
-
-      &:active .trainers__description {
-        display: block;
-      }
+    &:hover .trainers__description {
+      display: block;
     }
   }
 
-  &__image-wrapper > span {
+  &__image-wrapper>span {
     display: block;
     position: absolute;
     transform: translateX(-50%);

@@ -33,32 +33,32 @@
 
   &:hover,
   &:active {
-    color: $color-default-black;
+    color: $color-sapphire;
     cursor: pointer;
   }
 
   &:hover circle:first-child,
   &:active circle:first-child {
-    stroke: $color-black-russian;
+    stroke: $color-sapphire;
     stroke-opacity: 1;
   }
 
   &:hover circle:nth-child(2),
   &:active circle:nth-child(2) {
-    fill: $color-transparent;
+    fill: $color-default-white;
   }
 
   &--disabled {
-    color: $color-default-black;
+    color: $color-sapphire;
     opacity: 0.2;
 
     & circle:first-child {
-      stroke: $color-black-russian;
+      stroke: $color-sapphire;
       stroke-opacity: 1;
     }
 
     & circle:nth-child(2) {
-      fill: $color-transparent;
+      fill: $color-default-white;
     }
   }
 }

@@ -2168,7 +2168,19 @@ button {
     -webkit-transform: translateY(5px);
         -ms-transform: translateY(5px);
             transform: translateY(5px);
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
   }
+}
+.header__logo:hover {
+  border-bottom: 1px solid #ffffff;
+}
+.header__logo:active {
+  border-bottom: 1px solid #ffffff;
+  opacity: 0.2;
+}
+.header__logo:focus-visible {
+  outline: 1px solid #ffffff;
 }
 .header__phone {
   color: #ffffff;
@@ -2178,6 +2190,11 @@ button {
   .header__phone {
     letter-spacing: 0.7px;
     font-size: 26px;
+    -webkit-transform: translateY(-3px);
+        -ms-transform: translateY(-3px);
+            transform: translateY(-3px);
+    padding-bottom: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
   }
 }
 @media (max-width: 1199px) {
@@ -2190,6 +2207,16 @@ button {
   .header__phone {
     font-size: 20px;
   }
+}
+.header__phone:hover {
+  border-bottom: 1px solid #ffffff;
+}
+.header__phone:active {
+  border-bottom: 1px solid #ffffff;
+  opacity: 0.8;
+}
+.header__phone:focus-visible {
+  outline: 1px solid #ffffff;
 }
 
 .head-wrapper {
@@ -2207,6 +2234,7 @@ button {
     -ms-grid-columns: 35% 65%;
     grid-template-columns: 35% 65%;
     padding-bottom: 50px;
+    margin-top: -6px;
   }
 }
 @media (max-width: 1199px) {
@@ -2460,6 +2488,7 @@ button {
 }
 .footer__logo {
   padding: 5px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
 @media (max-width: 767px) {
   .footer__logo {
@@ -2469,13 +2498,17 @@ button {
 .footer__logo:hover {
   border-bottom: 1px solid #ffffff;
 }
+.footer__logo:active {
+  border-bottom: 1px solid #ffffff;
+  opacity: 0.8;
+}
 .footer__logo:focus-visible {
   outline: 1px solid #ffffff;
 }
 @media (min-width: 1200px) {
   .footer__logo {
     margin-left: -6px;
-    margin-top: 7px;
+    margin-top: 13px;
   }
 }
 @media (max-width: 1199px) {
@@ -2905,26 +2938,26 @@ button {
   }
 }
 .video-play-button:hover, .video-play-button:active {
-  color: #000000;
+  color: #102654;
   cursor: pointer;
 }
 .video-play-button:hover circle:first-child, .video-play-button:active circle:first-child {
-  stroke: #030a1a;
+  stroke: #102654;
   stroke-opacity: 1;
 }
 .video-play-button:hover circle:nth-child(2), .video-play-button:active circle:nth-child(2) {
-  fill: rgba(255, 255, 255, 0);
+  fill: #ffffff;
 }
 .video-play-button--disabled {
-  color: #000000;
+  color: #102654;
   opacity: 0.2;
 }
 .video-play-button--disabled circle:first-child {
-  stroke: #030a1a;
+  stroke: #102654;
   stroke-opacity: 1;
 }
 .video-play-button--disabled circle:nth-child(2) {
-  fill: rgba(255, 255, 255, 0);
+  fill: #ffffff;
 }
 
 .abonements {
@@ -3179,6 +3212,22 @@ button {
      border-image: linear-gradient(140deg, #ed0233 0%, #003eb7 100%);
   border-image-slice: 1;
 }
+.cards__item:hover .cards__buy {
+  background: linear-gradient(100deg, #ed0233 0%, #003eb7 100%);
+  color: #ffffff;
+  border: none;
+}
+.cards__item:active .cards__buy {
+  background: linear-gradient(100deg, #ed0233 0%, #003eb7 100%);
+  color: rgba(255, 255, 255, 0.7);
+  border: none;
+}
+.cards__item:focus-visible .cards__buy {
+  background: linear-gradient(100deg, #ed0233 0%, #003eb7 100%);
+  color: #ffffff;
+  border: none;
+  outline: none;
+}
 .cards h3 {
   font-family: "roboto-bold", "Arial", sans-serif;
   margin: 0;
@@ -3277,22 +3326,6 @@ button {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-}
-.cards__buy:hover {
-  background: linear-gradient(100deg, #ed0233 0%, #003eb7 100%);
-  color: #ffffff;
-  border: none;
-}
-.cards__buy:active {
-  background: linear-gradient(100deg, #ed0233 0%, #003eb7 100%);
-  color: #787878;
-  border: none;
-}
-.cards__buy:focus-visible {
-  background: linear-gradient(100deg, #ed0233 0%, #003eb7 100%);
-  color: #ffffff;
-  border: none;
-  outline: none;
 }
 @media (min-width: 1200px) {
   .cards__buy {
@@ -3651,21 +3684,11 @@ button {
 .trainers__item {
   position: relative;
 }
-@media (min-width: 1200px) {
-  .trainers__item:hover .trainers__name {
-    display: none;
-  }
-  .trainers__item:hover .trainers__description {
-    display: block;
-  }
+.trainers__item:hover span {
+  display: none;
 }
-@media (max-width: 1199px) {
-  .trainers__item:active .trainers__name {
-    display: none;
-  }
-  .trainers__item:active .trainers__description {
-    display: block;
-  }
+.trainers__item:hover .trainers__description {
+  display: block;
 }
 .trainers__image-wrapper > span {
   display: block;
@@ -3712,6 +3735,7 @@ button {
   top: 0;
   background: rgba(16, 38, 84, 0.89);
   height: 100%;
+  width: 100%;
   color: #ffffff;
   text-align: center;
 }
@@ -4691,10 +4715,19 @@ button {
       -ms-user-select: none;
           user-select: none;
 }
+.promo-hero__about:hover {
+  opacity: 0.8;
+}
+.promo-hero__about:active {
+  opacity: 1;
+}
 .promo-hero__about:focus-visible {
   outline: 1px solid #ffffff;
   outline-offset: 5px;
   border-bottom: none;
+}
+.promo-hero__about:disabled {
+  opacity: 0.2;
 }
 .promo-hero__img {
   background-color: #c7dcf7;
@@ -4838,10 +4871,19 @@ button {
       -ms-user-select: none;
           user-select: none;
 }
+.another-promos__link:hover {
+  opacity: 0.8;
+}
+.another-promos__link:active {
+  opacity: 1;
+}
 .another-promos__link:focus-visible {
   outline: 1px solid #000000;
   outline-offset: 5px;
   border-bottom: none;
+}
+.another-promos__link:disabled {
+  opacity: 0.2;
 }
 
 .faq {
@@ -5019,7 +5061,7 @@ button {
 }
 @media (min-width: 1200px) {
   .accordion__button {
-    padding: 34px 0;
+    padding: 34px 50px 34px 0;
   }
 }
 @media (max-width: 1199px) {
@@ -5050,7 +5092,7 @@ button {
 }
 @media (min-width: 1200px) {
   .accordion__element.is-active .accordion__button {
-    padding: 34px 0 0;
+    padding: 34px 50px 0 0;
   }
 }
 @media (max-width: 1199px) {
@@ -5319,8 +5361,14 @@ button {
   color: #ffffff;
   opacity: 1;
 }
+.trial__input input:hover {
+  border-bottom: 1px solid #ffffff;
+}
 .trial__input input:focus-visible {
   outline: 1px solid #ffffff;
+}
+.trial__input input:disabled {
+  opacity: 0.2;
 }
 @media (min-width: 1200px) {
   .trial__input input {
