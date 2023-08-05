@@ -15,5 +15,6 @@
   @include mobile-width {
     width: 310px;
     bottom: 220px;
+    position: static;
   }
 }

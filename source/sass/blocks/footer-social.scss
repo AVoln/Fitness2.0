@@ -32,7 +32,13 @@
     width: 25px;
     height: 25px;
 
-    &:hover svg {
+    &:focus {
+      border: none;
+      outline: none;
+    }
+
+    &:hover svg,
+    &:focus svg {
       color: $color-default-white;
       background-color: $color-neon-blue;
       border-radius: 50%;

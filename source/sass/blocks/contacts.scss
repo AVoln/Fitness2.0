@@ -1,7 +1,6 @@
 .contacts {
   @include desktop-width-only {
     width: 50%;
-    border-top: 1px solid $color-sapphire;
   }
 
   &__wrapper {
@@ -28,7 +27,7 @@
     @include desktop-width-only {
       font-size: 54px;
       line-height: 54px;
-      padding-bottom: 12px;
+      padding-bottom: 14px;
     }
 
     @include tablet-width {
@@ -141,6 +140,10 @@
 
     &:hover {
       border-bottom: 1px solid $color-sapphire;
+    }
+
+    &:focus {
+      outline: 1px solid $color-sapphire;
     }
   }
 

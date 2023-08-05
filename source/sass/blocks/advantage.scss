@@ -1,6 +1,8 @@
 .advantage {
   @include desktop-width-only {
     padding: 0 113px 37px;
+    max-width: 1366px;
+    margin: 0 auto;
   }
 
   @include tablet-width {
@@ -15,6 +17,7 @@
     display: flex;
 
     @include desktop-width-only {
+
       &.comfort,
       &.experience {
         padding-top: 53px;
@@ -28,6 +31,8 @@
   }
 
   &__element:first-child {
+    position: relative;
+
     @include desktop-width-only {
       padding-left: 70px;
     }
@@ -58,6 +63,32 @@
 
     @include mobile-width {
       padding: 3px 45px 0;
+    }
+  }
+
+  &__element:first-child.comfort::before {
+    @include desktop-width-only {
+      position: absolute;
+      content: "";
+      width: 340px;
+      height: 2px;
+      bottom: 160px;
+      left: 50px;
+      background-color: $color-torch-red;
+      opacity: .2;
+    }
+  }
+
+  &__element:last-child.experience::before {
+    @include desktop-width-only {
+      position: absolute;
+      content: "";
+      width: 340px;
+      height: 2px;
+      bottom: 281px;
+      right: 163px;
+      background-color: $color-torch-red;
+      opacity: .2;
     }
   }
 
@@ -96,7 +127,7 @@
     }
   }
 
-  &__amount > p {
+  &__amount>p {
     font-family: $ff-roboto-bold;
     background-image: $blue-to-red-text;
     /* stylelint-disable */
@@ -115,7 +146,7 @@
     }
   }
 
-  &__amount > span {
+  &__amount>span {
     font-size: 14px;
     line-height: 21px;
     color: $color-persian-blue;

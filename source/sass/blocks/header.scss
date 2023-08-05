@@ -19,17 +19,34 @@
 
   &__logo {
     @include desktop-width-only {
-      transform: translateY(5px);
+      padding: 5px 0;
+      border-bottom: 1px solid $color-transparent;
+    }
+
+    &:hover {
+      border-bottom: 1px solid $color-default-white;
+    }
+
+    &:active {
+      border-bottom: 1px solid $color-default-white;
+      opacity: 0.2;
+    }
+
+    &:focus-visible {
+      outline: 1px solid $color-default-white;
     }
   }
 
   &__phone {
     color: $color-default-white;
-    font-family: $ff-alumni;
+    font-family: $ff-alumni-semibold;
 
     @include desktop-width-only {
       letter-spacing: 0.7px;
       font-size: 26px;
+      transform: translateY(-7px);
+      padding: 3px 0 1px;
+      border-bottom: 1px solid $color-transparent;
     }
 
     @include tablet-width {
@@ -39,6 +56,19 @@
 
     @include mobile-width {
       font-size: 20px;
+    }
+
+    &:hover {
+      border-bottom: 1px solid $color-default-white;
+    }
+
+    &:active {
+      border-bottom: 1px solid $color-default-white;
+      opacity: 0.8;
+    }
+
+    &:focus-visible {
+      outline: 1px solid $color-default-white;
     }
   }
 }

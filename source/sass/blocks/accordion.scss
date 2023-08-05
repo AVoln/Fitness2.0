@@ -13,8 +13,23 @@
     user-select: none;
     cursor: pointer;
 
+    &:focus {
+      outline: none;
+    }
+
+    &:focus + .accordion__button-svg {
+      background-color: $color-sapphire;
+      color: $color-default-white;
+    }
+
+    &:active + .accordion__button-svg--open,
+    &.is-active + .accordion__button-svg--close {
+      background-color: $color-sapphire;
+      color: $color-default-white;
+    }
+
     @include desktop-width-only {
-      padding: 34px 0;
+      padding: 34px 50px 30px 0;
     }
 
     @include tablet-width {
@@ -43,7 +58,7 @@
 
   &__element.is-active &__button {
     @include desktop-width-only {
-      padding: 34px 0 0;
+      padding: 34px 50px 0 0;
     }
 
     @include tablet-width {
@@ -163,8 +178,8 @@
 
   &__element.is-active &__content {
     @include desktop-width-only {
-      margin-top: 20px;
-      margin-bottom: 26px;
+      margin-top: 15px;
+      margin-bottom: 27px;
     }
 
     @include tablet-width {
@@ -203,6 +218,16 @@
     @include mobile-width {
       line-height: 22px;
       font-size: 16px;
+    }
+  }
+
+  &__element:nth-child(3) .accordion__button {
+    @include tablet-width {
+      padding: 33px 0 31px;
+    }
+
+    @include mobile-width {
+      padding: 20px 0 16px;
     }
   }
 }

@@ -1,15 +1,37 @@
 .feedback {
-  width: 100%;
+  position: relative;
 
   @include desktop-width-only {
-    display: flex;
+    background-image: linear-gradient(to right, $color-sapphire 50%, $color-default-white 50% 100%);
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      height: 1px;
+      background-color: $color-sapphire;
+      top: 0;
+      left: 50%;
+    }
+  }
+
+  &-container {
+    position: relative;
+
+    @include desktop-width-only {
+      display: flex;
+      max-width: 1366px;
+      margin: 0 auto;
+    }
   }
 
   &__trial-wrapper {
-    background-color: $color-sapphire;
-
     @include desktop-width-only {
       width: 50%;
+    }
+
+    @include tablet-width {
+      background-color: $color-sapphire;
     }
 
     @include mobile-width {

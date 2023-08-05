@@ -14,13 +14,14 @@
 
     @include mobile-width {
       position: absolute;
-      top: 50px;
+      top: 52px;
       left: 35px;
     }
   }
 
   &__logo {
     padding: 5px 0;
+    border-bottom: 1px solid $color-transparent;
 
     @include mobile-width {
       padding: 0;
@@ -30,13 +31,18 @@
       border-bottom: 1px solid $color-default-white;
     }
 
+    &:active {
+      border-bottom: 1px solid $color-default-white;
+      opacity: 0.8;
+    }
+
     &:focus-visible {
       outline: 1px solid $color-default-white;
     }
 
     @include desktop-width-only {
       margin-left: -6px;
-      margin-top: 7px;
+      margin-top: 13px;
     }
 
     @include tablet-width {

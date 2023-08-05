@@ -4,6 +4,7 @@
   top: 0;
   background: $color-bcgr-trainer;
   height: 100%;
+  width: 100%;
   color: $color-default-white;
   text-align: center;
 
@@ -18,10 +19,12 @@
 
     @include tablet-width {
       padding-top: 55px;
+      padding-right: 8px;
     }
 
     @include mobile-width {
       padding-top: 44px;
+      padding-right: 0;
     }
   }
 
@@ -43,7 +46,7 @@
     }
 
     @include mobile-width {
-      padding-top: 24px;
+      padding-top: 21px;
     }
   }
 
@@ -52,7 +55,8 @@
     list-style-position: outside;
     margin-left: 70px;
     font-size: 14px;
-    padding-top: 9px;
+    line-height: 22px;
+    padding-top: 11px;
 
     @include mobile-width {
       margin-left: 50px;

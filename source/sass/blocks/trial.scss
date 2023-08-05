@@ -74,8 +74,20 @@
       opacity: 1;
     }
 
+    &:hover {
+      border-bottom: 1px solid $color-default-white;
+    }
+
     &:focus-visible {
       outline: 1px solid $color-default-white;
+    }
+
+    &:focus::placeholder {
+      color: $color-transparent;
+    }
+
+    &:disabled {
+      opacity: 0.2;
     }
 
     @include desktop-width-only {
@@ -92,12 +104,38 @@
     }
   }
 
-  &__input .is-invalid {
+  &__input.is-invalid input {
+    border-bottom: 1px solid $color-torch-red;
+  }
+
+  &__input .is-valid {
     position: absolute;
-    font-size: 12px;
+    font-size: 14px;
+    color: $color-default-white;
 
     @include desktop-width-only {
-      left: -18px;
+      left: 1px;
+      top: 28px;
+    }
+
+    @include tablet-width {
+      top: 28px;
+      left: -3px;
+    }
+
+    @include mobile-width {
+      top: 70px;
+      left: 1px;
+    }
+  }
+
+  &__input .is-invalid {
+    position: absolute;
+    font-size: 14px;
+    color: $color-torch-red;
+
+    @include desktop-width-only {
+      left: 1px;
       top: 28px;
     }
 
@@ -137,7 +175,7 @@
     }
 
     @include mobile-width {
-      margin-top: 40px;
+      margin-top: 38px;
       width: 100%;
     }
   }

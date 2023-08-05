@@ -22,23 +22,26 @@
   }
 
   @include mobile-width {
-    bottom: 0;
+    bottom: 40.5%;
     width: 32px;
     height: 32px;
+    margin: 0 3px;
   }
 
-  &:hover {
-    border: 1px solid $color-sapphire;
-  }
+  &:not(&.swiper-button-disabled) {
+    &:hover {
+      border: 1px solid $color-sapphire;
+    }
 
-  &:active {
-    background-color: $color-sapphire;
-    color: $color-default-white;
-  }
+    &:active {
+      background-color: $color-sapphire;
+      color: $color-default-white;
+    }
 
-  &:focus-visible {
-    border: 1px solid $color-sapphire;
-    outline: none;
+    &:focus-visible {
+      border: 1px solid $color-sapphire;
+      outline: none;
+    }
   }
 
   &:disabled {

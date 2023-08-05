@@ -1,14 +1,15 @@
 .another-promos {
   @include desktop-width-only {
     padding-left: 40px;
-    min-width: 600px;
+    flex-grow: 1;
   }
 
   @include tablet-width {
     display: flex;
     gap: 30px;
     padding-top: 30px;
-    width: 100%;
+    width: 680px;
+    margin: 0 auto;
   }
 
   @include mobile-width {
@@ -115,10 +116,22 @@
     width: max-content;
     user-select: none;
 
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+
     &:focus-visible {
       outline: 1px solid $color-default-black;
       outline-offset: 5px;
       border-bottom: none;
+    }
+
+    &:disabled {
+      opacity: 0.2;
     }
   }
 }

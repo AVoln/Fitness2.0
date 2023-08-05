@@ -14,13 +14,14 @@ const initSwiper = () => {
       breakpoints: {
         320: {
           slidesPerView: 1,
+          spaceBetween: 48,
           initialSlide: 2,
         },
 
         768: {
           slidesPerView: 2,
           spaceBetween: 30,
-          initialSlide: 2,
+          initialSlide: 6,
         },
 
         1200: {
@@ -38,6 +39,11 @@ const initSwiperComments = () => {
 
       loop: false,
       spaceBetween: 40,
+      breakpoints: {
+        320: {
+          spaceBetween: 48,
+        }
+      },
 
       navigation: {
         nextEl: '.comments-arrow--right',
