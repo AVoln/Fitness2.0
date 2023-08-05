@@ -58,10 +58,26 @@
 
   &--left {
     left: 0;
+
+    @include tablet-width {
+      left: -3px;
+    }
+
+    @include mobile-width {
+      left: 0;
+    }
   }
 
   &--right {
     transform: rotate(180deg) translateY(-50%);
     right: 0;
+
+    @include tablet-width {
+      right: -3px;
+    }
+
+    @include mobile-width {
+      right: 0;
+    }
   }
 }

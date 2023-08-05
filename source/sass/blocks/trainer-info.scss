@@ -53,7 +53,8 @@
     list-style-position: outside;
     margin-left: 70px;
     font-size: 14px;
-    padding-top: 9px;
+    line-height: 22px;
+    padding-top: 10px;
 
     @include mobile-width {
       margin-left: 50px;

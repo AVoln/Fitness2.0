@@ -220,4 +220,14 @@
       font-size: 16px;
     }
   }
+
+  &__element:nth-child(3) .accordion__button {
+    @include tablet-width {
+      padding: 33px 0 31px;
+    }
+
+    @include mobile-width {
+      padding: 20px 0 16px;
+    }
+  }
 }
