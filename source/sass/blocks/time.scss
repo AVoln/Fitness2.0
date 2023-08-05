@@ -20,7 +20,8 @@
 
     @include desktop-width-only {
       font-size: 40px;
-      line-height: 52px;
+      line-height: 46px;
+      padding-bottom: 6px;
     }
 
     @include tablet-width {

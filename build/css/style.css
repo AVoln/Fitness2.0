@@ -3501,7 +3501,7 @@ button {
     margin-top: 45px;
     margin-bottom: 5px;
     font-size: 12px;
-    padding: 28px 114px;
+    padding: 28px 114px 28px 111px;
     line-height: 10px;
   }
 }
@@ -3518,6 +3518,7 @@ button {
 @media (max-width: 767px) {
   .game__button {
     text-align: center;
+    margin-bottom: 0;
   }
 }
 
@@ -3631,7 +3632,8 @@ button {
 @media (min-width: 1200px) {
   .time p {
     font-size: 40px;
-    line-height: 52px;
+    line-height: 46px;
+    padding-bottom: 6px;
   }
 }
 @media (max-width: 1199px) {
@@ -3643,7 +3645,7 @@ button {
 
 @media (min-width: 1200px) {
   .trainers {
-    width: 1160px;
+    max-width: 1160px;
   }
 }
 @media (max-width: 1199px) {
@@ -3657,63 +3659,18 @@ button {
     padding: 0 47px;
   }
 }
-.trainers h2 {
-  font-family: "alumni-semibold", "Arial", sans-serif;
-}
-@media (min-width: 1200px) {
-  .trainers h2 {
-    font-size: 54px;
-    line-height: 65px;
-    padding-top: 106px;
-    letter-spacing: 1.7px;
-  }
-}
-@media (max-width: 1199px) {
-  .trainers h2 {
-    text-align: center;
-    font-size: 42px;
-    line-height: 46px;
-    padding-top: 101px;
-    letter-spacing: 1.2px;
-  }
-}
-@media (max-width: 767px) {
-  .trainers h2 {
-    font-size: 32px;
-    line-height: 38px;
-    padding-top: 63px;
-  }
-}
 .trainers__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-@media (min-width: 1200px) {
-  .trainers__list {
-    padding-top: 48px;
-    padding-bottom: 105px;
-  }
-}
-@media (max-width: 1199px) {
-  .trainers__list {
-    padding-top: 35px;
-    padding-bottom: 100px;
-  }
-}
-@media (max-width: 767px) {
-  .trainers__list {
-    padding-top: 42px;
-    padding-bottom: 70px;
-  }
-}
 .trainers__item {
   position: relative;
 }
-.trainers__item:hover span {
+.trainers__item:hover > span, .trainers__item:focus > span {
   display: none;
 }
-.trainers__item:hover .trainers__description {
+.trainers__item:hover .trainers__description, .trainers__item:focus .trainers__description {
   display: block;
 }
 .trainers__image-wrapper > span {
@@ -3752,6 +3709,7 @@ button {
 @media (max-width: 767px) {
   .trainers__image img {
     min-height: 274px;
+    height: 100%;
   }
 }
 
@@ -3821,26 +3779,6 @@ button {
   }
 }
 
-.trainers-arrows {
-  margin: 0 auto;
-}
-@media (min-width: 1200px) {
-  .trainers-arrows {
-    max-width: 1310px;
-  }
-}
-@media (max-width: 1199px) {
-  .trainers-arrows {
-    position: relative;
-    max-width: 716px;
-  }
-}
-@media (max-width: 767px) {
-  .trainers-arrows {
-    max-width: 310px;
-  }
-}
-
 .trainers-arrow {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3855,28 +3793,30 @@ button {
   border: none;
   background-color: rgba(255, 255, 255, 0);
   border-radius: 50%;
-  z-index: 2;
   color: #102654;
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
 }
 @media (min-width: 1200px) {
   .trainers-arrow {
     width: 56px;
     height: 56px;
-    bottom: 224px;
+    bottom: 50%;
   }
 }
 @media (max-width: 1199px) {
   .trainers-arrow {
     width: 56px;
     height: 56px;
-    bottom: 219px;
+    bottom: 50%;
   }
 }
 @media (max-width: 767px) {
   .trainers-arrow {
     width: 32px;
     height: 32px;
-    bottom: 39%;
+    bottom: 50%;
     margin: 0 3px;
   }
 }
@@ -3910,14 +3850,85 @@ button {
   left: 0;
 }
 .trainers-arrow--right {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(180deg) translateY(-50%);
+      -ms-transform: rotate(180deg) translateY(-50%);
+          transform: rotate(180deg) translateY(-50%);
   right: 0;
 }
 
 .trainers-wrapper {
   position: relative;
+}
+@media (min-width: 1200px) {
+  .trainers-wrapper {
+    padding-bottom: 104px;
+  }
+}
+@media (max-width: 1199px) {
+  .trainers-wrapper {
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .trainers-wrapper {
+    padding-bottom: 70px;
+  }
+}
+.trainers-wrapper h2 {
+  display: block;
+  margin: 0 auto;
+  font-family: "alumni-semibold", "Arial", sans-serif;
+}
+@media (min-width: 1200px) {
+  .trainers-wrapper h2 {
+    padding-bottom: 105px;
+    width: 1366px;
+    font-size: 54px;
+    line-height: 65px;
+    padding: 106px 0 48px 104px;
+    letter-spacing: 1.7px;
+  }
+}
+@media (max-width: 1199px) {
+  .trainers-wrapper h2 {
+    text-align: center;
+    font-size: 42px;
+    line-height: 46px;
+    padding: 102px 0 34px;
+    letter-spacing: 1.2px;
+  }
+}
+@media (max-width: 767px) {
+  .trainers-wrapper h2 {
+    font-size: 32px;
+    line-height: 38px;
+    padding-top: 63px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .trainers-container {
+    position: relative;
+    padding: 0px 60px;
+    margin: 0 auto;
+    max-width: 1310px;
+  }
+}
+@media (max-width: 1199px) {
+  .trainers-container {
+    position: relative;
+    padding: 0px 60px;
+    margin: 0 auto;
+    max-width: 710px;
+  }
+}
+@media (max-width: 767px) {
+  .trainers-container {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
 .comments-arrows {
@@ -4048,7 +4059,7 @@ button {
   .comments h2 {
     font-size: 54px;
     line-height: 56px;
-    padding: 122px 0 39px;
+    padding: 125px 0 40px;
   }
 }
 @media (max-width: 1199px) {
@@ -5438,13 +5449,40 @@ button {
     margin-top: 32px;
   }
 }
+.trial__input.is-invalid input {
+  border-bottom: 1px solid #ed0233;
+}
+.trial__input .is-valid {
+  position: absolute;
+  font-size: 14px;
+  color: #ffffff;
+}
+@media (min-width: 1200px) {
+  .trial__input .is-valid {
+    left: 1px;
+    top: 28px;
+  }
+}
+@media (max-width: 1199px) {
+  .trial__input .is-valid {
+    top: 28px;
+    left: -3px;
+  }
+}
+@media (max-width: 767px) {
+  .trial__input .is-valid {
+    top: 70px;
+    left: 1px;
+  }
+}
 .trial__input .is-invalid {
   position: absolute;
-  font-size: 12px;
+  font-size: 14px;
+  color: #ed0233;
 }
 @media (min-width: 1200px) {
   .trial__input .is-invalid {
-    left: -18px;
+    left: 1px;
     top: 28px;
   }
 }
@@ -5524,7 +5562,7 @@ button {
   .contacts h2 {
     font-size: 54px;
     line-height: 54px;
-    padding-bottom: 12px;
+    padding-bottom: 14px;
   }
 }
 @media (max-width: 1199px) {

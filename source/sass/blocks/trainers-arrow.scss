@@ -6,25 +6,25 @@
   border: none;
   background-color: $color-transparent;
   border-radius: 50%;
-  z-index: 2;
   color: $color-sapphire;
+  transform: translateY(50%);
 
   @include desktop-width-only {
     width: 56px;
     height: 56px;
-    bottom: 224px;
+    bottom: 50%;
   }
 
   @include tablet-width {
     width: 56px;
     height: 56px;
-    bottom: 219px;
+    bottom: 50%;
   }
 
   @include mobile-width {
     width: 32px;
     height: 32px;
-    bottom: 39%;
+    bottom: 50%;
     margin: 0 3px;
   }
 
@@ -61,7 +61,7 @@
   }
 
   &--right {
-    transform: rotate(180deg);
+    transform: rotate(180deg) translateY(-50%);
     right: 0;
   }
 }
