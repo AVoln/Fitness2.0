@@ -46,7 +46,7 @@
             </div>
           </div>
           <div class="hero__description-button-wrapper">
-            <button class="hero__description-button btn" type="button">Купить абонемент</button>
+            <a class="hero__description-button btn" href="#abonements">Купить абонемент</a>
           </div>
         </div>
         <div class="hero__image">
@@ -115,10 +115,11 @@
             <img src="img/video-preview_mobile.jpg" srcset="img/video-preview_mobile@2x.jpg 2x" alt="Спортзал."
               width="320" height="167">
           </picture>
-          <div class="general-info__video-play-button video-play-button">
+          <div class="general-info__video-play-button video-play-button" tabindex="0">
             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
               <circle cx="50" cy="50" r="49" stroke="url(#paint0_linear_1_293)" stroke-opacity="0.2" stroke-width="2" />
               <circle cx="50" cy="50" r="36" fill="url(#paint1_linear_1_293)" />
+              <circle cx="50" cy="50" r="30" fill="#ffffff" />
               <path d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z" fill="currentColor" />
               <defs>
                 <linearGradient id="paint0_linear_1_293" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444"
@@ -137,7 +138,7 @@
         </div>
       </section>
 
-      <section class="abonements" data-tabs="parent" data-delay="300" data-height="max">
+      <section class="abonements" id="abonements" data-tabs="parent" data-delay="300" data-height="max">
         <h2>Абонементы</h2>
         <div class="abonements__controls" data-tabs="controls">
           <button class="abonements__control is-active" type="button" data-tabs="control">1&nbsp;месяц</button>
@@ -270,25 +271,27 @@
 
       <section class="super-games">
         <div class="super-games-wrapper">
-          <div class="super-games__description game">
-            <div class="game__info">
-              <h3>Super<br>Games</h3>
-              <ul class="game__timetable-list timelist">
-                <li class="timelist__item date">
-                  <span>Дата</span>
-                  <div class="date__when">
-                    <p>7</p>
-                    <span>Марта<br>2019</span>
-                  </div>
-                </li>
-                <li class="timelist__item time">
-                  <span>Время</span>
-                  <p>12:00</p>
-                </li>
-              </ul>
+          <div class="super-games__description-container">
+            <div class="super-games__description game">
+              <div class="game__info">
+                <h3>Super<br>Games</h3>
+                <ul class="game__timetable-list timelist">
+                  <li class="timelist__item date">
+                    <span>Дата</span>
+                    <div class="date__when">
+                      <p>7</p>
+                      <span>Марта<br>2019</span>
+                    </div>
+                  </li>
+                  <li class="timelist__item time">
+                    <span>Время</span>
+                    <p>12:00</p>
+                  </li>
+                </ul>
+              </div>
+              <span class="game__text">Ежегодные соревнования по&nbsp;CrossFit</span>
+              <a class="game__button btn" href="#">заполнить&nbsp;заявку</a>
             </div>
-            <span class="game__text">Ежегодные соревнования по&nbsp;CrossFitt</span>
-            <a class="game__button btn" href="#">заполнить&nbsp;заявку</a>
           </div>
           <div class="super-games__image">
             <picture>
@@ -312,267 +315,267 @@
       </section>
 
       <section class="trainers-wrapper">
-        <div class="trainers swiper">
-          <h2>Тренеры</h2>
-          <ul class="trainers__list swiper-wrapper">
-            <li class="trainers__item swiper-slide">
-              <div class="trainers__image-wrapper">
-                <div class="trainers__image">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/anna-pavlova.webp 1x,
+        <h2>Тренеры</h2>
+        <div class="trainers-container">
+          <div class="trainers swiper">
+            <ul class="trainers__list swiper-wrapper">
+              <li class="trainers__item swiper-slide" tabindex="0">
+                <div class="trainers__image-wrapper">
+                  <div class="trainers__image">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/anna-pavlova.webp 1x,
                     img/anna-pavlova@2x.webp 2x" width="260" height="294">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/anna-pavlova.webp 1x,
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/anna-pavlova.webp 1x,
                     img/anna-pavlova@2x.webp 2x" width="268" height="294">
-                    <source type="image/webp" media="(min-width: 320px)" srcset="img/anna-pavlova.webp 1x,
+                      <source type="image/webp" media="(min-width: 320px)" srcset="img/anna-pavlova.webp 1x,
                   img/anna-pavlova@2x.webp 2x" width="226" height="274">
 
-                    <source media="(min-width: 1200px)" srcset="img/anna-pavlova.jpg 1x,
+                      <source media="(min-width: 1200px)" srcset="img/anna-pavlova.jpg 1x,
                     img/anna-pavlova@2x.jpg 2x" width="260" height="294">
-                    <source media="(min-width: 768px)" srcset="img/anna-pavlova.jpg 1x,
+                      <source media="(min-width: 768px)" srcset="img/anna-pavlova.jpg 1x,
                     img/video-preview_tablet@2x.jpg 2x" width="268" height="294">
-                    <img src="img/anna-pavlova.jpg" srcset="img/anna-pavlova@2x.jpg 2x" alt="Анна&nbsp;Павлова."
-                      width="226" height="274">
-                  </picture>
+                      <img src="img/anna-pavlova.jpg" srcset="img/anna-pavlova@2x.jpg 2x" alt="Анна&nbsp;Павлова."
+                        width="226" height="274">
+                    </picture>
+                  </div>
+                  <span>Анна&nbsp;Павлова</span>
+                  <div class="trainers__description trainer-info">
+                    <p>Анна&nbsp;Павлова</p>
+                    <span>CrossFit</span>
+                    <ul class="trainer-info__list">
+                      <li class="trainer-info__item">Certified Level&nbsp;1 Trainer</li>
+                      <li class="trainer-info__item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li class="trainer-info__item">Опыт&nbsp;&mdash; 4&nbsp;года</li>
+                    </ul>
+                  </div>
                 </div>
-                <span>Анна&nbsp;Павлова</span>
-                <div class="trainers__description trainer-info">
-                  <p>Анна&nbsp;Павлова</p>
-                  <span>CrossFit</span>
-                  <ul class="trainer-info__list">
-                    <li class="trainer-info__item">Certified Level&nbsp;1 Trainer</li>
-                    <li class="trainer-info__item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                    <li class="trainer-info__item">Опыт&nbsp;&mdash; 4&nbsp;года</li>
-                  </ul>
-                </div>
-              </div>
-            </li>
+              </li>
 
-            <li class="trainers__item swiper-slide">
-              <div class="trainers__image-wrapper">
-                <div class="trainers__image">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/aleksey-lavrov.webp 1x,
+              <li class="trainers__item swiper-slide" tabindex="0">
+                <div class="trainers__image-wrapper">
+                  <div class="trainers__image">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/aleksey-lavrov.webp 1x,
                     img/aleksey-lavrov@2x.webp 2x" width="260" height="294">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/aleksey-lavrov.webp 1x,
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/aleksey-lavrov.webp 1x,
                     img/aleksey-lavrov@2x.webp 2x" width="268" height="294">
-                    <source type="image/webp" media="(min-width: 320px)" srcset="img/aleksey-lavrov.webp 1x,
+                      <source type="image/webp" media="(min-width: 320px)" srcset="img/aleksey-lavrov.webp 1x,
                   img/aleksey-lavrov@2x.webp 2x" width="226" height="274">
 
-                    <source media="(min-width: 1200px)" srcset="img/aleksey-lavrov.jpg 1x,
+                      <source media="(min-width: 1200px)" srcset="img/aleksey-lavrov.jpg 1x,
                     img/aleksey-lavrov@2x.jpg 2x" width="260" height="294">
-                    <source media="(min-width: 768px)" srcset="img/aleksey-lavrov.jpg 1x,
+                      <source media="(min-width: 768px)" srcset="img/aleksey-lavrov.jpg 1x,
                     img/video-preview_tablet@2x.jpg 2x" width="268" height="294">
-                    <img src="img/aleksey-lavrov.jpg" srcset="img/aleksey-lavrov@2x.jpg 2x" alt="Алексей&nbsp;Лавров."
-                      width="226" height="274">
-                  </picture>
+                      <img src="img/aleksey-lavrov.jpg" srcset="img/aleksey-lavrov@2x.jpg 2x" alt="Алексей&nbsp;Лавров."
+                        width="226" height="274">
+                    </picture>
+                  </div>
+                  <span>Алексей&nbsp;Лавров</span>
+                  <div class="trainers__description trainer-info">
+                    <p>Алексей&nbsp;Лавров</p>
+                    <span>CrossFit</span>
+                    <ul class="trainer-info__list">
+                      <li class="trainer-info__item">Certified Level&nbsp;2 Trainer</li>
+                      <li class="trainer-info__item">Победитель чемпионата России по&nbsp;Прищуру</li>
+                      <li class="trainer-info__item">Опыт&nbsp;&mdash; 5&nbsp;лет</li>
+                    </ul>
+                  </div>
                 </div>
-                <span>Алексей&nbsp;Лавров</span>
-                <div class="trainers__description trainer-info">
-                  <p>Алексей&nbsp;Лавров</p>
-                  <span>CrossFit</span>
-                  <ul class="trainer-info__list">
-                    <li class="trainer-info__item">Certified Level&nbsp;2 Trainer</li>
-                    <li class="trainer-info__item">Победитель чемпионата России по&nbsp;Прищуру</li>
-                    <li class="trainer-info__item">Опыт&nbsp;&mdash; 5&nbsp;лет</li>
-                  </ul>
-                </div>
-              </div>
-            </li>
+              </li>
 
-            <li class="trainers__item swiper-slide">
-              <div class="trainers__image-wrapper">
-                <div class="trainers__image">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/aleksandr-pashkov.webp 1x,
+              <li class="trainers__item swiper-slide" tabindex="0">
+                <div class="trainers__image-wrapper">
+                  <div class="trainers__image">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/aleksandr-pashkov.webp 1x,
                     img/aleksandr-pashkov@2x.webp 2x" width="260" height="294">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/aleksandr-pashkov.webp 1x,
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/aleksandr-pashkov.webp 1x,
                     img/aleksandr-pashkov@2x.webp 2x" width="268" height="294">
-                    <source type="image/webp" media="(min-width: 320px)" srcset="img/aleksandr-pashkov.webp 1x,
+                      <source type="image/webp" media="(min-width: 320px)" srcset="img/aleksandr-pashkov.webp 1x,
                   img/aleksandr-pashkov@2x.webp 2x" width="226" height="274">
 
-                    <source media="(min-width: 1200px)" srcset="img/aleksandr-pashkov.jpg 1x,
+                      <source media="(min-width: 1200px)" srcset="img/aleksandr-pashkov.jpg 1x,
                     img/aleksandr-pashkov@2x.jpg 2x" width="260" height="294">
-                    <source media="(min-width: 768px)" srcset="img/aleksandr-pashkov.jpg 1x,
+                      <source media="(min-width: 768px)" srcset="img/aleksandr-pashkov.jpg 1x,
                     img/video-preview_tablet@2x.jpg 2x" width="268" height="294">
-                    <img src="img/aleksandr-pashkov.jpg" srcset="img/aleksandr-pashkov@2x.jpg 2x"
-                      alt="Александр&nbsp;Пашков." width="226" height="274">
-                  </picture>
+                      <img src="img/aleksandr-pashkov.jpg" srcset="img/aleksandr-pashkov@2x.jpg 2x"
+                        alt="Александр&nbsp;Пашков." width="226" height="274">
+                    </picture>
+                  </div>
+                  <span>Александр&nbsp;Пашков</span>
+                  <div class="trainers__description trainer-info">
+                    <p>Александр&nbsp;Пашков</p>
+                    <span>CrossFit</span>
+                    <ul class="trainer-info__list">
+                      <li class="trainer-info__item">Certified Level&nbsp;3 Trainer</li>
+                      <li class="trainer-info__item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li class="trainer-info__item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                    </ul>
+                  </div>
                 </div>
-                <span>Александр&nbsp;Пашков</span>
-                <div class="trainers__description trainer-info">
-                  <p>Александр&nbsp;Пашков</p>
-                  <span>CrossFit</span>
-                  <ul class="trainer-info__list">
-                    <li class="trainer-info__item">Certified Level&nbsp;3 Trainer</li>
-                    <li class="trainer-info__item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                    <li class="trainer-info__item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                  </ul>
-                </div>
-              </div>
-            </li>
+              </li>
 
-            <li class="trainers__item swiper-slide">
-              <div class="trainers__image-wrapper">
-                <div class="trainers__image">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/mariya-ketova.webp 1x,
+              <li class="trainers__item swiper-slide" tabindex="0">
+                <div class="trainers__image-wrapper">
+                  <div class="trainers__image">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/mariya-ketova.webp 1x,
                     img/mariya-ketova@2x.webp 2x" width="260" height="294">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/mariya-ketova.webp 1x,
-                    img/mariya-ketova@2x.webp 2x" width="268" height="294">
-                    <source type="image/webp" media="(min-width: 320px)" srcset="img/mariya-ketova.webp 1x,
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/mariya-ketova_tablet.webp 1x,
+                    img/mariya-ketova_tablet@2x.webp 2x" width="268" height="294">
+                      <source type="image/webp" media="(min-width: 320px)" srcset="img/mariya-ketova.webp 1x,
                   img/mariya-ketova@2x.webp 2x" width="226" height="274">
 
-                    <source media="(min-width: 1200px)" srcset="img/mariya-ketova.jpg 1x,
+                      <source media="(min-width: 1200px)" srcset="img/mariya-ketova.jpg 1x,
                     img/mariya-ketova@2x.jpg 2x" width="260" height="294">
-                    <source media="(min-width: 768px)" srcset="img/mariya-ketova.jpg 1x,
-                    img/video-preview_tablet@2x.jpg 2x" width="268" height="294">
-                    <img src="img/mariya-ketova.jpg" srcset="img/mariya-ketova@2x.jpg 2x" alt="Мария&nbsp;Кетова."
-                      width="226" height="274">
-                  </picture>
+                      <source media="(min-width: 768px)" srcset="img/mariya-ketova.jpg 1x,
+                    img/mariya-ketova_tablet@2x.jpg 2x" width="268" height="294">
+                      <img src="img/mariya-ketova.jpg" srcset="img/mariya-ketova@2x.jpg 2x" alt="Мария&nbsp;Кетова."
+                        width="226" height="274">
+                    </picture>
+                  </div>
+                  <span>Мария&nbsp;Кетова</span>
+                  <div class="trainers__description trainer-info">
+                    <p>Мария&nbsp;Кетова</p>
+                    <span>CrossFit</span>
+                    <ul class="trainer-info__list">
+                      <li class="trainer-info__item">Certified Level&nbsp;4 Trainer</li>
+                      <li class="trainer-info__item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li class="trainer-info__item">Опыт&nbsp;&mdash; 7&nbsp;лет</li>
+                    </ul>
+                  </div>
                 </div>
-                <span>Мария&nbsp;Кетова</span>
-                <div class="trainers__description trainer-info">
-                  <p>Мария&nbsp;Кетова</p>
-                  <span>CrossFit</span>
-                  <ul class="trainer-info__list">
-                    <li class="trainer-info__item">Certified Level&nbsp;4 Trainer</li>
-                    <li class="trainer-info__item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                    <li class="trainer-info__item">Опыт&nbsp;&mdash; 7&nbsp;лет</li>
-                  </ul>
-                </div>
-              </div>
-            </li>
+              </li>
 
-            <li class="trainers__item swiper-slide">
-              <div class="trainers__image-wrapper">
-                <div class="trainers__image">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/anna-pavlova.webp 1x,
+              <li class="trainers__item swiper-slide" tabindex="0">
+                <div class="trainers__image-wrapper">
+                  <div class="trainers__image">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/anna-pavlova.webp 1x,
                     img/anna-pavlova@2x.webp 2x" width="260" height="294">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/anna-pavlova.webp 1x,
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/anna-pavlova.webp 1x,
                     img/anna-pavlova@2x.webp 2x" width="268" height="294">
-                    <source type="image/webp" media="(min-width: 320px)" srcset="img/anna-pavlova.webp 1x,
+                      <source type="image/webp" media="(min-width: 320px)" srcset="img/anna-pavlova.webp 1x,
                   img/anna-pavlova@2x.webp 2x" width="226" height="274">
 
-                    <source media="(min-width: 1200px)" srcset="img/anna-pavlova.jpg 1x,
+                      <source media="(min-width: 1200px)" srcset="img/anna-pavlova.jpg 1x,
                     img/anna-pavlova@2x.jpg 2x" width="260" height="294">
-                    <source media="(min-width: 768px)" srcset="img/anna-pavlova.jpg 1x,
+                      <source media="(min-width: 768px)" srcset="img/anna-pavlova.jpg 1x,
                     img/video-preview_tablet@2x.jpg 2x" width="268" height="294">
-                    <img src="img/anna-pavlova.jpg" srcset="img/anna-pavlova@2x.jpg 2x" alt="Анна&nbsp;Павлова."
-                      width="226" height="274">
-                  </picture>
+                      <img src="img/anna-pavlova.jpg" srcset="img/anna-pavlova@2x.jpg 2x" alt="Анна&nbsp;Павлова."
+                        width="226" height="274">
+                    </picture>
+                  </div>
+                  <span>Анна&nbsp;Павлова</span>
+                  <div class="trainers__description trainer-info">
+                    <p>Анна&nbsp;Павлова</p>
+                    <span>CrossFit</span>
+                    <ul class="trainer-info__list">
+                      <li class="trainer-info__item">Certified Level&nbsp;1 Trainer</li>
+                      <li class="trainer-info__item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li class="trainer-info__item">Опыт&nbsp;&mdash; 4&nbsp;года</li>
+                    </ul>
+                  </div>
                 </div>
-                <span>Анна&nbsp;Павлова</span>
-                <div class="trainers__description trainer-info">
-                  <p>Анна&nbsp;Павлова</p>
-                  <span>CrossFit</span>
-                  <ul class="trainer-info__list">
-                    <li class="trainer-info__item">Certified Level&nbsp;1 Trainer</li>
-                    <li class="trainer-info__item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                    <li class="trainer-info__item">Опыт&nbsp;&mdash; 4&nbsp;года</li>
-                  </ul>
-                </div>
-              </div>
-            </li>
+              </li>
 
-            <li class="trainers__item swiper-slide">
-              <div class="trainers__image-wrapper">
-                <div class="trainers__image">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/aleksey-lavrov.webp 1x,
+              <li class="trainers__item swiper-slide" tabindex="0">
+                <div class="trainers__image-wrapper">
+                  <div class="trainers__image">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/aleksey-lavrov.webp 1x,
                     img/aleksey-lavrov@2x.webp 2x" width="260" height="294">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/aleksey-lavrov.webp 1x,
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/aleksey-lavrov.webp 1x,
                     img/aleksey-lavrov@2x.webp 2x" width="268" height="294">
-                    <source type="image/webp" media="(min-width: 320px)" srcset="img/aleksey-lavrov.webp 1x,
+                      <source type="image/webp" media="(min-width: 320px)" srcset="img/aleksey-lavrov.webp 1x,
                   img/aleksey-lavrov@2x.webp 2x" width="226" height="274">
 
-                    <source media="(min-width: 1200px)" srcset="img/aleksey-lavrov.jpg 1x,
+                      <source media="(min-width: 1200px)" srcset="img/aleksey-lavrov.jpg 1x,
                     img/aleksey-lavrov@2x.jpg 2x" width="260" height="294">
-                    <source media="(min-width: 768px)" srcset="img/aleksey-lavrov.jpg 1x,
+                      <source media="(min-width: 768px)" srcset="img/aleksey-lavrov.jpg 1x,
                     img/video-preview_tablet@2x.jpg 2x" width="268" height="294">
-                    <img src="img/aleksey-lavrov.jpg" srcset="img/aleksey-lavrov@2x.jpg 2x" alt="Алексей&nbsp;Лавров."
-                      width="226" height="274">
-                  </picture>
+                      <img src="img/aleksey-lavrov.jpg" srcset="img/aleksey-lavrov@2x.jpg 2x" alt="Алексей&nbsp;Лавров."
+                        width="226" height="274">
+                    </picture>
+                  </div>
+                  <span>Алексей&nbsp;Лавров</span>
+                  <div class="trainers__description trainer-info">
+                    <p>Алексей&nbsp;Лавров</p>
+                    <span>CrossFit</span>
+                    <ul class="trainer-info__list">
+                      <li class="trainer-info__item">Certified Level&nbsp;2 Trainer</li>
+                      <li class="trainer-info__item">Победитель чемпионата России по&nbsp;Прищуру</li>
+                      <li class="trainer-info__item">Опыт&nbsp;&mdash; 5&nbsp;лет</li>
+                    </ul>
+                  </div>
                 </div>
-                <span>Алексей&nbsp;Лавров</span>
-                <div class="trainers__description trainer-info">
-                  <p>Алексей&nbsp;Лавров</p>
-                  <span>CrossFit</span>
-                  <ul class="trainer-info__list">
-                    <li class="trainer-info__item">Certified Level&nbsp;2 Trainer</li>
-                    <li class="trainer-info__item">Победитель чемпионата России по&nbsp;Прищуру</li>
-                    <li class="trainer-info__item">Опыт&nbsp;&mdash; 5&nbsp;лет</li>
-                  </ul>
-                </div>
-              </div>
-            </li>
+              </li>
 
-            <li class="trainers__item swiper-slide">
-              <div class="trainers__image-wrapper">
-                <div class="trainers__image">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/aleksandr-pashkov.webp 1x,
+              <li class="trainers__item swiper-slide" tabindex="0">
+                <div class="trainers__image-wrapper">
+                  <div class="trainers__image">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/aleksandr-pashkov.webp 1x,
                     img/aleksandr-pashkov@2x.webp 2x" width="260" height="294">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/aleksandr-pashkov.webp 1x,
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/aleksandr-pashkov.webp 1x,
                     img/aleksandr-pashkov@2x.webp 2x" width="268" height="294">
-                    <source type="image/webp" media="(min-width: 320px)" srcset="img/aleksandr-pashkov.webp 1x,
+                      <source type="image/webp" media="(min-width: 320px)" srcset="img/aleksandr-pashkov.webp 1x,
                   img/aleksandr-pashkov@2x.webp 2x" width="226" height="274">
 
-                    <source media="(min-width: 1200px)" srcset="img/aleksandr-pashkov.jpg 1x,
+                      <source media="(min-width: 1200px)" srcset="img/aleksandr-pashkov.jpg 1x,
                     img/aleksandr-pashkov@2x.jpg 2x" width="260" height="294">
-                    <source media="(min-width: 768px)" srcset="img/aleksandr-pashkov.jpg 1x,
+                      <source media="(min-width: 768px)" srcset="img/aleksandr-pashkov.jpg 1x,
                     img/video-preview_tablet@2x.jpg 2x" width="268" height="294">
-                    <img src="img/aleksandr-pashkov.jpg" srcset="img/aleksandr-pashkov@2x.jpg 2x"
-                      alt="Александр&nbsp;Пашков." width="226" height="274">
-                  </picture>
+                      <img src="img/aleksandr-pashkov.jpg" srcset="img/aleksandr-pashkov@2x.jpg 2x"
+                        alt="Александр&nbsp;Пашков." width="226" height="274">
+                    </picture>
+                  </div>
+                  <span>Александр&nbsp;Пашков</span>
+                  <div class="trainers__description trainer-info">
+                    <p>Александр&nbsp;Пашков</p>
+                    <span>CrossFit</span>
+                    <ul class="trainer-info__list">
+                      <li class="trainer-info__item">Certified Level&nbsp;3 Trainer</li>
+                      <li class="trainer-info__item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li class="trainer-info__item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                    </ul>
+                  </div>
                 </div>
-                <span>Александр&nbsp;Пашков</span>
-                <div class="trainers__description trainer-info">
-                  <p>Александр&nbsp;Пашков</p>
-                  <span>CrossFit</span>
-                  <ul class="trainer-info__list">
-                    <li class="trainer-info__item">Certified Level&nbsp;3 Trainer</li>
-                    <li class="trainer-info__item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                    <li class="trainer-info__item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
-                  </ul>
-                </div>
-              </div>
-            </li>
+              </li>
 
-            <li class="trainers__item swiper-slide">
-              <div class="trainers__image-wrapper">
-                <div class="trainers__image">
-                  <picture>
-                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/mariya-ketova.webp 1x,
+              <li class="trainers__item swiper-slide" tabindex="0">
+                <div class="trainers__image-wrapper">
+                  <div class="trainers__image">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/mariya-ketova.webp 1x,
                     img/mariya-ketova@2x.webp 2x" width="260" height="294">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="img/mariya-ketova.webp 1x,
-                    img/mariya-ketova@2x.webp 2x" width="268" height="294">
-                    <source type="image/webp" media="(min-width: 320px)" srcset="img/mariya-ketova.webp 1x,
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/mariya-ketova_tablet.webp 1x,
+                    img/mariya-ketova_tablet@2x.webp 2x" width="268" height="294">
+                      <source type="image/webp" media="(min-width: 320px)" srcset="img/mariya-ketova.webp 1x,
                   img/mariya-ketova@2x.webp 2x" width="226" height="274">
 
-                    <source media="(min-width: 1200px)" srcset="img/mariya-ketova.jpg 1x,
+                      <source media="(min-width: 1200px)" srcset="img/mariya-ketova.jpg 1x,
                     img/mariya-ketova@2x.jpg 2x" width="260" height="294">
-                    <source media="(min-width: 768px)" srcset="img/mariya-ketova.jpg 1x,
-                    img/video-preview_tablet@2x.jpg 2x" width="268" height="294">
-                    <img src="img/mariya-ketova.jpg" srcset="img/mariya-ketova@2x.jpg 2x" alt="Мария&nbsp;Кетова."
-                      width="226" height="274">
-                  </picture>
+                      <source media="(min-width: 768px)" srcset="img/mariya-ketova_tablet.jpg 1x,
+                    img/mariya-ketova_tablet@2x.jpg 2x" width="268" height="294">
+                      <img src="img/mariya-ketova.jpg" srcset="img/mariya-ketova@2x.jpg 2x" alt="Мария&nbsp;Кетова."
+                        width="226" height="274">
+                    </picture>
+                  </div>
+                  <span>Мария&nbsp;Кетова</span>
+                  <div class="trainers__description trainer-info">
+                    <p>Мария&nbsp;Кетова</p>
+                    <span>CrossFit</span>
+                    <ul class="trainer-info__list">
+                      <li class="trainer-info__item">Certified Level&nbsp;4 Trainer</li>
+                      <li class="trainer-info__item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                      <li class="trainer-info__item">Опыт&nbsp;&mdash; 7&nbsp;лет</li>
+                    </ul>
+                  </div>
                 </div>
-                <span>Мария&nbsp;Кетова</span>
-                <div class="trainers__description trainer-info">
-                  <p>Мария&nbsp;Кетова</p>
-                  <span>CrossFit</span>
-                  <ul class="trainer-info__list">
-                    <li class="trainer-info__item">Certified Level&nbsp;4 Trainer</li>
-                    <li class="trainer-info__item">Победитель чемпионата России по&nbsp;CrossFit</li>
-                    <li class="trainer-info__item">Опыт&nbsp;&mdash; 7&nbsp;лет</li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="trainers-arrows">
+              </li>
+            </ul>
+          </div>
           <button class="trainers-arrow trainers-arrow--left" type="button" aria-label="Предыдущий слайд.">
             <svg width="16" height="32">
               <use href="img/sprite.svg#arrow"></use>
@@ -703,19 +706,19 @@
           <div class="faq__content" data-tabs="content">
             <div class="faq__element" data-tabs="element">
               <div class="faq__accordion accordion" data-accordion="parent">
-                <div class="accordion__element is-active" data-accordion="element">
-                  <div class="accordion__button" data-accordion="button">
+                <div class="accordion__element" data-accordion="element">
+                  <button class="accordion__button" data-accordion="button" tabindex="0">
                     <span>Как стать членом фитнес-центра?</span>
-                    <div class="accordion__button-svg accordion__button-svg--open">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#open"></use>
-                      </svg>
-                    </div>
-                    <div class="accordion__button-svg accordion__button-svg--close">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#close"></use>
-                      </svg>
-                    </div>
+                  </button>
+                  <div class="accordion__button-svg accordion__button-svg--open">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#open"></use>
+                    </svg>
+                  </div>
+                  <div class="accordion__button-svg accordion__button-svg--close">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#close"></use>
+                    </svg>
                   </div>
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
@@ -726,18 +729,18 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <div class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button" tabindex="0">
                     <span>Где можно посмотреть расписание?</span>
-                    <div class="accordion__button-svg accordion__button-svg--open">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#open"></use>
-                      </svg>
-                    </div>
-                    <div class="accordion__button-svg accordion__button-svg--close">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#close"></use>
-                      </svg>
-                    </div>
+                  </button>
+                  <div class="accordion__button-svg accordion__button-svg--open">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#open"></use>
+                    </svg>
+                  </div>
+                  <div class="accordion__button-svg accordion__button-svg--close">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#close"></use>
+                    </svg>
                   </div>
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
@@ -746,18 +749,18 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <div class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button" tabindex="0">
                     <span>Есть кулеры в&nbsp;центре? Предоставляются полотенца?</span>
-                    <div class="accordion__button-svg accordion__button-svg--open">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#open"></use>
-                      </svg>
-                    </div>
-                    <div class="accordion__button-svg accordion__button-svg--close">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#close"></use>
-                      </svg>
-                    </div>
+                  </button>
+                  <div class="accordion__button-svg accordion__button-svg--open">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#open"></use>
+                    </svg>
+                  </div>
+                  <div class="accordion__button-svg accordion__button-svg--close">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#close"></use>
+                    </svg>
                   </div>
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
@@ -767,18 +770,18 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <div class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button" tabindex="0">
                     <span>Сколько тренеров работает в&nbsp;клубе и&nbsp;какова их&nbsp;квалификация?</span>
-                    <div class="accordion__button-svg accordion__button-svg--open">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#open"></use>
-                      </svg>
-                    </div>
-                    <div class="accordion__button-svg accordion__button-svg--close">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#close"></use>
-                      </svg>
-                    </div>
+                  </button>
+                  <div class="accordion__button-svg accordion__button-svg--open">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#open"></use>
+                    </svg>
+                  </div>
+                  <div class="accordion__button-svg accordion__button-svg--close">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#close"></use>
+                    </svg>
                   </div>
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
@@ -790,19 +793,19 @@
             </div>
             <div class="faq__element" data-tabs="element">
               <div class="faq__accordion accordion" data-accordion="parent">
-                <div class="accordion__element is-active" data-accordion="element">
-                  <div class="accordion__button" data-accordion="button">
+                <div class="accordion__element" data-accordion="element">
+                  <button class="accordion__button" data-accordion="button">
                     <span>Занятия с&nbsp;тренером входят в&nbsp;абонемент?</span>
-                    <div class="accordion__button-svg accordion__button-svg--open">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#open"></use>
-                      </svg>
-                    </div>
-                    <div class="accordion__button-svg accordion__button-svg--close">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#close"></use>
-                      </svg>
-                    </div>
+                  </button>
+                  <div class="accordion__button-svg accordion__button-svg--open">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#open"></use>
+                    </svg>
+                  </div>
+                  <div class="accordion__button-svg accordion__button-svg--close">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#close"></use>
+                    </svg>
                   </div>
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
@@ -814,18 +817,18 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <div class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button">
                     <span>Можно&nbsp;ли заморозить абонемент?</span>
-                    <div class="accordion__button-svg accordion__button-svg--open">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#open"></use>
-                      </svg>
-                    </div>
-                    <div class="accordion__button-svg accordion__button-svg--close">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#close"></use>
-                      </svg>
-                    </div>
+                  </button>
+                  <div class="accordion__button-svg accordion__button-svg--open">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#open"></use>
+                    </svg>
+                  </div>
+                  <div class="accordion__button-svg accordion__button-svg--close">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#close"></use>
+                    </svg>
                   </div>
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
@@ -834,18 +837,18 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <div class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button">
                     <span>Есть&nbsp;ли лимит по&nbsp;посещениям тренажерного зала и&nbsp;групповых занятий?</span>
-                    <div class="accordion__button-svg accordion__button-svg--open">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#open"></use>
-                      </svg>
-                    </div>
-                    <div class="accordion__button-svg accordion__button-svg--close">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#close"></use>
-                      </svg>
-                    </div>
+                  </button>
+                  <div class="accordion__button-svg accordion__button-svg--open">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#open"></use>
+                    </svg>
+                  </div>
+                  <div class="accordion__button-svg accordion__button-svg--close">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#close"></use>
+                    </svg>
                   </div>
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
@@ -854,18 +857,18 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <div class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button">
                     <span>Что такое семейный доступ и&nbsp;доступ для друзей?</span>
-                    <div class="accordion__button-svg accordion__button-svg--open">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#open"></use>
-                      </svg>
-                    </div>
-                    <div class="accordion__button-svg accordion__button-svg--close">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#close"></use>
-                      </svg>
-                    </div>
+                  </button>
+                  <div class="accordion__button-svg accordion__button-svg--open">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#open"></use>
+                    </svg>
+                  </div>
+                  <div class="accordion__button-svg accordion__button-svg--close">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#close"></use>
+                    </svg>
                   </div>
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
@@ -878,19 +881,19 @@
             </div>
             <div class="faq__element" data-tabs="element">
               <div class="faq__accordion accordion" data-accordion="parent">
-                <div class="accordion__element is-active" data-accordion="element">
-                  <div class="accordion__button" data-accordion="button">
+                <div class="accordion__element" data-accordion="element">
+                  <button class="accordion__button" data-accordion="button">
                     <span>Предлагает&nbsp;ли клуб услуги по&nbsp;консультированию по&nbsp;вопросам питания?</span>
-                    <div class="accordion__button-svg accordion__button-svg--open">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#open"></use>
-                      </svg>
-                    </div>
-                    <div class="accordion__button-svg accordion__button-svg--close">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#close"></use>
-                      </svg>
-                    </div>
+                  </button>
+                  <div class="accordion__button-svg accordion__button-svg--open">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#open"></use>
+                    </svg>
+                  </div>
+                  <div class="accordion__button-svg accordion__button-svg--close">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#close"></use>
+                    </svg>
                   </div>
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
@@ -900,18 +903,18 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <div class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button">
                     <span>Проводятся&nbsp;ли в&nbsp;клубе <br>какие-либо мероприятия<br>или соревнования?</span>
-                    <div class="accordion__button-svg accordion__button-svg--open">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#open"></use>
-                      </svg>
-                    </div>
-                    <div class="accordion__button-svg accordion__button-svg--close">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#close"></use>
-                      </svg>
-                    </div>
+                  </button>
+                  <div class="accordion__button-svg accordion__button-svg--open">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#open"></use>
+                    </svg>
+                  </div>
+                  <div class="accordion__button-svg accordion__button-svg--close">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#close"></use>
+                    </svg>
                   </div>
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
@@ -921,18 +924,18 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <div class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button">
                     <span>Можно&nbsp;ли приобрести в&nbsp;центре спортивное питание?</span>
-                    <div class="accordion__button-svg accordion__button-svg--open">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#open"></use>
-                      </svg>
-                    </div>
-                    <div class="accordion__button-svg accordion__button-svg--close">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#close"></use>
-                      </svg>
-                    </div>
+                  </button>
+                  <div class="accordion__button-svg accordion__button-svg--open">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#open"></use>
+                    </svg>
+                  </div>
+                  <div class="accordion__button-svg accordion__button-svg--close">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#close"></use>
+                    </svg>
                   </div>
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
@@ -941,18 +944,18 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <div class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button">
                     <span>Есть&nbsp;ли в&nbsp;центре детская комната?</span>
-                    <div class="accordion__button-svg accordion__button-svg--open">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#open"></use>
-                      </svg>
-                    </div>
-                    <div class="accordion__button-svg accordion__button-svg--close">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#close"></use>
-                      </svg>
-                    </div>
+                  </button>
+                  <div class="accordion__button-svg accordion__button-svg--open">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#open"></use>
+                    </svg>
+                  </div>
+                  <div class="accordion__button-svg accordion__button-svg--close">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#close"></use>
+                    </svg>
                   </div>
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
@@ -964,19 +967,19 @@
             </div>
             <div class="faq__element" data-tabs="element">
               <div class="faq__accordion accordion" data-accordion="parent">
-                <div class="accordion__element is-active" data-accordion="element">
-                  <div class="accordion__button" data-accordion="button">
+                <div class="accordion__element" data-accordion="element">
+                  <button class="accordion__button" data-accordion="button">
                     <span>Есть в&nbsp;фитнес-центре дресс-код?</span>
-                    <div class="accordion__button-svg accordion__button-svg--open">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#open"></use>
-                      </svg>
-                    </div>
-                    <div class="accordion__button-svg accordion__button-svg--close">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#close"></use>
-                      </svg>
-                    </div>
+                  </button>
+                  <div class="accordion__button-svg accordion__button-svg--open">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#open"></use>
+                    </svg>
+                  </div>
+                  <div class="accordion__button-svg accordion__button-svg--close">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#close"></use>
+                    </svg>
                   </div>
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
@@ -991,18 +994,18 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <div class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button">
                     <span>Можно&nbsp;ли приводить с&nbsp;собой детей на&nbsp;тренировки?</span>
-                    <div class="accordion__button-svg accordion__button-svg--open">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#open"></use>
-                      </svg>
-                    </div>
-                    <div class="accordion__button-svg accordion__button-svg--close">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#close"></use>
-                      </svg>
-                    </div>
+                  </button>
+                  <div class="accordion__button-svg accordion__button-svg--open">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#open"></use>
+                    </svg>
+                  </div>
+                  <div class="accordion__button-svg accordion__button-svg--close">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#close"></use>
+                    </svg>
                   </div>
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
@@ -1011,18 +1014,18 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <div class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button">
                     <span>Какие дополнительные правила посещения центра?</span>
-                    <div class="accordion__button-svg accordion__button-svg--open">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#open"></use>
-                      </svg>
-                    </div>
-                    <div class="accordion__button-svg accordion__button-svg--close">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#close"></use>
-                      </svg>
-                    </div>
+                  </button>
+                  <div class="accordion__button-svg accordion__button-svg--open">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#open"></use>
+                    </svg>
+                  </div>
+                  <div class="accordion__button-svg accordion__button-svg--close">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#close"></use>
+                    </svg>
                   </div>
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
@@ -1036,18 +1039,18 @@
                   </div>
                 </div>
                 <div class="accordion__element" data-accordion="element">
-                  <div class="accordion__button" data-accordion="button">
+                  <button class="accordion__button" data-accordion="button">
                     <span>Нужна&nbsp;ли медицинская справка для посещения залов и&nbsp;бассейна?</span>
-                    <div class="accordion__button-svg accordion__button-svg--open">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#open"></use>
-                      </svg>
-                    </div>
-                    <div class="accordion__button-svg accordion__button-svg--close">
-                      <svg width="42" height="42">
-                        <use href="img/sprite.svg#close"></use>
-                      </svg>
-                    </div>
+                  </button>
+                  <div class="accordion__button-svg accordion__button-svg--open">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#open"></use>
+                    </svg>
+                  </div>
+                  <div class="accordion__button-svg accordion__button-svg--close">
+                    <svg width="42" height="42">
+                      <use href="img/sprite.svg#close"></use>
+                    </svg>
                   </div>
                   <div class="accordion__content" data-accordion="content">
                     <div class="accordion__wrapper">
@@ -1084,7 +1087,7 @@
                 </picture>
               </div>
               <div class="comments__text">
-                <h3>Анна Орлова</h3>
+                <h3>Анна<br> Орлова</h3>
                 <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе
                   всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время
                   нет
@@ -1182,48 +1185,49 @@
       </section>
 
       <section class="feedback">
-        <div class="feedback__trial-wrapper">
-          <div class="feedback__trial trial" data-form-validate="data-form-validate">
-            <h2>Бесплатное занятие</h2>
-            <form class="trial__form" action="https://echo.htmlacademy.ru" method="post"
-              data-on-input-validate="data-on-input-validate">
-              <div class="trial__inputs">
-                <div class="trial__input trial__input--name" data-validate-type="text"
-                  data-on-input-validate="data-on-input-validate" data-limitation="name"
-                  data-message-base="Поле обязательно к заполнению"
-                  data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
-                  <label aria-label="Ваше имя.">
-                    <input type="text" name="user-name-1" placeholder="Имя" />
-                  </label>
+        <div class="feedback-container">
+          <div class="feedback__trial-wrapper">
+            <div class="feedback__trial trial" data-form-validate="data-form-validate">
+              <h2>Бесплатное занятие</h2>
+              <form class="trial__form" action="https://echo.htmlacademy.ru" method="post"
+                data-on-input-validate="data-on-input-validate">
+                <div class="trial__inputs">
+                  <div class="trial__input trial__input--name" data-validate-type="text" data-limitation="name"
+                    data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность"
+                    data-required="data-required">
+                    <label aria-label="Ваше имя.">
+                      <input type="text" name="user-name-4" placeholder="Имя" />
+                    </label>
+                  </div>
+                  <div class="trial__input trial__input--phone" data-validate-type="phone"
+                    data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению"
+                    data-message-extra="Проверьте корректность номера" data-message-success="Поле заполнено верно"
+                    data-required="data-required">
+                    <label aria-label="Ваш номер телефона.">
+                      <input type="tel" name="user-phone" placeholder="Телефон" />
+                    </label>
+                  </div>
                 </div>
-                <div class="trial__input trial__input--phone" data-validate-type="phone"
-                  data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению"
-                  data-message-extra="Проверьте корректность заполнения поля"
-                  data-message-success="Поле заполнено верно" data-required="data-required">
-                  <label aria-label="Ваш номер телефона.">
-                    <input type="tel" name="user-phone" placeholder="Телефон" />
-                  </label>
-                </div>
-              </div>
-              <button class="trial__button btn" type="submit">Отправить</button>
-            </form>
+                <button class="trial__button btn" type="reset">Отправить</button>
+              </form>
+            </div>
           </div>
-        </div>
-        <div class="feedback__contacts contacts">
-          <div class="contacts__wrapper">
-            <h2>Контакты</h2>
-            <div class="contacts__info-wrapper">
-              <div class="contacts__info">
-                <p>Адрес:</p>
-                <span>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</span>
-                <p>График работы:</p>
-                <span>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</span>
-              </div>
-              <div class="contacts__info">
-                <p>Телефон:</p>
-                <a href="tel:88005555555">8-800-555-55-55</a>
-                <p>Email:</p>
-                <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+          <div class="feedback__contacts contacts">
+            <div class="contacts__wrapper">
+              <h2>Контакты</h2>
+              <div class="contacts__info-wrapper">
+                <div class="contacts__info">
+                  <p>Адрес:</p>
+                  <span>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</span>
+                  <p>График работы:</p>
+                  <span>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</span>
+                </div>
+                <div class="contacts__info">
+                  <p>Телефон:</p>
+                  <a href="tel:88005555555">8-800-555-55-55</a>
+                  <p>Email:</p>
+                  <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                </div>
               </div>
             </div>
           </div>
