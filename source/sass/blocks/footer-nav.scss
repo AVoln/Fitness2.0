@@ -84,6 +84,11 @@
       outline-offset: 3px;
     }
 
+    &:active {
+      outline: none;
+      border: none;
+    }
+
     @include mobile-width {
       font-size: 16px;
     }

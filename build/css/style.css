@@ -2626,6 +2626,10 @@ button {
   outline: 1px solid #ffffff;
   outline-offset: 3px;
 }
+.footer-nav__link:active {
+  outline: none;
+  border: none;
+}
 @media (max-width: 767px) {
   .footer-nav__link {
     font-size: 16px;
@@ -2906,6 +2910,9 @@ button {
           transform: translate(-50%);
   color: #ffffff;
 }
+.video-play-button circle:nth-child(3) {
+  display: none;
+}
 @media (min-width: 1200px) {
   .video-play-button {
     top: 28%;
@@ -2947,8 +2954,14 @@ button {
   stroke: #102654;
   stroke-opacity: 1;
 }
-.video-play-button:hover circle:nth-child(2), .video-play-button:focus circle:nth-child(2), .video-play-button:active circle:nth-child(2) {
+.video-play-button:hover circle:nth-child(2), .video-play-button:focus circle:nth-child(2) {
   fill: #ffffff;
+}
+.video-play-button:active circle:nth-child(2) {
+  fill: rgba(255, 255, 255, 0);
+}
+.video-play-button:active circle:nth-child(3) {
+  display: block;
 }
 .video-play-button--disabled {
   color: #102654;

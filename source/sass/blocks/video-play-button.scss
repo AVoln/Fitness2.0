@@ -6,6 +6,10 @@
   transform: translate(-50%);
   color: $color-default-white;
 
+  & circle:nth-child(3) {
+    display: none;
+  }
+
   @include desktop-width-only {
     top: 28%;
   }
@@ -47,9 +51,16 @@
   }
 
   &:hover circle:nth-child(2),
-  &:focus circle:nth-child(2),
-  &:active circle:nth-child(2) {
+  &:focus circle:nth-child(2) {
     fill: $color-default-white;
+  }
+
+  &:active circle:nth-child(2)  {
+    fill:$color-transparent;
+  }
+
+  &:active circle:nth-child(3) {
+    display: block;
   }
 
   &--disabled {
