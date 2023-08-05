@@ -5391,6 +5391,21 @@ button {
 .trial__input input:focus-visible {
   outline: 1px solid #ffffff;
 }
+.trial__input input:focus::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0);
+}
+.trial__input input:focus::-moz-placeholder {
+  color: rgba(255, 255, 255, 0);
+}
+.trial__input input:focus:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0);
+}
+.trial__input input:focus::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0);
+}
+.trial__input input:focus::placeholder {
+  color: rgba(255, 255, 255, 0);
+}
 .trial__input input:disabled {
   opacity: 0.2;
 }

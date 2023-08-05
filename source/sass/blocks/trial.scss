@@ -82,6 +82,10 @@
       outline: 1px solid $color-default-white;
     }
 
+    &:focus::placeholder {
+      color: $color-transparent;
+    }
+
     &:disabled {
       opacity: 0.2;
     }
