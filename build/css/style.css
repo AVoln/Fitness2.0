@@ -5072,9 +5072,20 @@ button {
           user-select: none;
   cursor: pointer;
 }
+.accordion__button:focus {
+  outline: none;
+}
+.accordion__button:focus + .accordion__button-svg {
+  background-color: #102654;
+  color: #ffffff;
+}
+.accordion__button:active + .accordion__button-svg--open, .accordion__button.is-active + .accordion__button-svg--close {
+  background-color: #102654;
+  color: #ffffff;
+}
 @media (min-width: 1200px) {
   .accordion__button {
-    padding: 34px 50px 34px 0;
+    padding: 34px 50px 30px 0;
   }
 }
 @media (max-width: 1199px) {
@@ -5225,8 +5236,8 @@ button {
 }
 @media (min-width: 1200px) {
   .accordion__element.is-active .accordion__content {
-    margin-top: 20px;
-    margin-bottom: 26px;
+    margin-top: 15px;
+    margin-bottom: 27px;
   }
 }
 @media (max-width: 1199px) {
