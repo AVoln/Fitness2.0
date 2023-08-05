@@ -164,21 +164,28 @@
       text-align: right;
     }
 
-    @include mobile-width {
+    @include tablet-width {
       display: flex;
+      justify-content: flex-end;
+    }
+
+    @include mobile-width {
       justify-content: center;
     }
   }
 
   &__description-button {
+    display: block;
     font-family: $ff-roboto-bold;
     font-size: 12px;
+    line-height: 15px;
     text-transform: uppercase;
     color: $color-default-white;
     background-color: $color-transparent;
     padding: 20px 0 20px;
     border: 4px solid $color-default-white;
     letter-spacing: 0.6px;
+    text-align: center;
 
     @include desktop-width-only {
       width: 235px;

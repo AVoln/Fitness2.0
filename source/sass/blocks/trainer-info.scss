@@ -19,10 +19,12 @@
 
     @include tablet-width {
       padding-top: 55px;
+      padding-right: 8px;
     }
 
     @include mobile-width {
       padding-top: 44px;
+      padding-right: 0;
     }
   }
 
@@ -44,7 +46,7 @@
     }
 
     @include mobile-width {
-      padding-top: 24px;
+      padding-top: 21px;
     }
   }
 
@@ -54,7 +56,7 @@
     margin-left: 70px;
     font-size: 14px;
     line-height: 22px;
-    padding-top: 10px;
+    padding-top: 11px;
 
     @include mobile-width {
       margin-left: 50px;

@@ -2412,25 +2412,35 @@ button {
     text-align: right;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .hero__description-button-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+@media (max-width: 767px) {
+  .hero__description-button-wrapper {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
 .hero__description-button {
+  display: block;
   font-family: "roboto-bold", "Arial", sans-serif;
   font-size: 12px;
+  line-height: 15px;
   text-transform: uppercase;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0);
   padding: 20px 0 20px;
   border: 4px solid #ffffff;
   letter-spacing: 0.6px;
+  text-align: center;
 }
 @media (min-width: 1200px) {
   .hero__description-button {
@@ -3736,11 +3746,13 @@ button {
 @media (max-width: 1199px) {
   .trainer-info p {
     padding-top: 55px;
+    padding-right: 8px;
   }
 }
 @media (max-width: 767px) {
   .trainer-info p {
     padding-top: 44px;
+    padding-right: 0;
   }
 }
 .trainer-info span {
@@ -3763,7 +3775,7 @@ button {
 }
 @media (max-width: 767px) {
   .trainer-info__list {
-    padding-top: 24px;
+    padding-top: 21px;
   }
 }
 .trainer-info__item {
@@ -3772,7 +3784,7 @@ button {
   margin-left: 70px;
   font-size: 14px;
   line-height: 22px;
-  padding-top: 10px;
+  padding-top: 11px;
 }
 @media (max-width: 767px) {
   .trainer-info__item {
@@ -3923,7 +3935,7 @@ button {
   .trainers-wrapper h2 {
     font-size: 32px;
     line-height: 38px;
-    padding: 63px 0 43px;
+    padding: 63px 0 42px;
   }
 }
 
