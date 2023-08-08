@@ -32,7 +32,7 @@
     }
 
     @include mobile-width {
-      justify-content: space-evenly;
+      justify-content: center;
       padding-top: 74px;
     }
   }
@@ -188,9 +188,11 @@
     text-align: center;
 
     @include desktop-width-only {
+      display: inline-block;
       width: 235px;
       margin-left: 8px;
       margin-top: 48px;
+      line-height: 13px;
     }
 
     @include tablet-width {

@@ -33,8 +33,8 @@
     }
 
     @include mobile-width {
-      width: 290px;
-      padding-bottom: 48px;
+      width: auto;
+      padding-bottom: 47px;
       margin: 18px;
     }
 
@@ -105,9 +105,13 @@
       line-height: 24px;
       padding-top: 10px;
     }
+
+    @include mobile-width {
+      padding-top: 7px;
+    }
   }
 
-  & p {
+  &__price {
     position: relative;
     font-family: $ff-roboto-bold;
     color: $color-neon-blue;
@@ -123,7 +127,8 @@
       font-size: 100px;
       color: $color-whisper;
       z-index: -1;
-      bottom: 25px;
+      bottom: 33px;
+      opacity: 0.48;
 
       @include mobile-width {
         font-size: 80px;
@@ -133,17 +138,38 @@
 
     @include desktop-width-only {
       font-size: 60px;
-      padding-top: 98px;
+      padding-top: 88px;
     }
 
     @include tablet-width {
       font-size: 60px;
-      padding-top: 96px;
+      padding-top: 88px;
     }
 
     @include mobile-width {
       font-size: 48px;
-      padding-top: 77px;
+      padding-top: 75px;
+    }
+  }
+
+  &__price svg {
+    @include mobile-width {
+      width: 24px;
+      height: 33px;
+    }
+  }
+
+  &__buy-wrapper {
+    @include desktop-width-only {
+      padding: 0 70px;
+    }
+
+    @include tablet-width {
+      padding: 0 111px;
+    }
+
+    @include mobile-width {
+      padding: 0 32px;
     }
   }
 
@@ -152,22 +178,23 @@
     font-family: $ff-roboto-bold;
     font-size: 12px;
     color: $color-sapphire;
-    padding: 24px 44px;
+    padding: 24px 25px;
     border: 2px solid $color-sapphire;
     background-color: $color-transparent;
     letter-spacing: 0.6px;
     user-select: none;
+    width: 100%;
 
     @include desktop-width-only {
-      margin-top: 67px;
+      margin-top: 59px;
     }
 
     @include tablet-width {
-      margin-top: 69px;
+      margin-top: 59px;
     }
 
     @include mobile-width {
-      margin-top: 54px;
+      margin-top: 51px;
     }
 
     &:focus {

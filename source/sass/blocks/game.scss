@@ -23,7 +23,27 @@
 
     @include mobile-width {
       width: 100%;
-      justify-content: space-between;
+      justify-content: center;
+    }
+  }
+
+  &__info + span {
+    display: block;
+    font-family: $ff-roboto-regular;
+
+    @include desktop-width-only {
+      padding-top: 14px;
+      font-size: 18px;
+    }
+
+    @include tablet-width {
+      padding-top: 2px;
+      font-size: 12px;
+    }
+
+    @include mobile-width {
+      text-align: center;
+      padding-right: 15px;
     }
   }
 
@@ -43,21 +63,6 @@
       line-height: 46px;
       padding: 6px 32px 0 7px;
       letter-spacing: 1.6px;
-    }
-  }
-
-  &__text {
-    display: block;
-    font-family: $ff-roboto-regular;
-
-    @include desktop-width-only {
-      padding-top: 14px;
-      font-size: 18px;
-    }
-
-    @include tablet-width {
-      padding-top: 2px;
-      font-size: 12px;
     }
   }
 
