@@ -2171,10 +2171,9 @@ button {
   }
 }
 .header__logo:hover {
-  border-bottom: 1px solid #ffffff;
+  opacity: 0.8;
 }
 .header__logo:active {
-  border-bottom: 1px solid #ffffff;
   opacity: 0.2;
 }
 .header__logo:focus-visible {
@@ -2207,11 +2206,10 @@ button {
   }
 }
 .header__phone:hover {
-  border-bottom: 1px solid #ffffff;
+  opacity: 0.8;
 }
 .header__phone:active {
-  border-bottom: 1px solid #ffffff;
-  opacity: 0.8;
+  opacity: 0.2;
 }
 .header__phone:focus-visible {
   outline: 1px solid #ffffff;
@@ -3719,7 +3717,7 @@ button {
 .trainers__item {
   position: relative;
 }
-.trainers__item:hover > span, .trainers__item:focus > span {
+.trainers__item:hover .trainers__image + span, .trainers__item:focus .trainers__image + span {
   display: none;
 }
 .trainers__item:hover .trainers__description, .trainers__item:focus .trainers__description {
@@ -3800,6 +3798,11 @@ button {
 .trainer-info span {
   color: #b6bdcc;
 }
+@media (max-width: 1199px) {
+  .trainer-info span {
+    padding-right: 10px;
+  }
+}
 .trainer-info__list {
   text-align: left;
 }
@@ -3831,6 +3834,8 @@ button {
 @media (max-width: 767px) {
   .trainer-info__item {
     margin-left: 50px;
+    line-height: 20px;
+    padding-top: 14px;
   }
 }
 
@@ -4068,6 +4073,9 @@ button {
     height: 32px;
     margin: 0 3px;
   }
+}
+.comments-arrow.swiper-button-disabled {
+  cursor: default;
 }
 .comments-arrow:not(.comments-arrow.swiper-button-disabled):hover {
   border: 1px solid #102654;

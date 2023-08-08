@@ -19,8 +19,8 @@
   &__item {
     position: relative;
 
-    &:hover > span,
-    &:focus > span {
+    &:hover .trainers__image + span,
+    &:focus .trainers__image + span {
       display: none;
     }
 
@@ -30,7 +30,7 @@
     }
   }
 
-  &__image-wrapper>span {
+  &__image-wrapper > span {
     display: block;
     position: absolute;
     transform: translateX(-50%);

@@ -30,6 +30,10 @@
 
   & span {
     color: $color-spindle;
+
+    @include tablet-width {
+      padding-right: 10px;
+    }
   }
 
   &__list {
@@ -60,6 +64,8 @@
 
     @include mobile-width {
       margin-left: 50px;
+      line-height: 20px;
+      padding-top: 14px;
     }
   }
 }
