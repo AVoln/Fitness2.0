@@ -2127,7 +2127,7 @@ button {
 }
 
 .logo__container {
-  background-color: #102654;
+  background: conic-gradient(from 151deg at 16.03% 39.06%, #003d85 20deg, #b80027 295deg, #003d85);
   padding-left: 50px;
 }
 .logo__link {
@@ -2151,6 +2151,7 @@ button {
 @media (min-width: 1200px) {
   .header {
     padding: 35px 104px 0 102px;
+    max-width: 1366px;
   }
 }
 @media (max-width: 1199px) {
@@ -2270,9 +2271,9 @@ button {
 }
 @media (max-width: 767px) {
   .hero__description-wrapper {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-top: 74px;
   }
 }
@@ -2444,9 +2445,11 @@ button {
 }
 @media (min-width: 1200px) {
   .hero__description-button {
+    display: inline-block;
     width: 235px;
     margin-left: 8px;
     margin-top: 48px;
+    line-height: 13px;
   }
 }
 @media (max-width: 1199px) {
@@ -3015,6 +3018,11 @@ button {
     width: 100%;
   }
 }
+@media (max-width: 767px) {
+  .abonements__element {
+    width: 100%;
+  }
+}
 .abonements h2 {
   font-family: "alumni-semibold", "Arial", sans-serif;
   margin: 0;
@@ -3226,8 +3234,8 @@ button {
 }
 @media (max-width: 767px) {
   .cards__item {
-    width: 290px;
-    padding-bottom: 48px;
+    width: auto;
+    padding-bottom: 47px;
     margin: 18px;
   }
 }
@@ -3296,14 +3304,19 @@ button {
     padding-top: 10px;
   }
 }
-.cards p {
+@media (max-width: 767px) {
+  .cards span {
+    padding-top: 7px;
+  }
+}
+.cards__price {
   position: relative;
   font-family: "roboto-bold", "Arial", sans-serif;
   color: #103aae;
   margin: 0;
   z-index: 2;
 }
-.cards p::after {
+.cards__price::after {
   position: absolute;
   content: attr(data-price);
   left: 0;
@@ -3312,30 +3325,52 @@ button {
   font-size: 100px;
   color: #e8e8e8;
   z-index: -1;
-  bottom: 25px;
+  bottom: 33px;
+  opacity: 0.48;
 }
 @media (max-width: 767px) {
-  .cards p::after {
+  .cards__price::after {
     font-size: 80px;
     bottom: 20px;
   }
 }
 @media (min-width: 1200px) {
-  .cards p {
+  .cards__price {
     font-size: 60px;
-    padding-top: 98px;
+    padding-top: 88px;
   }
 }
 @media (max-width: 1199px) {
-  .cards p {
+  .cards__price {
     font-size: 60px;
-    padding-top: 96px;
+    padding-top: 88px;
   }
 }
 @media (max-width: 767px) {
-  .cards p {
+  .cards__price {
     font-size: 48px;
-    padding-top: 77px;
+    padding-top: 75px;
+  }
+}
+@media (max-width: 767px) {
+  .cards__price svg {
+    width: 24px;
+    height: 33px;
+  }
+}
+@media (min-width: 1200px) {
+  .cards__buy-wrapper {
+    padding: 0 70px;
+  }
+}
+@media (max-width: 1199px) {
+  .cards__buy-wrapper {
+    padding: 0 111px;
+  }
+}
+@media (max-width: 767px) {
+  .cards__buy-wrapper {
+    padding: 0 32px;
   }
 }
 .cards__buy {
@@ -3343,7 +3378,7 @@ button {
   font-family: "roboto-bold", "Arial", sans-serif;
   font-size: 12px;
   color: #102654;
-  padding: 24px 44px;
+  padding: 24px 25px;
   border: 2px solid #102654;
   background-color: rgba(255, 255, 255, 0);
   letter-spacing: 0.6px;
@@ -3351,20 +3386,21 @@ button {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  width: 100%;
 }
 @media (min-width: 1200px) {
   .cards__buy {
-    margin-top: 67px;
+    margin-top: 59px;
   }
 }
 @media (max-width: 1199px) {
   .cards__buy {
-    margin-top: 69px;
+    margin-top: 59px;
   }
 }
 @media (max-width: 767px) {
   .cards__buy {
-    margin-top: 54px;
+    margin-top: 51px;
   }
 }
 .cards__buy:focus {
@@ -3409,7 +3445,7 @@ button {
 }
 @media (max-width: 767px) {
   .super-games-wrapper {
-    padding: 70px 15px 0;
+    padding: 69px 15px 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -3456,9 +3492,31 @@ button {
 @media (max-width: 767px) {
   .game__info {
     width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.game__info + span {
+  display: block;
+  font-family: "roboto-regular", "Arial", sans-serif;
+}
+@media (min-width: 1200px) {
+  .game__info + span {
+    padding-top: 14px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 1199px) {
+  .game__info + span {
+    padding-top: 2px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .game__info + span {
+    text-align: center;
+    padding-right: 15px;
   }
 }
 .game h3 {
@@ -3479,22 +3537,6 @@ button {
     line-height: 46px;
     padding: 6px 32px 0 7px;
     letter-spacing: 1.6px;
-  }
-}
-.game__text {
-  display: block;
-  font-family: "roboto-regular", "Arial", sans-serif;
-}
-@media (min-width: 1200px) {
-  .game__text {
-    padding-top: 14px;
-    font-size: 18px;
-  }
-}
-@media (max-width: 1199px) {
-  .game__text {
-    padding-top: 2px;
-    font-size: 12px;
   }
 }
 .game__button {
