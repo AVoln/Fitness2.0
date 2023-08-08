@@ -28,6 +28,10 @@
     margin: 0 3px;
   }
 
+  &.swiper-button-disabled {
+    cursor: default;
+  }
+
   &:not(&.swiper-button-disabled) {
     &:hover {
       border: 1px solid $color-sapphire;

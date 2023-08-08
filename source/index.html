@@ -1202,28 +1202,26 @@
       <section class="feedback">
         <div class="feedback-container">
           <div class="feedback__trial-wrapper">
-            <div class="feedback__trial trial" data-form-validate="data-form-validate">
+            <div class="feedback__trial trial" data-form-validate="data-form-validate" data-callback="base">
               <h2>Бесплатное занятие</h2>
-              <form class="trial__form" action="https://echo.htmlacademy.ru" method="post"
-                data-on-input-validate="data-on-input-validate">
+              <form class="trial__form" action="https://echo.htmlacademy.ru" method="post">
                 <div class="trial__inputs">
                   <div class="trial__input trial__input--name" data-validate-type="text" data-limitation="name"
                     data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность"
-                    data-required="data-required">
+                    data-message-success="Поле заполнено верно" data-required="data-required">
                     <label aria-label="Ваше имя.">
-                      <input type="text" name="user-name-4" placeholder="Имя" />
+                      <input type="text" name="user-name-4" placeholder="Имя" required />
                     </label>
                   </div>
                   <div class="trial__input trial__input--phone" data-validate-type="phone"
-                    data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению"
-                    data-message-extra="Проверьте корректность номера" data-message-success="Поле заполнено верно"
-                    data-required="data-required">
+                    data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность номера"
+                    data-message-success="Поле заполнено верно" data-required="data-required">
                     <label aria-label="Ваш номер телефона.">
-                      <input type="tel" name="user-phone" placeholder="Телефон" />
+                      <input type="tel" name="user-phone" placeholder="Телефон" required />
                     </label>
                   </div>
                 </div>
-                <button class="trial__button btn" type="reset">Отправить</button>
+                <button class="trial__button btn" type="submit">Отправить</button>
               </form>
             </div>
           </div>
