@@ -19,6 +19,8 @@
   }
 
   &__logo {
+    max-width: 160px;
+
     @include desktop-width-only {
       padding: 5px 0;
       border-bottom: 1px solid $color-transparent;
@@ -40,6 +42,7 @@
   &__phone {
     color: $color-default-white;
     font-family: $ff-alumni-semibold;
+    max-width: 160px;
 
     @include desktop-width-only {
       letter-spacing: 0.7px;

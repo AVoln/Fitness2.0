@@ -2164,6 +2164,9 @@ button {
     padding: 15px 15px 0;
   }
 }
+.header__logo {
+  max-width: 160px;
+}
 @media (min-width: 1200px) {
   .header__logo {
     padding: 5px 0;
@@ -2182,6 +2185,7 @@ button {
 .header__phone {
   color: #ffffff;
   font-family: "alumni-semibold", "Arial", sans-serif;
+  max-width: 160px;
 }
 @media (min-width: 1200px) {
   .header__phone {
@@ -2383,9 +2387,6 @@ button {
     padding-top: 18px;
   }
 }
-.hero__image {
-  background-color: #102654;
-}
 @media (min-width: 1200px) {
   .hero__image {
     margin-top: -8px;
@@ -2401,6 +2402,9 @@ button {
   .hero__image {
     display: none;
   }
+}
+.hero__image-container {
+  background-color: #102654;
 }
 .hero__description-button-wrapper {
   text-align: right;
@@ -2772,7 +2776,7 @@ button {
 @media (min-width: 1200px) {
   .general-info__video {
     position: absolute;
-    bottom: 120px;
+    top: 408px;
     right: 197px;
     width: 364px;
     height: 228px;
@@ -3097,9 +3101,9 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 45px;
   }
 }
 .abonements__control {
@@ -3425,6 +3429,20 @@ button {
 @media (max-width: 767px) {
   .super-games__image {
     width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .super-games__image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+  }
+}
+@media (max-width: 1199px) {
+  .super-games__image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
   }
 }
 @media (max-width: 767px) {
@@ -3772,6 +3790,7 @@ button {
   width: 100%;
   color: #ffffff;
   text-align: center;
+  overflow: scroll;
 }
 .trainer-info p {
   font-family: "roboto-bold", "Arial", sans-serif;
@@ -3962,10 +3981,10 @@ button {
 @media (min-width: 1200px) {
   .trainers-wrapper h2 {
     padding-bottom: 105px;
-    width: 1366px;
+    width: 1160px;
     font-size: 54px;
     line-height: 65px;
-    padding: 106px 0 48px 104px;
+    padding: 106px 0 48px;
     letter-spacing: 1.7px;
   }
 }

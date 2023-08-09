@@ -7,6 +7,7 @@
   width: 100%;
   color: $color-default-white;
   text-align: center;
+  overflow: scroll;
 
   & p {
     font-family: $ff-roboto-bold;

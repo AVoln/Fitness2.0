@@ -140,8 +140,6 @@
   }
 
   &__image {
-    background-color: $color-sapphire;
-
     @include desktop-width-only {
       margin-top: -8px;
       margin-left: 27px;
@@ -154,6 +152,10 @@
     @include mobile-width {
       display: none;
     }
+  }
+
+  &__image-container {
+    background-color: $color-sapphire;
   }
 
   &__description-button-wrapper {
