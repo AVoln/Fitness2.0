@@ -92,7 +92,8 @@
       margin: 0 auto;
       padding: 4px 0 0;
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 45px;
     }
   }
 

@@ -11,6 +11,15 @@
   }
 
   &__image img {
+    @include desktop-width-only {
+      object-fit: cover;
+      height: 100%;
+    }
+
+    @include tablet-width {
+      object-fit: cover;
+      height: 100%;
+    }
     @include mobile-width {
       width: 100%;
     }
