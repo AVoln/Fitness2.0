@@ -4324,28 +4324,40 @@ button {
 }
 @media (min-width: 1200px) {
   .advantages-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-grid;
+    display: grid;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    gap: 200px;
+    -ms-grid-columns: 370px 350px;
+    grid-template-columns: 370px 350px;
+    -webkit-column-gap: 260px;
+       -moz-column-gap: 260px;
+            column-gap: 260px;
+    row-gap: 154px;
     padding-bottom: 84px;
     padding-top: 17px;
   }
 }
 @media (max-width: 1199px) {
   .advantages-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-grid-columns: 322px 322px;
+    grid-template-columns: 322px 322px;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+    row-gap: 326px;
+    padding-bottom: 84px;
   }
 }
 @media (max-width: 767px) {
   .advantages-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -4356,6 +4368,8 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    row-gap: 0;
+    padding-bottom: 0;
   }
 }
 .advantages h2 {
@@ -4397,7 +4411,7 @@ button {
 }
 @media (max-width: 1199px) {
   .advantage {
-    padding: 0 45px 90px;
+    padding: 0 45px 6px;
   }
 }
 @media (max-width: 767px) {
@@ -4409,11 +4423,6 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-@media (min-width: 1200px) {
-  .advantage__element.comfort, .advantage__element.experience {
-    padding-top: 53px;
-  }
 }
 @media (max-width: 767px) {
   .advantage__element {
@@ -4431,32 +4440,18 @@ button {
 }
 @media (min-width: 1200px) {
   .advantage__element:first-child {
-    padding-left: 70px;
-  }
-}
-@media (min-width: 1200px) {
-  .advantage__element:last-child {
-    padding-left: 142px;
-  }
-}
-@media (max-width: 1199px) {
-  .advantage__element:last-child {
-    padding-left: 36px;
+    padding-left: 30px;
   }
 }
 @media (max-width: 767px) {
-  .advantage__element:last-child {
-    padding-left: 0;
+  .advantage__element:nth-child(2) .advantage__text span {
+    padding: 7px 45px 0;
+    line-height: 21px;
   }
 }
 @media (min-width: 1200px) {
   .advantage__element:last-child .advantage__text span {
     padding-right: 60px;
-  }
-}
-@media (max-width: 1199px) {
-  .advantage__element:last-child .advantage__text span {
-    padding-right: 10px;
   }
 }
 @media (max-width: 767px) {
@@ -4465,42 +4460,39 @@ button {
   }
 }
 @media (min-width: 1200px) {
-  .advantage__element:first-child.comfort::before {
+  .advantage__element.comfort {
+    padding-left: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .advantage__element.experience::before, .advantage__element.comfort::before {
     position: absolute;
     content: "";
     width: 340px;
     height: 2px;
-    bottom: 160px;
-    left: 50px;
     background-color: #ed0233;
     opacity: 0.2;
+    bottom: 280px;
   }
 }
 @media (min-width: 1200px) {
-  .advantage__element:last-child.experience::before {
-    position: absolute;
-    content: "";
-    width: 340px;
-    height: 2px;
-    bottom: 281px;
-    right: 163px;
-    background-color: #ed0233;
-    opacity: 0.2;
+  .advantage__element.experience::before {
+    right: 165px;
   }
 }
 @media (min-width: 1200px) {
-  .advantage__element:last-child.experience .advantage__text span {
+  .advantage__element.comfort::before {
+    left: 165px;
+  }
+}
+@media (min-width: 1200px) {
+  .advantage__element.experience .advantage__text span {
     padding-right: 20px;
   }
 }
 @media (max-width: 767px) {
-  .advantage__element:first-child.comfort .advantage__text span {
+  .advantage__element.comfort .advantage__text span {
     padding: 2px 50px 7px;
-  }
-}
-@media (min-width: 1200px) {
-  .advantage__element.experience {
-    padding-left: 129px;
   }
 }
 @media (min-width: 1200px) {
@@ -4603,7 +4595,7 @@ button {
 }
 @media (max-width: 767px) {
   .advantage__text span {
-    padding: 10px 40px 0;
+    padding: 10px 45px 0;
   }
 }
 
@@ -4635,16 +4627,26 @@ button {
 }
 @media (max-width: 1199px) {
   .simulator {
+    position: absolute;
+    top: 261px;
+    left: 50%;
     padding: 0 120px 40px;
     margin: 43px auto 44px;
     width: 442px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 @media (max-width: 767px) {
   .simulator {
+    position: static;
     width: 100%;
-    margin: 10px 0 46px;
+    margin: 13px 0 46px;
     padding: 0 56px 44px;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 .simulator p:first-child {

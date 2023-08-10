@@ -7,22 +7,31 @@
 
   &-container {
     @include desktop-width-only {
-      display: flex;
+      display: grid;
       justify-content: space-around;
-      gap: 200px;
+      grid-template-columns: 370px 350px;
+      column-gap: 260px;
+      row-gap: 154px;
       padding-bottom: 84px;
       padding-top: 17px;
     }
 
     @include tablet-width {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      justify-content: space-around;
+      grid-template-columns: 322px 322px;
+      column-gap: 30px;
+      row-gap: 326px;
+      padding-bottom: 84px;
     }
 
     @include mobile-width {
+      display: flex;
       justify-content: space-between;
       flex-direction: column;
       align-items: center;
+      row-gap: 0;
+      padding-bottom: 0;
     }
   }
 
