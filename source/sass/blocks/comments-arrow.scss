@@ -8,21 +8,22 @@
   border-radius: 50%;
   z-index: 2;
   color: $color-sapphire;
+  transform: translateY(50%);
 
   @include desktop-width-only {
-    bottom: -6px;
+    bottom: 50%;
     width: 56px;
     height: 56px;
   }
 
   @include tablet-width {
-    bottom: -6px;
+    bottom: 50%;
     width: 56px;
     height: 56px;
   }
 
   @include mobile-width {
-    bottom: 40.5%;
+    bottom: 50%;
     width: 32px;
     height: 32px;
     margin: 0 3px;
@@ -63,11 +64,19 @@
   }
 
   &--left {
-    left: 0;
+    left: 26px;
+
+    @include mobile-width {
+      left: 0;
+    }
   }
 
   &--right {
-    transform: rotate(180deg);
-    right: 0;
+    transform: rotate(180deg) translateY(-50%);
+    right: 26px;
+
+    @include mobile-width {
+      right: 0;
+    }
   }
 }
