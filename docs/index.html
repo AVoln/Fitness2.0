@@ -50,18 +50,21 @@
           </div>
         </div>
         <div class="hero__image">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/hero-desktop.webp 1x,
+          <div class="hero__image-container">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/hero-desktop.webp 1x,
             img/hero-desktop@2x.webp 2x" width="500" height="556">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/hero-tablet.webp 1x,
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/hero-tablet.webp 1x,
             img/hero-tablet@2x.webp 2x" width="324" height="390">
 
-            <source media="(min-width: 1200px)" srcset="img/hero-desktop.jpg 1x,
+              <source media="(min-width: 1200px)" srcset="img/hero-desktop.jpg 1x,
             img/hero-desktop@2x.jpg 2x" width="500" height="556">
-            <source media="(min-width: 768px)" srcset="img/hero-tablet.jpg 1x,
+              <source media="(min-width: 768px)" srcset="img/hero-tablet.jpg 1x,
             img/hero-tablet@2x.jpg 2x" width="324" height="390">
-            <img src="img/hero-tablet.jpg" srcset="img/hero-tablet@2x.jpg 2x" alt="Супермен." width="324" height="390">
-          </picture>
+              <img src="img/hero-tablet.jpg" srcset="img/hero-tablet@2x.jpg 2x" alt="Супермен." width="324"
+                height="390">
+            </picture>
+          </div>
         </div>
       </section>
     </div>
@@ -151,23 +154,38 @@
               <li class="cards__item">
                 <h3>С&nbsp;тренером</h3>
                 <span>12&nbsp;занятий</span>
-                <p data-price="5000">5000&nbsp;₽
-                </p>
-                <button class="cards__buy" type="button">Купить абонемент</button>
+                <div class="cards__price" data-price="5000">5000
+                  <svg width="30" height="42">
+                    <use href="img/sprite.svg#rub"></use>
+                  </svg>
+                </div>
+                <div class="cards__buy-wrapper">
+                  <button class="cards__buy" type="button">Купить абонемент</button>
+                </div>
               </li>
               <li class="cards__item is-active">
                 <h3>Дневной</h3>
                 <span>с&nbsp;8:00 до&nbsp;17:00</span>
-                <p data-price="1700">1700&nbsp;₽
-                </p>
-                <button class="cards__buy" type="button">Купить абонемент</button>
+                <div class="cards__price" data-price="1700">1700
+                  <svg width="30" height="42">
+                    <use href="img/sprite.svg#rub"></use>
+                  </svg>
+                </div>
+                <div class="cards__buy-wrapper">
+                  <button class="cards__buy" type="button">Купить абонемент</button>
+                </div>
               </li>
               <li class="cards__item">
                 <h3>Полный день</h3>
                 <span>с&nbsp;8:00 до&nbsp;22:00</span>
-                <p data-price="2700">2700&nbsp;₽
-                </p>
-                <button class="cards__buy" type="button">Купить абонемент</button>
+                <div class="cards__price" data-price="2700">2700
+                  <svg width="30" height="42">
+                    <use href="img/sprite.svg#rub"></use>
+                  </svg>
+                </div>
+                <div class="cards__buy-wrapper">
+                  <button class="cards__buy" type="button">Купить абонемент</button>
+                </div>
               </li>
             </ul>
             <div class="abonements__image">
@@ -289,7 +307,7 @@
                   </li>
                 </ul>
               </div>
-              <span class="game__text">Ежегодные соревнования по&nbsp;CrossFit</span>
+              <span>Ежегодные соревнования по&nbsp;CrossFit</span>
               <a class="game__button btn" href="#">заполнить&nbsp;заявку</a>
             </div>
           </div>
@@ -614,15 +632,11 @@
                   парковке</span>
               </div>
             </div>
-          </div>
-
-          <div class="advantage__simulator simulator">
-            <p>100</p>
-            <p>Тренажеров</p>
-            <span>Современные тренажеры на&nbsp;все группы мышц</span>
-          </div>
-
-          <div class="advantages-container">
+            <div class="advantage__simulator simulator">
+              <p>100</p>
+              <p>Тренажеров</p>
+              <span>Современные тренажеры на&nbsp;все группы мышц</span>
+            </div>
             <div class="advantage__element comfort">
               <div class="advantage__amount">
                 <p>350</p>
@@ -651,9 +665,11 @@
         <h2>Акции</h2>
         <div class="promotion__hero promo-hero">
           <div class="promo-hero__info">
-            <span>Год</span>
-            <span>4999</span>
-            <span>Безлимитный абонемент<br>в&nbsp;тренажерный зал</span>
+            <div class="promo-hero__info-text">
+              <span>Год</span>
+              <span>4999</span>
+              <span>Безлимитный абонемент<br>в&nbsp;тренажерный зал</span>
+            </div>
             <div class="promo-hero__about-wrapper">
               <a class="promo-hero__about" href="#">Подробнее</a>
             </div>
@@ -686,7 +702,7 @@
           </li>
           <li class="another-promos__item">
             <p>Скидка&nbsp;20%</p>
-            <span>Корпоративный фитнес<br>с&nbsp;командой</span>
+            <span>Корпоративный фитнес <br>с&nbsp;командой</span>
             <div class="another-promos__link-wrapper">
               <a class="another-promos__link" href="#">Подробнее</a>
             </div>
@@ -1065,150 +1081,148 @@
       </section>
 
       <section class="comments-wrapper">
-        <div class="comments comments--swiper">
-          <h2>Отзывы</h2>
-          <ul class="comments__list swiper-wrapper">
-            <li class="comments__item swiper-slide">
-              <div class="comments__image">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/anna-orlova_desktop-tablet.webp 1x,
+        <h2>Отзывы</h2>
+        <div class="comments">
+          <div class="comments__list-container comments--swiper">
+            <ul class="comments__list swiper-wrapper">
+              <li class="comments__item swiper-slide">
+                <div class="comments__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/anna-orlova_desktop-tablet.webp 1x,
                   img/anna-orlova_desktop-tablet@2x.webp 2x" width="80" height="80">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/anna-orlova_desktop-tablet.webp 1x,
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/anna-orlova_desktop-tablet.webp 1x,
                   img/anna-orlova_desktop-tablet@2x.webp 2x" width="80" height="80">
-                  <source type="image/webp" media="(min-width: 320px)" srcset="img/anna-orlova_mobile.webp 1x,
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/anna-orlova_mobile.webp 1x,
                   img/anna-orlova_mobile@2x.webp 2x" width="68" height="68">
 
-                  <source media="(min-width: 1200px)" srcset="img/anna-orlova_desktop-tablet.jpg 1x,
+                    <source media="(min-width: 1200px)" srcset="img/anna-orlova_desktop-tablet.jpg 1x,
                   img/anna-orlova_desktop-tablet@2x.jpg 2x" width="80" height="80">
-                  <source media="(min-width: 768px)" srcset="img/anna-orlova_desktop-tablet.jpg 1x,
+                    <source media="(min-width: 768px)" srcset="img/anna-orlova_desktop-tablet.jpg 1x,
                   img/anna-orlova_desktop-tablet@2x.jpg 2x" width="80" height="80">
-                  <img src="img/anna-orlova_mobile.jpg" srcset="img/anna-orlova_mobile@2x.jpg 2x"
-                    alt="Комментатор Анна Орлова." width="68" height="68">
-                </picture>
-              </div>
-              <div class="comments__text">
-                <h3>Анна<br> Орлова</h3>
-                <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе
-                  всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время
-                  нет
-                  очередей&raquo;</p>
-              </div>
-            </li>
-            <li class="comments__item swiper-slide">
-              <div class="comments__image">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/aleksey-lavrov.webp 1x,
+                    <img src="img/anna-orlova_mobile.jpg" srcset="img/anna-orlova_mobile@2x.jpg 2x"
+                      alt="Комментатор Анна Орлова." width="68" height="68">
+                  </picture>
+                </div>
+                <div class="comments__text">
+                  <h3>Анна<br> Орлова</h3>
+                  <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе
+                    всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время
+                    нет
+                    очередей&raquo;</p>
+                </div>
+              </li>
+              <li class="comments__item swiper-slide">
+                <div class="comments__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/aleksey-lavrov.webp 1x,
                   img/aleksey-lavrov@2x.webp 2x" width="80" height="80">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/aleksey-lavrov.webp 1x,
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/aleksey-lavrov.webp 1x,
                   img/aleksey-lavrov@2x.webp 2x" width="80" height="80">
-                  <source type="image/webp" media="(min-width: 320px)" srcset="img/aleksey-lavrov.webp 1x,
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/aleksey-lavrov.webp 1x,
                   img/aleksey-lavrov@2x.webp 2x" width="68" height="68">
 
-                  <source media="(min-width: 1200px)" srcset="img/aleksey-lavrov.jpg 1x,
+                    <source media="(min-width: 1200px)" srcset="img/aleksey-lavrov.jpg 1x,
                   img/aleksey-lavrov@2x.jpg 2x" width="80" height="80">
-                  <source media="(min-width: 768px)" srcset="img/aleksey-lavrov.jpg 1x,
+                    <source media="(min-width: 768px)" srcset="img/aleksey-lavrov.jpg 1x,
                   img/aleksey-lavrov@2x.jpg 2x" width="80" height="80">
-                  <img src="img/aleksey-lavrov.jpg" srcset="img/aleksey-lavrov@2x.jpg 2x" alt="Комментатор Иван Петров."
-                    width="68" height="68">
-                </picture>
-              </div>
-              <div class="comments__text">
-                <h3>Иван Петров</h3>
-                <p>Хороший зал, атмосфера приятная. Спасибо большое тренеру Александру!!!!
-                  Он&nbsp;рассказал и&nbsp;показал хороший комплекс упражнений.</p>
-              </div>
-            </li>
-            <li class="comments__item swiper-slide">
-              <div class="comments__image">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/anna-orlova_desktop-tablet.webp 1x,
+                    <img src="img/aleksey-lavrov.jpg" srcset="img/aleksey-lavrov@2x.jpg 2x"
+                      alt="Комментатор Иван Петров." width="68" height="68">
+                  </picture>
+                </div>
+                <div class="comments__text">
+                  <h3>Иван Петров</h3>
+                  <p>Хороший зал, атмосфера приятная. Спасибо большое тренеру Александру!!!!
+                    Он&nbsp;рассказал и&nbsp;показал хороший комплекс упражнений.</p>
+                </div>
+              </li>
+              <li class="comments__item swiper-slide">
+                <div class="comments__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/anna-orlova_desktop-tablet.webp 1x,
                   img/anna-orlova_desktop-tablet@2x.webp 2x" width="80" height="80">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/anna-orlova_desktop-tablet.webp 1x,
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/anna-orlova_desktop-tablet.webp 1x,
                   img/anna-orlova_desktop-tablet@2x.webp 2x" width="80" height="80">
-                  <source type="image/webp" media="(min-width: 320px)" srcset="img/anna-orlova_mobile.webp 1x,
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/anna-orlova_mobile.webp 1x,
                   img/anna-orlova_mobile@2x.webp 2x" width="68" height="68">
 
-                  <source media="(min-width: 1200px)" srcset="img/anna-orlova_desktop-tablet.jpg 1x,
+                    <source media="(min-width: 1200px)" srcset="img/anna-orlova_desktop-tablet.jpg 1x,
                   img/anna-orlova_desktop-tablet@2x.jpg 2x" width="80" height="80">
-                  <source media="(min-width: 768px)" srcset="img/anna-orlova_desktop-tablet.jpg 1x,
+                    <source media="(min-width: 768px)" srcset="img/anna-orlova_desktop-tablet.jpg 1x,
                   img/anna-orlova_desktop-tablet@2x.jpg 2x" width="80" height="80">
-                  <img src="img/anna-orlova_mobile.jpg" srcset="img/anna-orlova_mobile@2x.jpg 2x"
-                    alt="Комментатор Анна Орлова." width="68" height="68">
-                </picture>
-              </div>
-              <div class="comments__text">
-                <h3>Анна Орлова</h3>
-                <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе
-                  всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время
-                  нет
-                  очередей&raquo;</p>
-              </div>
-            </li>
-            <li class="comments__item swiper-slide">
-              <div class="comments__image">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/aleksey-lavrov.webp 1x,
+                    <img src="img/anna-orlova_mobile.jpg" srcset="img/anna-orlova_mobile@2x.jpg 2x"
+                      alt="Комментатор Анна Орлова." width="68" height="68">
+                  </picture>
+                </div>
+                <div class="comments__text">
+                  <h3>Анна Орлова</h3>
+                  <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе
+                    всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время
+                    нет
+                    очередей&raquo;</p>
+                </div>
+              </li>
+              <li class="comments__item swiper-slide">
+                <div class="comments__image">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/aleksey-lavrov.webp 1x,
                   img/aleksey-lavrov@2x.webp 2x" width="80" height="80">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/aleksey-lavrov.webp 1x,
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/aleksey-lavrov.webp 1x,
                   img/aleksey-lavrov@2x.webp 2x" width="80" height="80">
-                  <source type="image/webp" media="(min-width: 320px)" srcset="img/aleksey-lavrov.webp 1x,
+                    <source type="image/webp" media="(min-width: 320px)" srcset="img/aleksey-lavrov.webp 1x,
                   img/aleksey-lavrov@2x.webp 2x" width="68" height="68">
 
-                  <source media="(min-width: 1200px)" srcset="img/aleksey-lavrov.jpg 1x,
+                    <source media="(min-width: 1200px)" srcset="img/aleksey-lavrov.jpg 1x,
                   img/aleksey-lavrov@2x.jpg 2x" width="80" height="80">
-                  <source media="(min-width: 768px)" srcset="img/aleksey-lavrov.jpg 1x,
+                    <source media="(min-width: 768px)" srcset="img/aleksey-lavrov.jpg 1x,
                   img/aleksey-lavrov@2x.jpg 2x" width="80" height="80">
-                  <img src="img/aleksey-lavrov.jpg" srcset="img/aleksey-lavrov@2x.jpg 2x" alt="Комментатор Иван Петров."
-                    width="68" height="68">
-                </picture>
-              </div>
-              <div class="comments__text">
-                <h3>Иван Петров</h3>
-                <p>Хороший зал, атмосфера приятная. Спасибо большое тренеру Александру!!!!
-                  Он&nbsp;рассказал и&nbsp;показал хороший комплекс упражнений.</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="comments-arrows">
-          <button class="comments-arrow comments-arrow--left" type="button" aria-label="Предыдущий слайд.">
-            <svg width="16" height="32">
-              <use href="img/sprite.svg#arrow"></use>
-            </svg>
-          </button>
-          <button class="comments-arrow comments-arrow--right" type="button" aria-label="Следующий слайд.">
-            <svg width="16" height="32">
-              <use href="img/sprite.svg#arrow"></use>
-            </svg>
-          </button>
+                    <img src="img/aleksey-lavrov.jpg" srcset="img/aleksey-lavrov@2x.jpg 2x"
+                      alt="Комментатор Иван Петров." width="68" height="68">
+                  </picture>
+                </div>
+                <div class="comments__text">
+                  <h3>Иван Петров</h3>
+                  <p>Хороший зал, атмосфера приятная. Спасибо большое тренеру Александру!!!!
+                    Он&nbsp;рассказал и&nbsp;показал хороший комплекс упражнений.</p>
+                </div>
+              </li>
+            </ul>
+            <button class="comments-arrow comments-arrow--left" type="button" aria-label="Предыдущий слайд.">
+              <svg width="16" height="32">
+                <use href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+            <button class="comments-arrow comments-arrow--right" type="button" aria-label="Следующий слайд.">
+              <svg width="16" height="32">
+                <use href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
       <section class="feedback">
         <div class="feedback-container">
           <div class="feedback__trial-wrapper">
-            <div class="feedback__trial trial" data-form-validate="data-form-validate">
+            <div class="feedback__trial trial" data-form-validate="data-form-validate" data-callback="base">
               <h2>Бесплатное занятие</h2>
-              <form class="trial__form" action="https://echo.htmlacademy.ru" method="post"
-                data-on-input-validate="data-on-input-validate">
+              <form class="trial__form" action="https://echo.htmlacademy.ru" method="post">
                 <div class="trial__inputs">
                   <div class="trial__input trial__input--name" data-validate-type="text" data-limitation="name"
                     data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность"
-                    data-required="data-required">
+                    data-message-success="Поле заполнено верно" data-required="data-required">
                     <label aria-label="Ваше имя.">
-                      <input type="text" name="user-name-4" placeholder="Имя" />
+                      <input type="text" name="user-name-4" placeholder="Имя" required />
                     </label>
                   </div>
                   <div class="trial__input trial__input--phone" data-validate-type="phone"
-                    data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению"
-                    data-message-extra="Проверьте корректность номера" data-message-success="Поле заполнено верно"
-                    data-required="data-required">
+                    data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность номера"
+                    data-message-success="Поле заполнено верно" data-required="data-required">
                     <label aria-label="Ваш номер телефона.">
-                      <input type="tel" name="user-phone" placeholder="Телефон" />
+                      <input type="tel" name="user-phone" placeholder="Телефон" required />
                     </label>
                   </div>
                 </div>
-                <button class="trial__button btn" type="reset">Отправить</button>
+                <button class="trial__button btn" type="submit">Отправить</button>
               </form>
             </div>
           </div>
