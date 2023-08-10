@@ -2491,6 +2491,16 @@ button {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (min-width: 1200px) {
+  .footer__logo-wrapper {
+    min-width: 92px;
+  }
+}
+@media (max-width: 1199px) {
+  .footer__logo-wrapper {
+    min-width: 85px;
+  }
+}
 @media (max-width: 767px) {
   .footer__logo-wrapper {
     position: absolute;
@@ -2556,6 +2566,8 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media (min-width: 1200px) {
   .footer-nav {
@@ -2658,11 +2670,24 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media (min-width: 1200px) {
+  .footer-social {
+    max-width: 204px;
+  }
+}
+@media (max-width: 1199px) {
+  .footer-social {
+    max-width: 204px;
+  }
 }
 @media (max-width: 767px) {
   .footer-social {
     padding: 0 0 52px 0;
     margin-left: -3px;
+    max-width: 100%;
   }
 }
 @media (min-width: 1200px) {
@@ -3820,6 +3845,11 @@ button {
 @media (max-width: 1199px) {
   .trainer-info span {
     padding-right: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .trainer-info span {
+    padding-right: 0;
   }
 }
 .trainer-info__list {

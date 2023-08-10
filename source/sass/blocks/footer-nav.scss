@@ -1,6 +1,7 @@
 .footer-nav {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   @include desktop-width-only {
     padding: 31px 0 32px 5px;

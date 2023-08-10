@@ -12,6 +12,14 @@
     display: flex;
     align-items: center;
 
+    @include desktop-width-only {
+      min-width: 92px;
+    }
+
+    @include tablet-width {
+      min-width: 85px;
+    }
+
     @include mobile-width {
       position: absolute;
       top: 52px;
