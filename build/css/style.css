@@ -4789,6 +4789,21 @@ button {
     width: 100%;
   }
 }
+@media (min-width: 1200px) {
+  .promo-hero__info-text {
+    min-height: 356px;
+  }
+}
+@media (max-width: 1199px) {
+  .promo-hero__info-text {
+    min-height: 394px;
+  }
+}
+@media (max-width: 767px) {
+  .promo-hero__info-text {
+    min-height: 0;
+  }
+}
 .promo-hero__info {
   background-color: #ed0233;
   color: #ffffff;
@@ -4837,6 +4852,7 @@ button {
   display: block;
   font-size: 18px;
   padding-top: 14px;
+  letter-spacing: 0.2px;
 }
 @media (min-width: 1200px) {
   .promo-hero__info span:nth-child(3) {
@@ -4855,18 +4871,14 @@ button {
 }
 @media (min-width: 1200px) {
   .promo-hero__about-wrapper {
-    padding-top: 184px;
-  }
-}
-@media (max-width: 1199px) {
-  .promo-hero__about-wrapper {
-    padding-top: 184px;
+    padding-top: 40px;
+    padding-bottom: 44px;
   }
 }
 @media (max-width: 767px) {
   .promo-hero__about-wrapper {
     padding-top: 27px;
-    margin-bottom: 44px;
+    padding-bottom: 44px;
   }
 }
 .promo-hero__about {
@@ -4899,6 +4911,11 @@ button {
 }
 .promo-hero__img {
   background-color: #c7dcf7;
+}
+.promo-hero__img img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 767px) {
   .promo-hero__img img {
@@ -4957,6 +4974,7 @@ button {
   .another-promos__item {
     width: 100%;
     letter-spacing: 0.4px;
+    padding: 30px 30px 27px;
   }
   .another-promos__item:nth-child(2) br {
     display: none;
@@ -4996,6 +5014,7 @@ button {
 }
 .another-promos__item span {
   display: inline-block;
+  font-family: "roboto-regular", "Arial", sans-serif;
 }
 @media (min-width: 1200px) {
   .another-promos__item span {
@@ -5004,7 +5023,13 @@ button {
 }
 @media (max-width: 1199px) {
   .another-promos__item span {
+    letter-spacing: 0.1px;
     padding-top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .another-promos__item span {
+    padding-top: 11px;
   }
 }
 @media (min-width: 1200px) {

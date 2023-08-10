@@ -38,6 +38,7 @@
     @include tablet-width {
       width: 100%;
       letter-spacing: 0.4px;
+      padding: 30px 30px 27px;
 
       &:nth-child(2) br {
         display: none;
@@ -80,13 +81,19 @@
 
   &__item span {
     display: inline-block;
+    font-family: $ff-roboto-regular;
 
     @include desktop-width-only {
       padding-top: 11px;
     }
 
     @include tablet-width {
+      letter-spacing: 0.1px;
       padding-top: 10px;
+    }
+
+    @include mobile-width {
+      padding-top: 11px;
     }
   }
 
