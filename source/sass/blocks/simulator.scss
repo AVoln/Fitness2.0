@@ -15,15 +15,21 @@
   }
 
   @include tablet-width {
+    position: absolute;
+    top: 261px;
+    left: 50%;
     padding: 0 120px 40px;
     margin: 43px auto 44px;
     width: 442px;
+    transform: translateX(-50%);
   }
 
   @include mobile-width {
+    position: static;
     width: 100%;
-    margin: 10px 0 46px;
+    margin: 13px 0 46px;
     padding: 0 56px 44px;
+    transform: translateX(0);
   }
 
   & p:first-child {

@@ -9,13 +9,13 @@
     }
 
     @include tablet-width {
-      padding: 66px 0 63px;
+      padding: 66px 0 61px;
       width: 503px;
       margin: 0 auto;
     }
 
     @include mobile-width {
-      padding: 66px 15px 62px;
+      padding: 66px 15px 65px;
       width: 100%;
     }
   }
@@ -81,7 +81,6 @@
     }
   }
 
-
   &__info:last-child {
     @include desktop-width-only {
       padding-left: 60px;
@@ -96,17 +95,23 @@
     }
   }
 
+  &__info:last-child p {
+    @include mobile-width {
+      padding-top: 20px;
+    }
+  }
+
   &__info p {
     font-family: $ff-roboto-bold;
 
     @include desktop-width-only {
       font-size: 16px;
-      padding-top: 17px;
+      padding-top: 16px;
     }
 
     @include tablet-width {
       font-size: 20px;
-      padding-top: 22px;
+      padding-top: 23px;
     }
   }
 

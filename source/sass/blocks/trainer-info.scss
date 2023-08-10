@@ -35,6 +35,10 @@
     @include tablet-width {
       padding-right: 10px;
     }
+
+    @include mobile-width {
+      padding-right: 0;
+    }
   }
 
   &__list {

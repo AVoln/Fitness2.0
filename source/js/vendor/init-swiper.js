@@ -42,6 +42,14 @@ const initSwiperComments = () => {
       breakpoints: {
         320: {
           spaceBetween: 48,
+        },
+
+        768: {
+          spaceBetween: 400,
+        },
+
+        1200: {
+          spaceBetween: 1400,
         }
       },
 

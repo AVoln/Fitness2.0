@@ -6,7 +6,7 @@
   }
 
   @include tablet-width {
-    padding: 0 45px 90px;
+    padding: 0 45px 6px;
   }
 
   @include mobile-width {
@@ -15,14 +15,6 @@
 
   &__element {
     display: flex;
-
-    @include desktop-width-only {
-
-      &.comfort,
-      &.experience {
-        padding-top: 53px;
-      }
-    }
 
     @include mobile-width {
       align-items: center;
@@ -34,21 +26,14 @@
     position: relative;
 
     @include desktop-width-only {
-      padding-left: 70px;
+      padding-left: 30px;
     }
   }
 
-  &__element:last-child {
-    @include desktop-width-only {
-      padding-left: 142px;
-    }
-
-    @include tablet-width {
-      padding-left: 36px;
-    }
-
+  &__element:nth-child(2) .advantage__text span {
     @include mobile-width {
-      padding-left: 0;
+      padding: 7px 45px 0;
+      line-height: 21px;
     }
   }
 
@@ -57,56 +42,51 @@
       padding-right: 60px;
     }
 
-    @include tablet-width {
-      padding-right: 10px;
-    }
-
     @include mobile-width {
       padding: 3px 45px 0;
     }
   }
 
-  &__element:first-child.comfort::before {
+  &__element.comfort {
+    @include desktop-width-only {
+      padding-left: 30px;
+    }
+  }
+
+  &__element.experience::before,
+  &__element.comfort::before {
     @include desktop-width-only {
       position: absolute;
       content: "";
       width: 340px;
       height: 2px;
-      bottom: 160px;
-      left: 50px;
       background-color: $color-torch-red;
       opacity: .2;
+      bottom: 280px;
     }
   }
 
-  &__element:last-child.experience::before {
+  &__element.experience::before {
     @include desktop-width-only {
-      position: absolute;
-      content: "";
-      width: 340px;
-      height: 2px;
-      bottom: 281px;
-      right: 163px;
-      background-color: $color-torch-red;
-      opacity: .2;
+      right: 165px;
     }
   }
 
-  &__element:last-child.experience .advantage__text span {
+  &__element.comfort::before {
+    @include desktop-width-only {
+      left: 165px;
+    }
+  }
+
+  &__element.experience .advantage__text span {
     @include desktop-width-only {
       padding-right: 20px;
     }
   }
 
-  &__element:first-child.comfort .advantage__text span {
+  &__element.comfort .advantage__text span {
     @include mobile-width {
       padding: 2px 50px 7px;
-    }
-  }
-
-  &__element.experience {
-    @include desktop-width-only {
-      padding-left: 129px;
     }
   }
 
@@ -127,7 +107,7 @@
     }
   }
 
-  &__amount>p {
+  &__amount > p {
     font-family: $ff-roboto-bold;
     background-image: $blue-to-red-text;
     /* stylelint-disable */
@@ -146,7 +126,7 @@
     }
   }
 
-  &__amount>span {
+  &__amount > span {
     font-size: 14px;
     line-height: 21px;
     color: $color-persian-blue;
@@ -196,7 +176,7 @@
     }
 
     @include mobile-width {
-      padding: 10px 40px 0;
+      padding: 10px 45px 0;
     }
   }
 }

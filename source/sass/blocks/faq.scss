@@ -1,6 +1,10 @@
 .faq {
   background-color: $color-ghost-white;
 
+  @include mobile-width {
+    padding-top: 70px;
+  }
+
   &-container {
     margin: 0 auto;
 

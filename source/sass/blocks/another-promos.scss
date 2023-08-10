@@ -6,6 +6,7 @@
 
   @include tablet-width {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     padding-top: 30px;
     width: 680px;
@@ -26,11 +27,13 @@
     color: $color-resolution-blue;
 
     @include desktop-width-only {
+      max-width: 560px;
+
       & br {
         display: none;
       }
 
-      &:nth-child(2) {
+      &:not(:first-child) {
         margin-top: 40px;
       }
     }
@@ -38,6 +41,9 @@
     @include tablet-width {
       width: 100%;
       letter-spacing: 0.4px;
+      padding: 30px 30px 27px;
+      max-width: 324px;
+
 
       &:nth-child(2) br {
         display: none;
@@ -53,8 +59,11 @@
       text-align: center;
       padding: 39px;
 
-      &:nth-child(2) {
+      &:not(:first-child) {
         margin-top: 30px;
+      }
+
+      &:last-child {
         margin-bottom: 70px;
       }
 
@@ -80,13 +89,19 @@
 
   &__item span {
     display: inline-block;
+    font-family: $ff-roboto-regular;
 
     @include desktop-width-only {
       padding-top: 11px;
     }
 
     @include tablet-width {
+      letter-spacing: 0;
       padding-top: 10px;
+    }
+
+    @include mobile-width {
+      padding-top: 11px;
     }
   }
 
