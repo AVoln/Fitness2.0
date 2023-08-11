@@ -3382,7 +3382,7 @@ button {
 @media (max-width: 767px) {
   .cards__price::after {
     font-size: 80px;
-    bottom: 20px;
+    bottom: 25px;
   }
 }
 @media (min-width: 1200px) {
