@@ -39,10 +39,27 @@
     }
   }
 
+  &__phone-container {
+    @include desktop-width-only {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 50%;
+    }
+  }
+
   &__phone {
     color: $color-default-white;
     font-family: $ff-alumni-semibold;
     max-width: 160px;
+    white-space: nowrap;
+
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+
+    &:nth-child(3n+1) {
+      margin-left: 0;
+    }
 
     @include desktop-width-only {
       letter-spacing: 0.7px;

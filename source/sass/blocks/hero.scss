@@ -12,7 +12,7 @@
     justify-content: center;
     grid-template-columns: 50% 50%;
     column-gap: 5%;
-    padding-bottom: 85px;
+    padding-bottom: 83px;
   }
 
   @include mobile-width {
@@ -28,7 +28,7 @@
     }
 
     @include tablet-width {
-      padding-top: 82px;
+      padding-top: 80px;
     }
 
     @include mobile-width {

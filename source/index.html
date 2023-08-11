@@ -30,7 +30,9 @@
             <img src="./img/logo/logo_mobile.svg" width="69" height="16" alt="Лого Fitnes2.0.">
           </picture>
         </a>
-        <a class="header__phone" href="tel:88005555555">8-800-555-55-55</a>
+        <div class="header__phone-container">
+          <a class="header__phone" href="tel:88005555555">8-800-555-55-55</a>
+        </div>
       </header>
       <section class="hero container">
         <div class="hero__description">
@@ -663,51 +665,53 @@
 
       <section class="promotion container">
         <h2>Акции</h2>
-        <div class="promotion__hero promo-hero">
-          <div class="promo-hero__info">
-            <div class="promo-hero__info-text">
-              <span>Год</span>
-              <span>4999</span>
-              <span>Безлимитный абонемент<br>в&nbsp;тренажерный зал</span>
+        <div class="promotion__container">
+          <div class="promotion__hero promo-hero">
+            <div class="promo-hero__info">
+              <div class="promo-hero__info-text">
+                <span>Год</span>
+                <span>4999</span>
+                <span>Безлимитный абонемент<br>в&nbsp;тренажерный зал</span>
+              </div>
+              <div class="promo-hero__about-wrapper">
+                <a class="promo-hero__about" href="#">Подробнее</a>
+              </div>
             </div>
-            <div class="promo-hero__about-wrapper">
-              <a class="promo-hero__about" href="#">Подробнее</a>
-            </div>
-          </div>
-          <div class="promo-hero__img">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/promotion_desktop.webp 1x,
+            <div class="promo-hero__img">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/promotion_desktop.webp 1x,
                 img/promotion_desktop.webp 2x" width="280" height="462">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/promotion_tablet.webp 1x,
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/promotion_tablet.webp 1x,
                 img/promotion_tablet@2x.webp 2x" width="399" height="462">
-              <source type="image/webp" media="(min-width: 320px)" srcset="img/promotion_mobile.webp 1x,
+                <source type="image/webp" media="(min-width: 320px)" srcset="img/promotion_mobile.webp 1x,
                 img/promotion_mobile@2x.webp 2x" width="290" height="299">
 
-              <source media="(min-width: 1200px)" srcset="img/promotion_desktop.jpg 1x,
+                <source media="(min-width: 1200px)" srcset="img/promotion_desktop.jpg 1x,
                 img/promotion_desktop@2x.jpg 2x" width="280" height="462">
-              <source media="(min-width: 768px)" srcset="img/promotion_tablet.jpg 1x,
+                <source media="(min-width: 768px)" srcset="img/promotion_tablet.jpg 1x,
                 img/promotion_tablet@2x.jpg 2x" width="399" height="462">
-              <img src="img/promotion_mobile.jpg" srcset="img/promotion_mobile@2x.jpg 2x"
-                alt="Победитель по жизни, купила год по акции." width="290" height="299">
-            </picture>
+                <img src="img/promotion_mobile.jpg" srcset="img/promotion_mobile@2x.jpg 2x"
+                  alt="Победитель по жизни, купила год по акции." width="290" height="299">
+              </picture>
+            </div>
           </div>
+          <ul class="promotion__list another-promos">
+            <li class="another-promos__item">
+              <p>Месяц бесплатно</p>
+              <span>Приведи друга, получи <br>абонемент в&nbsp;подарок</span>
+              <div class="another-promos__link-wrapper">
+                <a class="another-promos__link" href="#">Подробнее</a>
+              </div>
+            </li>
+            <li class="another-promos__item">
+              <p>Скидка&nbsp;20%</p>
+              <span>Корпоративный фитнес <br>с&nbsp;командой</span>
+              <div class="another-promos__link-wrapper">
+                <a class="another-promos__link" href="#">Подробнее</a>
+              </div>
+            </li>
+          </ul>
         </div>
-        <ul class="promotion__list another-promos">
-          <li class="another-promos__item">
-            <p>Месяц бесплатно</p>
-            <span>Приведи друга, получи<br>абонемент в&nbsp;подарок</span>
-            <div class="another-promos__link-wrapper">
-              <a class="another-promos__link" href="#">Подробнее</a>
-            </div>
-          </li>
-          <li class="another-promos__item">
-            <p>Скидка&nbsp;20%</p>
-            <span>Корпоративный фитнес <br>с&nbsp;командой</span>
-            <div class="another-promos__link-wrapper">
-              <a class="another-promos__link" href="#">Подробнее</a>
-            </div>
-          </li>
-        </ul>
       </section>
 
       <section class="faq" data-tabs="parent" data-delay="300">
@@ -1263,32 +1267,27 @@
             </a>
           </div>
           <ul class="footer__nav-list footer-nav">
-            <li class="footer-nav__item">
-              <div class="footer-nav__link-wrapper">
-                <a class="footer-nav__link" href="#"></a>
-              </div>
-            </li>
-            <li class="footer-nav__item">
+            <li class="footer-nav__item footer-nav__item--1">
               <div class="footer-nav__link-wrapper">
                 <a class="footer-nav__link" href="#">Услуги</a>
               </div>
             </li>
-            <li class="footer-nav__item">
+            <li class="footer-nav__item footer-nav__item--2">
               <div class="footer-nav__link-wrapper">
                 <a class="footer-nav__link" href="#">Абонементы</a>
               </div>
             </li>
-            <li class="footer-nav__item">
+            <li class="footer-nav__item footer-nav__item--3">
               <div class="footer-nav__link-wrapper">
                 <a class="footer-nav__link" href="#">Акции</a>
               </div>
             </li>
-            <li class="footer-nav__item">
+            <li class="footer-nav__item footer-nav__item--4">
               <div class="footer-nav__link-wrapper">
                 <a class="footer-nav__link" href="#">Тренеры</a>
               </div>
             </li>
-            <li class="footer-nav__item">
+            <li class="footer-nav__item footer-nav__item--5">
               <div class="footer-nav__link-wrapper">
                 <a class="footer-nav__link" href="#">Расписание</a>
               </div>
