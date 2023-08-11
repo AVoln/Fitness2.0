@@ -5,22 +5,10 @@
 
   @include desktop-width-only {
     padding: 31px 0 32px 5px;
-
-    &__item {
-      &:nth-child(1) {
-        display: none;
-      }
-    }
   }
 
   @include tablet-width {
     padding: 35px 0 34px 15px;
-
-    &__item {
-      &:nth-child(1) {
-        display: none;
-      }
-    }
   }
 
   @include mobile-width {

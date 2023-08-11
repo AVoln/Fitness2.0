@@ -58,7 +58,7 @@
     @include desktop-width-only {
       position: absolute;
       content: "";
-      width: 340px;
+      width: 25%;
       height: 2px;
       background-color: $color-torch-red;
       opacity: .2;

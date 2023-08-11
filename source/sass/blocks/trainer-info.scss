@@ -7,7 +7,7 @@
   width: 100%;
   color: $color-default-white;
   text-align: center;
-  overflow: scroll;
+  overflow: auto;
 
   & p {
     font-family: $ff-roboto-bold;
@@ -66,6 +66,10 @@
     font-size: 14px;
     line-height: 22px;
     padding-top: 11px;
+
+    &:last-child {
+      padding-bottom: 20px;
+    }
 
     @include mobile-width {
       margin-left: 50px;

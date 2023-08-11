@@ -2182,10 +2182,27 @@ button {
 .header__logo:focus-visible {
   outline: 1px solid #ffffff;
 }
+@media (min-width: 1200px) {
+  .header__phone-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 50%;
+  }
+}
 .header__phone {
   color: #ffffff;
   font-family: "alumni-semibold", "Arial", sans-serif;
   max-width: 160px;
+  white-space: nowrap;
+}
+.header__phone:not(:first-child) {
+  margin-left: 30px;
+}
+.header__phone:nth-child(3n+1) {
+  margin-left: 0;
 }
 @media (min-width: 1200px) {
   .header__phone {
@@ -2247,7 +2264,7 @@ button {
     -webkit-column-gap: 5%;
        -moz-column-gap: 5%;
             column-gap: 5%;
-    padding-bottom: 85px;
+    padding-bottom: 83px;
   }
 }
 @media (max-width: 767px) {
@@ -2268,7 +2285,7 @@ button {
 }
 @media (max-width: 1199px) {
   .hero__description-wrapper {
-    padding-top: 82px;
+    padding-top: 80px;
   }
 }
 @media (max-width: 767px) {
@@ -2573,16 +2590,10 @@ button {
   .footer-nav {
     padding: 31px 0 32px 5px;
   }
-  .footer-nav__item:nth-child(1) {
-    display: none;
-  }
 }
 @media (max-width: 1199px) {
   .footer-nav {
     padding: 35px 0 34px 15px;
-  }
-  .footer-nav__item:nth-child(1) {
-    display: none;
   }
 }
 @media (max-width: 767px) {
@@ -2912,7 +2923,7 @@ button {
 }
 @media (min-width: 1200px) {
   .description > span {
-    padding-top: 40px;
+    padding: 40px 40px 0 0;
   }
 }
 @media (max-width: 1199px) {
@@ -3815,7 +3826,7 @@ button {
   width: 100%;
   color: #ffffff;
   text-align: center;
-  overflow: scroll;
+  overflow: auto;
 }
 .trainer-info p {
   font-family: "roboto-bold", "Arial", sans-serif;
@@ -3879,6 +3890,9 @@ button {
   font-size: 14px;
   line-height: 22px;
   padding-top: 11px;
+}
+.trainer-info__item:last-child {
+  padding-bottom: 20px;
 }
 @media (max-width: 767px) {
   .trainer-info__item {
@@ -4486,7 +4500,7 @@ button {
   .advantage__element.experience::before, .advantage__element.comfort::before {
     position: absolute;
     content: "";
-    width: 340px;
+    width: 25%;
     height: 2px;
     background-color: #ed0233;
     opacity: 0.2;
@@ -4758,6 +4772,33 @@ button {
             justify-content: center;
   }
 }
+.promotion__container {
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .promotion__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+}
+@media (max-width: 1199px) {
+  .promotion__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .promotion__container {
+    width: 100%;
+  }
+}
 .promotion h2 {
   display: block;
   width: 100%;
@@ -4947,6 +4988,16 @@ button {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media (max-width: 1199px) {
@@ -4965,6 +5016,7 @@ button {
 @media (max-width: 767px) {
   .another-promos {
     display: block;
+    width: 100%;
   }
 }
 .another-promos__item {
@@ -5014,6 +5066,7 @@ button {
             align-items: center;
     text-align: center;
     padding: 39px;
+    max-width: none;
   }
   .another-promos__item:not(:first-child) {
     margin-top: 30px;
