@@ -5,16 +5,19 @@
 
   @include desktop-width-only {
     max-width: 204px;
+    min-width: 102px;
   }
 
   @include tablet-width {
     max-width: 204px;
+    min-width: 102px;
   }
 
   @include mobile-width {
     padding: 0 0 52px 0;
     margin-left: -3px;
     max-width: 100%;
+    min-width: auto;
   }
 
   &__item {
