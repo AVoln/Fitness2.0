@@ -2182,14 +2182,26 @@ button {
 .header__logo:focus-visible {
   outline: 1px solid #ffffff;
 }
+.header__phone-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 @media (min-width: 1200px) {
   .header__phone-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    max-width: 50%;
+    max-width: 80%;
+  }
+}
+@media (max-width: 1199px) {
+  .header__phone-container {
+    max-width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .header__phone-container {
+    max-width: 60%;
   }
 }
 .header__phone {
@@ -2197,12 +2209,6 @@ button {
   font-family: "alumni-semibold", "Arial", sans-serif;
   max-width: 160px;
   white-space: nowrap;
-}
-.header__phone:not(:first-child) {
-  margin-left: 30px;
-}
-.header__phone:nth-child(3n+1) {
-  margin-left: 0;
 }
 @media (min-width: 1200px) {
   .header__phone {
@@ -2225,6 +2231,12 @@ button {
   .header__phone {
     font-size: 20px;
   }
+}
+.header__phone {
+  margin-right: 25px;
+}
+.header__phone:first-child:last-child {
+  margin-right: 0;
 }
 .header__phone:hover {
   opacity: 0.8;
