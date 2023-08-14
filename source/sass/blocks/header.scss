@@ -40,10 +40,19 @@
   }
 
   &__phone-container {
+    display: flex;
+    flex-wrap: wrap;
+
     @include desktop-width-only {
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 50%;
+      max-width: 80%;
+    }
+
+    @include tablet-width {
+      max-width: 80%;
+    }
+
+    @include mobile-width {
+      max-width: 60%;
     }
   }
 
@@ -52,14 +61,6 @@
     font-family: $ff-alumni-semibold;
     max-width: 160px;
     white-space: nowrap;
-
-    &:not(:first-child) {
-      margin-left: 30px;
-    }
-
-    &:nth-child(3n+1) {
-      margin-left: 0;
-    }
 
     @include desktop-width-only {
       letter-spacing: 0.7px;
@@ -76,6 +77,14 @@
 
     @include mobile-width {
       font-size: 20px;
+    }
+
+    & {
+      margin-right: 25px;
+    }
+
+    &:first-child:last-child {
+      margin-right: 0;
     }
 
     &:hover {
