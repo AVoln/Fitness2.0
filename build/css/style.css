@@ -3966,6 +3966,7 @@ button {
     height: 32px;
     bottom: 50%;
     margin: 0 3px;
+    padding: 0;
   }
 }
 .trainers-arrow:hover {
